@@ -24,8 +24,9 @@
     --serif:"Iowan Old Style",Palatino,"Palatino Linotype",Georgia,serif;
   }
   *{margin:0;padding:0;box-sizing:border-box}
-  html{font-size:17px}
-  body{background:var(--paper);color:var(--ink);font-family:var(--serif);line-height:1.55}
+  html{font-size:17px;-webkit-text-size-adjust:100%}
+  body{background:var(--paper);color:var(--ink);font-family:var(--serif);line-height:1.55;overflow-wrap:break-word}
+  img{max-width:100%}
   .wrap{max-width:60rem;margin:0 auto;padding:0 1.5rem}
   a{color:var(--accent)}
   header.wrap{padding-top:5.5rem}
@@ -43,6 +44,7 @@
   .term .c{color:#8a8378}
   .term .g{color:#7fbf9a}
   figure{margin:1.8rem 0}
+  figure a{display:block}
   figure img{width:100%;display:block;border:1px solid var(--ink)}
   figcaption{font-family:var(--mono);font-size:.72rem;letter-spacing:.04em;color:var(--muted);margin-top:.5rem}
   .steps{counter-reset:s;list-style:none;margin:.4rem 0 1.2rem}
@@ -88,15 +90,15 @@
   <p>Both sample reports come from the fictional demo companies that ship with the repo, so you
   can reproduce every page yourself before adding a single API key.</p>
   <figure>
-    <img src="assets/shot-summary.png" alt="Report opening page with headline findings and a domain authority chart" loading="lazy">
+    <a href="assets/shot-summary.png" target="_blank" rel="noopener"><img src="assets/shot-summary.png" alt="Report opening page with headline findings and a domain authority chart" loading="lazy"></a>
     <figcaption>Every headline on the opening spread is computed from the scan's own numbers</figcaption>
   </figure>
   <figure>
-    <img src="assets/shot-greenfield.png" alt="Greenfield opportunity map plotting demand against winnability for buyer queries" loading="lazy">
+    <a href="assets/shot-greenfield.png" target="_blank" rel="noopener"><img src="assets/shot-greenfield.png" alt="Greenfield opportunity map plotting demand against winnability for buyer queries" loading="lazy"></a>
     <figcaption>The greenfield map plots demand against winnability for every buyer query in the niche</figcaption>
   </figure>
   <figure>
-    <img src="assets/shot-matrix.png" alt="AI visibility matrix showing eight buyer questions across five AI engines" loading="lazy">
+    <a href="assets/shot-matrix.png" target="_blank" rel="noopener"><img src="assets/shot-matrix.png" alt="AI visibility matrix showing eight buyer questions across five AI engines" loading="lazy"></a>
     <figcaption>The AI visibility matrix checks eight buyer questions across five engines, cell by cell</figcaption>
   </figure>
   <hr class="rule">
