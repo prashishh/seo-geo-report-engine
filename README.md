@@ -1,5 +1,7 @@
 # seo-geo-report-engine
 
+**Website → [geoseo-visibility.prashish.xyz](https://geoseo-visibility.prashish.xyz/)**
+
 An open-source **SEO and AI-search (GEO) report engine** that runs inside
 [Claude Code](https://claude.com/claude-code) and any harness that can run Python. Point it at a
 company and it scans the field with live data, then renders a branded, 18-section competitive
