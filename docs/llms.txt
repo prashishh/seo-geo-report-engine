@@ -1,6 +1,6 @@
 # seo-geo-report-engine
 
-> Open-source SEO, GEO and AI visibility report engine. Point it at any website and it scans the
+> Open-source SEO, AEO and AI visibility report engine. Point it at any website and it scans the
 > company plus its competitors with live data, then renders an 18-section competitive report as a
 > branded PDF. It covers AI recommendations across ChatGPT, Gemini, Claude, Perplexity and Google
 > AI Overviews, competitor gaps, traffic share, review counts, reputation, ads footprint, social

@@ -2,7 +2,7 @@
 
 **Website → [geoseo-visibility.prashish.xyz](https://geoseo-visibility.prashish.xyz/)**
 
-An open-source **SEO, GEO and AI visibility report engine** that runs inside
+An open-source **SEO, AEO and AI visibility report engine** that runs inside
 [Claude Code](https://claude.com/claude-code) and any harness that can run Python. Point it at a
 company and it scans the field with live data, then renders a branded, 18-section competitive
 report as a PDF. AI visibility across five engines, competitor gaps, traffic share, review
