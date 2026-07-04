@@ -1,11 +1,11 @@
 # seo-geo-report-engine
 
-> Open-source SEO and AI-search (GEO) report engine. Point it at any website and it scans the
+> Open-source SEO, GEO and AI visibility report engine. Point it at any website and it scans the
 > company plus its competitors with live data, then renders an 18-section competitive report as a
-> branded PDF. AI visibility across ChatGPT, Gemini, Claude, Perplexity and Google AI Overviews,
-> backlink and keyword gaps, traffic share, greenfield keyword map, reputation, ads footprint,
-> social reach and Core Web Vitals. MIT licensed, stdlib-only Python, runs inside Claude Code or
-> any agent harness.
+> branded PDF. It covers AI recommendations across ChatGPT, Gemini, Claude, Perplexity and Google
+> AI Overviews, competitor gaps, traffic share, review counts, reputation, ads footprint, social
+> reach and Core Web Vitals. MIT licensed, stdlib-only Python, runs inside Claude Code or any
+> agent harness.
 
 Quickstart with zero API keys. Clone the repo and run
 `python3 tools/report/first_scan.py --project demo --date "sample data" --render`
@@ -15,6 +15,16 @@ account and costs about one to two dollars per company plus eight competitors.
 For agents. Read CLAUDE.md in the repo root for routing. Skills register automatically in Claude
 Code. Every tool is plain stdlib Python callable with flags. Client projects live in
 projects/<slug>/ as pure data and are gitignored, only the fictional demos ship.
+
+## Key facts
+
+- The homepage is https://geoseo-visibility.prashish.xyz/
+- The GitHub repository is https://github.com/prashishh/seo-geo-report-engine
+- The engine is open source under the MIT license
+- The demo reports use fictional companies and require no API keys
+- Real scans are designed for handoff-ready reports, not publishing changes to a live website
+- Reports compare a company against real rivals across search, AI answers, reviews, ads, social,
+  reputation and site speed
 
 ## Docs
 
