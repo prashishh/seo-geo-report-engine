@@ -16,7 +16,26 @@
 <meta name="twitter:description" content="Are you seen across search, AI, and social? An open-source SEO and AI-search (GEO) report engine. Point it at any website for an 18-section competitive report as a branded PDF covering AI visibility, backlinks, traffic share, greenfield keywords, reputation, social and more.">
 <meta name="twitter:image" content="https://geoseo-visibility.prashish.xyz/assets/shot-summary.png">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "seo-geo-report-engine", "description": "Are you seen across search, AI, and social? An open-source SEO and AI-search (GEO) report engine. Point it at any website for an 18-section competitive report as a branded PDF covering AI visibility, backlinks, traffic share, greenfield keywords, reputation, social and more.", "url": "https://geoseo-visibility.prashish.xyz/", "applicationCategory": "BusinessApplication", "operatingSystem": "macOS, Linux, Windows", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "license": "https://opensource.org/license/mit/", "sameAs": ["https://github.com/prashishh/seo-geo-report-engine"]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does it check?", "acceptedAnswer": {"@type": "Answer", "text": "Search rankings, backlinks, traffic, reviews, ads, social, site speed, and whether AI tools like ChatGPT and Gemini recommend you or your rivals."}}, {"@type": "Question", "name": "Does it find new keywords for me?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It shows the search terms your rivals rank for and you do not, and ranks the easy wins first."}}, {"@type": "Question", "name": "What does it tell me about my competitors?", "acceptedAnswer": {"@type": "Answer", "text": "Their best pages, their funding and hiring, their ad spend, their backlinks, and the one complaint that keeps showing up in their reviews."}}, {"@type": "Question", "name": "How much does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "The software is free. The demo needs no accounts. A real scan of you plus 8 rivals costs about $1 to $2."}}, {"@type": "Question", "name": "What is GEO?", "acceptedAnswer": {"@type": "Answer", "text": "Getting your brand recommended inside AI answers. Think of it as SEO for ChatGPT and Gemini."}}, {"@type": "Question", "name": "Do I just get a score, or a plan?", "acceptedAnswer": {"@type": "Answer", "text": "A plan. It ranks the exact moves to make first, based on demand and how easy each one is to win."}}, {"@type": "Question", "name": "Will it find things I missed myself?", "acceptedAnswer": {"@type": "Answer", "text": "Often, yes. Press that never linked back to you. A rival's backlinks that are mostly low-quality junk. A good rating sitting on almost no reviews."}}, {"@type": "Question", "name": "Can I just get the report by email?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Send your website to namaste@prashish.xyz and it comes back to you."}}]}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What does it check?", "acceptedAnswer": {"@type": "Answer", "text": "Search rankings, backlinks, traffic, reviews, ads, social, site speed, and whether AI tools like ChatGPT and Gemini recommend you or your rivals."}},
+    {"@type": "Question", "name": "Does it find new keywords for me?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It shows the search terms your rivals rank for and you do not, and ranks the easy wins first."}},
+    {"@type": "Question", "name": "What does it tell me about my competitors?", "acceptedAnswer": {"@type": "Answer", "text": "Their best pages, funding and hiring signals, ad footprint, backlinks, and the complaints that keep showing up in their reviews."}},
+    {"@type": "Question", "name": "How much does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "The software is free. The demo needs no accounts. A real scan of you plus 8 rivals costs about $1 to $2."}},
+    {"@type": "Question", "name": "What is GEO?", "acceptedAnswer": {"@type": "Answer", "text": "Getting your brand recommended inside AI answers. Think of it as SEO for ChatGPT and Gemini."}},
+    {"@type": "Question", "name": "Do I just get a score, or a plan?", "acceptedAnswer": {"@type": "Answer", "text": "A plan. It ranks the exact moves to make first, based on demand and how easy each one is to win."}},
+    {"@type": "Question", "name": "Will it find things I missed myself?", "acceptedAnswer": {"@type": "Answer", "text": "Often, yes. Press that never linked back to you. A rival's backlinks that are mostly low-quality junk. A good rating sitting on almost no reviews."}},
+    {"@type": "Question", "name": "Who is this for?", "acceptedAnswer": {"@type": "Answer", "text": "Agencies, founders, consultants, and marketers who need a fast competitive SEO and AI-search read."}},
+    {"@type": "Question", "name": "Do I need coding experience to use it?", "acceptedAnswer": {"@type": "Answer", "text": "The demo is simple to run, but real scans are easiest if you are comfortable running terminal commands and adding API keys."}},
+    {"@type": "Question", "name": "Can I use this for client work?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It is MIT licensed and designed to produce handoff-ready client reports, briefs, page specs, schema, and strategy artifacts."}},
+    {"@type": "Question", "name": "Does it publish anything to my website?", "acceptedAnswer": {"@type": "Answer", "text": "No. It creates reports and ready-to-implement recommendations. Your team still reviews, builds, and ships anything that goes live."}},
+    {"@type": "Question", "name": "What data do I need before running a real scan?", "acceptedAnswer": {"@type": "Answer", "text": "Start with a target domain, known competitors if you have them, and API keys for live search, review, backlink, ads, AI-answer, and speed data."}}
+  ]
+}
+</script>
 <style>
   :root{
     --paper:#faf7f2; --ink:#191613; --muted:#6b6459; --accent:#20563a;
@@ -47,6 +66,8 @@
   figure a{display:block}
   figure img{width:100%;display:block;border:1px solid var(--ink)}
   figcaption{font-family:var(--mono);font-size:.72rem;letter-spacing:.04em;color:var(--muted);margin-top:.5rem}
+  .proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin:1.8rem 0}
+  .proof-grid figure{margin:0}
   .steps{counter-reset:s;list-style:none;margin:.4rem 0 1.2rem}
   .steps li{counter-increment:s;padding:.55rem 0 .55rem 2.6rem;position:relative;max-width:46rem}
   .steps li::before{content:counter(s,decimal-leading-zero);position:absolute;left:0;top:.7rem;font-family:var(--mono);font-size:.72rem;color:var(--accent)}
@@ -54,8 +75,14 @@
   table{border-collapse:collapse;width:100%;font-size:.86rem;margin:.8rem 0 1.2rem}
   th,td{text-align:left;padding:.5rem .6rem .5rem 0;border-bottom:1px solid #d8d1c3;vertical-align:top}
   th{font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:500}
+  td:first-child{font-family:var(--mono);font-size:.78rem}
+  details{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:1rem 0;margin:1.4rem 0 0}
+  summary{cursor:pointer;display:inline-block;font-family:var(--mono);font-size:.8rem;letter-spacing:.06em;padding:.65rem 1.1rem;border:1px solid var(--ink);color:var(--ink);list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary:hover{background:var(--ink);color:var(--paper)}
+  details[open] summary{margin-bottom:1rem;background:var(--ink);color:var(--paper)}
   .split{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:.6rem}
-  @media(max-width:700px){.split{grid-template-columns:1fr}html{font-size:16px}h1{font-size:1.95rem}header.wrap{padding-top:3.5rem}}
+  @media(max-width:700px){.split,.proof-grid{grid-template-columns:1fr}html{font-size:16px}h1{font-size:1.95rem}header.wrap{padding-top:3.5rem}}
   .btn{display:inline-block;font-family:var(--mono);font-size:.8rem;letter-spacing:.06em;padding:.65rem 1.1rem;border:1px solid var(--ink);color:var(--ink);text-decoration:none;background:transparent;margin:0 .5rem .5rem 0}
   .btn:hover{background:var(--ink);color:var(--paper)}
   .btn.solid{background:var(--accent);border-color:var(--accent);color:#fff}
@@ -73,13 +100,12 @@
     <li>AI visibility across ChatGPT, Gemini, Claude, Perplexity and Google AI Overviews</li>
     <li>Backlink profile and the link gap, with a vetted outreach list</li>
     <li>Traffic share, share of search and a greenfield keyword map</li>
-    <li>Reputation, ads footprint, social reach and site speed against every rival</li>
+    <li>Review counts, ratings and recurring complaints that shape reputation</li>
+    <li>Competitor ad footprint: who is buying attention and where proof pages need to convert</li>
+    <li>Social reach and site speed against every rival</li>
     <li>An 18-section branded PDF, ready to send the same day</li>
     <li>Not just a diagnosis, a step-by-step plan you can actually run</li>
   </ul>
-  <p>Want the report but not the setup? Email your website to
-  <a href="mailto:namaste@prashish.xyz?subject=First%20scan%20request">namaste@prashish.xyz</a>
-  and it comes back to you.</p>
   <p>
     <a class="btn solid" href="mailto:namaste@prashish.xyz?subject=First%20scan%20request">Email me for a report</a>
     <a class="btn" href="https://github.com/prashishh/seo-geo-report-engine">View on GitHub</a>
@@ -106,6 +132,16 @@
     <a href="assets/shot-matrix.png" target="_blank" rel="noopener"><img src="assets/shot-matrix.png" alt="AI visibility matrix showing eight buyer questions across five AI engines" loading="lazy"></a>
     <figcaption>The AI visibility matrix checks eight buyer questions across five engines, cell by cell</figcaption>
   </figure>
+  <div class="proof-grid">
+    <figure>
+      <a href="assets/shot-pages-reviews.png" target="_blank" rel="noopener"><img src="assets/shot-pages-reviews.png" alt="Report page showing competitor top traffic pages, review counts, ratings and complaints" loading="lazy"></a>
+      <figcaption>Competitor pages, reviews, ratings and the complaint wedge all sit in the report</figcaption>
+    </figure>
+    <figure>
+      <a href="assets/shot-ads-footprint.png" target="_blank" rel="noopener"><img src="assets/shot-ads-footprint.png" alt="Report page showing live Google ads by company and social presence benchmarks" loading="lazy"></a>
+      <figcaption>The ads footprint shows which rivals are buying attention before you spend a dollar</figcaption>
+    </figure>
+  </div>
   <hr class="rule">
 </section>
 
@@ -147,6 +183,57 @@ $ python3 tools/report/first_scan.py --project demo --date "sample data" --rende
   <hr class="rule">
 </section>
 
+<section class="wrap" id="capabilities">
+  <h2>What the full scan covers</h2>
+  <p>The first-scan report is built to show the whole competitive field, not just a health score.
+  It checks search demand, backlinks, competitor pages, reviews, ad activity, social reach, site
+  speed, and AI-answer visibility, then turns that into a prioritized plan.</p>
+  <table>
+    <tr><th>Area</th><th>What you learn</th></tr>
+    <tr><td>AI search</td><td>whether ChatGPT, Gemini, Claude, Perplexity and Google AI Overviews name you or competitors</td></tr>
+    <tr><td>Search demand</td><td>which buyer queries exist, who ranks, and which greenfield terms are still open</td></tr>
+    <tr><td>Competitor pages</td><td>the pages already pulling traffic for rivals, including home, category, comparison and editorial pages</td></tr>
+    <tr><td>Reviews</td><td>ratings, review volume and recurring complaints that can become your switching wedge</td></tr>
+    <tr><td>Ads</td><td>which competitors are running live Google ads and where paid pressure is showing up</td></tr>
+    <tr><td>Authority</td><td>domain strength, backlinks, link gaps and the outreach list worth handing to a team</td></tr>
+    <tr><td>Performance</td><td>Core Web Vitals and site-speed gaps across the whole field</td></tr>
+  </table>
+  <details>
+    <summary>Show more capabilities</summary>
+    <h3>The 18 report sections</h3>
+    <table>
+      <tr><td>01</td><td>Where you stand today</td><td>headline findings computed from the scan</td></tr>
+      <tr><td>02</td><td>Domain authority</td><td>trust score for you and every rival</td></tr>
+      <tr><td>03</td><td>Backlinks and the link gap</td><td>who links to your rivals but not to you, junk filtered out</td></tr>
+      <tr><td>04</td><td>Press and awards</td><td>coverage you already have and whether it passes authority</td></tr>
+      <tr><td>05</td><td>Traffic share</td><td>how category organic visits split across the field</td></tr>
+      <tr><td>06</td><td>Share of search</td><td>who buyers look for by name</td></tr>
+      <tr><td>07</td><td>The demand you are missing</td><td>keywords rivals rank for that you do not</td></tr>
+      <tr><td>08</td><td>Rival funding and hiring</td><td>who raised, who is hiring, and where momentum points</td></tr>
+      <tr><td>09</td><td>Search demand and the gap</td><td>highest-intent queries with volume and difficulty</td></tr>
+      <tr><td>10</td><td>Greenfield opportunity map</td><td>demand against winnability for buyer queries</td></tr>
+      <tr><td>11</td><td>What competitors win with</td><td>each rival's top-traffic pages</td></tr>
+      <tr><td>12</td><td>Reputation and the wedge</td><td>ratings, review counts and recurring complaints</td></tr>
+      <tr><td>13</td><td>Google Ads footprint</td><td>who is buying attention and how many live ads they run</td></tr>
+      <tr><td>14</td><td>Social presence</td><td>follower benchmark on the channel that matters</td></tr>
+      <tr><td>15</td><td>Site speed</td><td>Core Web Vitals for the whole field</td></tr>
+      <tr><td>16</td><td>AI share of voice</td><td>how often each brand is named across AI engines</td></tr>
+      <tr><td>17</td><td>AI visibility matrix</td><td>buyer questions against five engines, cell by cell</td></tr>
+      <tr><td>18</td><td>The opportunity and the plan</td><td>the lanes to attack first</td></tr>
+    </table>
+    <h3>Skills and workflows</h3>
+    <table>
+      <tr><td>AI search</td><td>llm-visibility, geo-audit, aeo-content-patterns, ai-citation-sprint, serp-intel, web-research</td></tr>
+      <tr><td>SEO</td><td>keyword-research, competitor-analysis, backlink-analysis, technical-seo-audit, web-vitals, comparison-pages, programmatic-seo, schema-markup and more</td></tr>
+      <tr><td>Strategy</td><td>first-scan-report, opportunity-map, market-opportunity, positioning-messaging, customer-research, proposal-builder</td></tr>
+      <tr><td>Operations</td><td>report-generator, kpi-dashboard, agency-dashboard, seo-data-router, skill-navigator</td></tr>
+      <tr><td>Workflows</td><td>/client-report, /new-client, /discovery-audit, /growth-plan, /growth-proposal, /competitor-watch, /weekly-report, /monthly-report</td></tr>
+    </table>
+    <p class="fine">The dedicated <a href="capabilities.html">capabilities page</a> keeps the full reference in one place.</p>
+  </details>
+  <hr class="rule">
+</section>
+
 <section class="wrap">
   <h2>For AI agents</h2>
   <p>Working inside Claude Code, Codex, or another agent harness? Clone the repo and read
@@ -165,7 +252,7 @@ $ python3 tools/report/first_scan.py --project demo --date "sample data" --rende
   <h3>Does it find new keywords for me?</h3>
   <p>Yes. It shows the search terms your rivals rank for and you do not, and ranks the easy wins first.</p>
   <h3>What does it tell me about my competitors?</h3>
-  <p>Their best pages, their funding and hiring, their ad spend, their backlinks, and the one complaint that keeps showing up in their reviews.</p>
+  <p>Their best pages, funding and hiring signals, ad footprint, backlinks, and the complaints that keep showing up in their reviews.</p>
   <h3>How much does it cost?</h3>
   <p>The software is free. The demo needs no accounts. A real scan of you plus 8 rivals costs about $1 to $2.</p>
   <h3>What is GEO?</h3>
@@ -174,8 +261,16 @@ $ python3 tools/report/first_scan.py --project demo --date "sample data" --rende
   <p>A plan. It ranks the exact moves to make first, based on demand and how easy each one is to win.</p>
   <h3>Will it find things I missed myself?</h3>
   <p>Often, yes. Press that never linked back to you. A rival's backlinks that are mostly low-quality junk. A good rating sitting on almost no reviews.</p>
-  <h3>Can I just get the report by email?</h3>
-  <p>Yes. Send your website to namaste@prashish.xyz and it comes back to you.</p>
+  <h3>Who is this for?</h3>
+  <p>Agencies, founders, consultants, and marketers who need a fast competitive SEO and AI-search read.</p>
+  <h3>Do I need coding experience to use it?</h3>
+  <p>The demo is simple to run, but real scans are easiest if you are comfortable running terminal commands and adding API keys.</p>
+  <h3>Can I use this for client work?</h3>
+  <p>Yes. It is MIT licensed and designed to produce handoff-ready client reports, briefs, page specs, schema, and strategy artifacts.</p>
+  <h3>Does it publish anything to my website?</h3>
+  <p>No. It creates reports and ready-to-implement recommendations. Your team still reviews, builds, and ships anything that goes live.</p>
+  <h3>What data do I need before running a real scan?</h3>
+  <p>Start with a target domain, known competitors if you have them, and API keys for live search, review, backlink, ads, AI-answer, and speed data.</p>
   <hr class="rule">
 </section>
 
