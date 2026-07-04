@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SEO AEO AI visibility icon">
+  <rect width="64" height="64" rx="12" fill="#faf7f2"/>
+  <rect x="10" y="10" width="44" height="44" rx="10" fill="#191613"/>
+  <rect x="16" y="16" width="32" height="32" rx="6" fill="#20563a"/>
+  <path d="M22 40 L30 32 L36 36 L44 24" fill="none" stroke="#faf7f2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="44" cy="24" r="3.5" fill="#faf7f2"/>
+</svg>
