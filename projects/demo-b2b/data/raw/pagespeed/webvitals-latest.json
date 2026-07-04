@@ -1,0 +1,37 @@
+{
+  "Northwind Desk": {
+    "lab_performance": 64,
+    "cwv_passed": false,
+    "LCP_verdict": "poor",
+    "CLS_verdict": "good",
+    "TBT_verdict": "good"
+  },
+  "Contoso Helpdesk": {
+    "lab_performance": 52,
+    "cwv_passed": false,
+    "LCP_verdict": "poor",
+    "CLS_verdict": "good",
+    "TBT_verdict": "needs-improvement"
+  },
+  "Fabrikam Support": {
+    "lab_performance": 69,
+    "cwv_passed": false,
+    "LCP_verdict": "needs-improvement",
+    "CLS_verdict": "good",
+    "TBT_verdict": "good"
+  },
+  "Initrode Systems": {
+    "lab_performance": 31,
+    "cwv_passed": false,
+    "LCP_verdict": "poor",
+    "CLS_verdict": "poor",
+    "TBT_verdict": "poor"
+  },
+  "Hooli Desk": {
+    "lab_performance": 58,
+    "cwv_passed": false,
+    "LCP_verdict": "poor",
+    "CLS_verdict": "good",
+    "TBT_verdict": "good"
+  }
+}

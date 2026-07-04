@@ -1,0 +1,54 @@
+# Acme Roastworks - the FICTIONAL demo client that ships with this repo.
+# Every company, domain (.example), and number in projects/demo/ is invented so the full
+# first-scan report renders out of the box with zero API keys. Try it:
+#   python3 tools/report/first_scan.py --project demo --date "sample data" --render
+client_name: Acme Roastworks
+name: Acme Roastworks
+slug: demo
+domain: acme-roastworks.example
+
+profile: >
+  Acme Roastworks is a fictional US specialty-coffee subscription brand used to demonstrate this
+  framework. It roasts to order and ships within 48 hours of roast, competing against larger
+  fictional incumbents on freshness and curation.
+
+audience:
+  - "Home-brew coffee enthusiasts upgrading from grocery beans"
+  - "Gift buyers looking for a recurring coffee subscription"
+  - "Specialty cafes sourcing small-batch beans"
+
+competitors:
+  - { name: Globex Coffee, domain: globex-coffee.example }
+  - { name: Vandelay Roasters, domain: vandelay-roasters.example }
+  - { name: Initech Brew Co., domain: initech-brew.example }
+  - { name: Beanline, domain: beanline.example }
+  - { name: Cupwell, domain: cupwell.example }
+
+target_keywords:
+  - "coffee subscription"
+  - "single origin coffee"
+  - "best coffee subscription"
+  - "fresh roasted coffee beans"
+  - "light roast vs dark roast"
+  - "pour over coffee ratio"
+
+market: US
+
+# Fictional press; the press section cross-checks these domains against the backlink data.
+press:
+  - { outlet: The Daily Grind Journal, domain: dailygrindjournal.example }
+  - { outlet: Pourover Weekly, domain: pourover-weekly.example }
+
+messaging:
+  lanes:
+    - { tag: "Lane 1", name: "Own the AI answer", when: "invisible in AI answers today",
+        items: ["Be named when buyers ask AI for the best coffee subscription", "Answer-first category and brand pages"] }
+    - { tag: "Lane 2", name: "Out-teach the incumbents", when: "rivals win with brew-guide content",
+        items: ["Own the brew-education queries (storage, ratios, grind size)", "Every guide funnels to the subscription"] }
+    - { tag: "Lane 3", name: "Freshness proof", when: "the differentiator",
+        items: ["Roast-date transparency on every page", "Turn the 4.9 rating into volume with post-purchase review capture"] }
+  one_liner: "Roasted to order, shipped within 48 hours."
+
+brand:
+  primary: "#2D1B12"
+  accent:  "#C96F2D"

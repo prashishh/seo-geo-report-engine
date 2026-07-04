@@ -1,0 +1,28 @@
+# seo-geo-report-engine
+
+> Open-source SEO and AI-search (GEO) report engine. Point it at any website and it scans the
+> company plus its competitors with live data, then renders an 18-section competitive report as a
+> branded PDF. AI visibility across ChatGPT, Gemini, Claude, Perplexity and Google AI Overviews,
+> backlink and keyword gaps, traffic share, greenfield keyword map, reputation, ads footprint,
+> social reach and Core Web Vitals. MIT licensed, stdlib-only Python, runs inside Claude Code or
+> any agent harness.
+
+Quickstart with zero API keys. Clone the repo and run
+`python3 tools/report/first_scan.py --project demo --date "sample data" --render`
+to render the full demo report from fictional data. A real scan needs a pay-as-you-go DataForSEO
+account and costs about one to two dollars per company plus eight competitors.
+
+For agents. Read CLAUDE.md in the repo root for routing. Skills register automatically in Claude
+Code. Every tool is plain stdlib Python callable with flags. Client projects live in
+projects/<slug>/ as pure data and are gitignored, only the fictional demos ship.
+
+## Docs
+
+- [Homepage](https://geoseo-visibility.prashish.xyz/) how it works, sample reports, screenshots
+- [Capabilities](https://geoseo-visibility.prashish.xyz/capabilities.html) all 18 report sections, 33 skills, 8 workflows, 5 subagents, 9 playbooks
+- [Repository](https://github.com/prashishh/seo-geo-report-engine) source, README, operating manual
+
+## Samples
+
+- [Sample report 1](https://geoseo-visibility.prashish.xyz/assets/sample-report-1.pdf) consumer brand demo, 18 sections
+- [Sample report 2](https://geoseo-visibility.prashish.xyz/assets/sample-report-2.pdf) B2B SaaS demo, 17 sections

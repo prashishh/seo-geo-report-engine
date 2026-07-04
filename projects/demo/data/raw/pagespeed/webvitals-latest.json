@@ -1,0 +1,44 @@
+{
+  "Acme Roastworks": {
+    "lab_performance": 88,
+    "cwv_passed": true,
+    "LCP_verdict": "good",
+    "CLS_verdict": "good",
+    "TBT_verdict": "good"
+  },
+  "Globex Coffee": {
+    "lab_performance": 46,
+    "cwv_passed": false,
+    "LCP_verdict": "poor",
+    "CLS_verdict": "good",
+    "TBT_verdict": "needs-improvement"
+  },
+  "Vandelay Roasters": {
+    "lab_performance": 61,
+    "cwv_passed": false,
+    "LCP_verdict": "poor",
+    "CLS_verdict": "good",
+    "TBT_verdict": "good"
+  },
+  "Initech Brew Co.": {
+    "lab_performance": 34,
+    "cwv_passed": false,
+    "LCP_verdict": "poor",
+    "CLS_verdict": "poor",
+    "TBT_verdict": "poor"
+  },
+  "Beanline": {
+    "lab_performance": 71,
+    "cwv_passed": false,
+    "LCP_verdict": "needs-improvement",
+    "CLS_verdict": "good",
+    "TBT_verdict": "good"
+  },
+  "Cupwell": {
+    "lab_performance": 24,
+    "cwv_passed": false,
+    "LCP_verdict": "poor",
+    "CLS_verdict": "poor",
+    "TBT_verdict": "poor"
+  }
+}

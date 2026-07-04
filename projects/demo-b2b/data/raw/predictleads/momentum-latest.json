@@ -1,0 +1,45 @@
+{
+  "client": "Northwind Desk",
+  "field_depts": {
+    "Engineering": 88,
+    "Sales/GTM": 64,
+    "Support": 31,
+    "Finance": 12,
+    "Ops": 9
+  },
+  "total_field_roles": 204,
+  "companies": {
+    "Northwind Desk": {
+      "open_roles": 3,
+      "latest_round": {}
+    },
+    "Contoso Helpdesk": {
+      "open_roles": 141,
+      "latest_round": {
+        "amount": 80000000,
+        "type": "series_c",
+        "date": "2025-09-16"
+      }
+    },
+    "Fabrikam Support": {
+      "open_roles": 44,
+      "latest_round": {
+        "amount": 25000000,
+        "type": "series_a",
+        "date": "2025-03-02"
+      }
+    },
+    "Initrode Systems": {
+      "open_roles": 12,
+      "latest_round": {}
+    },
+    "Hooli Desk": {
+      "open_roles": 4,
+      "latest_round": {
+        "amount": 3000000,
+        "type": "seed",
+        "date": "2024-10-21"
+      }
+    }
+  }
+}

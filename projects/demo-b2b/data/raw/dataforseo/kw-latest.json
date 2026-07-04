@@ -1,0 +1,81 @@
+{
+  "labs": true,
+  "location": 2840,
+  "language": "en",
+  "topic_terms": [
+    "helpdesk",
+    "support"
+  ],
+  "targets": [
+    {
+      "keyword": "help desk software",
+      "volume": 33100,
+      "cpc": 18.2,
+      "kd": 71,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "ticketing system",
+      "volume": 14800,
+      "cpc": 12.4,
+      "kd": 58,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "help desk software for small business",
+      "volume": 4400,
+      "cpc": 21.0,
+      "kd": 34,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "customer support metrics",
+      "volume": 3600,
+      "cpc": 3.1,
+      "kd": 16,
+      "intent": "informational"
+    },
+    {
+      "keyword": "shared inbox for support teams",
+      "volume": 2900,
+      "cpc": 9.8,
+      "kd": 22,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "escalation matrix template",
+      "volume": 2400,
+      "cpc": 1.2,
+      "kd": 6,
+      "intent": "informational"
+    }
+  ],
+  "ideas": [],
+  "content_gap": [
+    {
+      "keyword": "customer support metrics",
+      "volume": 3600,
+      "held_by": "Contoso Helpdesk"
+    },
+    {
+      "keyword": "escalation matrix template",
+      "volume": 2400,
+      "held_by": "Fabrikam Support"
+    },
+    {
+      "keyword": "help desk sla best practices",
+      "volume": 1900,
+      "held_by": "Fabrikam Support"
+    },
+    {
+      "keyword": "ticketing system comparison",
+      "volume": 1600,
+      "held_by": "Fabrikam Support"
+    },
+    {
+      "keyword": "support ticket triage",
+      "volume": 880,
+      "held_by": "Initrode Systems"
+    }
+  ]
+}

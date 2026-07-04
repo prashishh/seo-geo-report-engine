@@ -1,0 +1,48 @@
+{
+  "client": "Acme Roastworks",
+  "client_share_pct": 4.1,
+  "rows": [
+    {
+      "name": "Globex Coffee",
+      "term": "Globex Coffee",
+      "avg_interest": 58.0,
+      "share_pct": 61.2,
+      "trend": "rising"
+    },
+    {
+      "name": "Vandelay Roasters",
+      "term": "Vandelay Roasters",
+      "avg_interest": 21.2,
+      "share_pct": 22.4,
+      "trend": "flat"
+    },
+    {
+      "name": "Initech Brew Co.",
+      "term": "Initech Brew",
+      "avg_interest": 9.3,
+      "share_pct": 9.8,
+      "trend": "fading"
+    },
+    {
+      "name": "Acme Roastworks",
+      "term": "Acme Roastworks",
+      "avg_interest": 3.9,
+      "share_pct": 4.1,
+      "trend": "rising"
+    },
+    {
+      "name": "Beanline",
+      "term": "Beanline coffee",
+      "avg_interest": 1.6,
+      "share_pct": 1.7,
+      "trend": "flat"
+    },
+    {
+      "name": "Cupwell",
+      "term": "Cupwell",
+      "avg_interest": 0.8,
+      "share_pct": 0.8,
+      "trend": "flat"
+    }
+  ]
+}

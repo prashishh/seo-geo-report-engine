@@ -1,0 +1,85 @@
+{
+  "labs": true,
+  "location": 2840,
+  "language": "en",
+  "topic_terms": [
+    "coffee"
+  ],
+  "targets": [
+    {
+      "keyword": "coffee subscription",
+      "volume": 27100,
+      "cpc": 4.1,
+      "kd": 62,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "single origin coffee",
+      "volume": 9900,
+      "cpc": 2.3,
+      "kd": 38,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "best coffee subscription",
+      "volume": 6600,
+      "cpc": 5.2,
+      "kd": 45,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "light roast vs dark roast",
+      "volume": 4400,
+      "cpc": 0.4,
+      "kd": 12,
+      "intent": "informational"
+    },
+    {
+      "keyword": "pour over coffee ratio",
+      "volume": 3600,
+      "cpc": 0.2,
+      "kd": 8,
+      "intent": "informational"
+    },
+    {
+      "keyword": "fresh roasted coffee beans",
+      "volume": 2900,
+      "cpc": 1.9,
+      "kd": 27,
+      "intent": "commercial"
+    }
+  ],
+  "ideas": [],
+  "content_gap": [
+    {
+      "keyword": "how to store coffee beans",
+      "volume": 8100,
+      "held_by": "Vandelay Roasters"
+    },
+    {
+      "keyword": "cold brew coffee ratio",
+      "volume": 6600,
+      "held_by": "Vandelay Roasters"
+    },
+    {
+      "keyword": "coffee grind size chart",
+      "volume": 5400,
+      "held_by": "Initech Brew Co."
+    },
+    {
+      "keyword": "french press coffee ratio",
+      "volume": 4400,
+      "held_by": "Vandelay Roasters"
+    },
+    {
+      "keyword": "arabica vs robusta",
+      "volume": 3600,
+      "held_by": "Initech Brew Co."
+    },
+    {
+      "keyword": "coffee subscription gift",
+      "volume": 1300,
+      "held_by": "Globex Coffee"
+    }
+  ]
+}

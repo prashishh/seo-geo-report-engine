@@ -1,0 +1,45 @@
+# Framework-wide defaults. Per-project values in projects/<client>/client.yml override these.
+# Read by tools/lib/config.py (merged: framework.yml < client.yml < env < CLI args).
+
+framework:
+  name: seo-geo-report-engine
+  version: 0.1.0
+
+# Where a tool looks for the active project when not told explicitly.
+projects_dir: projects
+
+# Data source preference. Tools try these in order and use the first available.
+data_sources:
+  keywords:    [ahrefs_mcp, dataforseo, semrush]
+  backlinks:   [ahrefs_mcp, semrush]
+  rank:        [ahrefs_mcp, semrush]
+  geo_ai:      [ahrefs_brand_radar, openrouter_perplexity]   # AI search / share-of-voice; latter = live probe
+  analytics:   [ahrefs_web_analytics, ga4, gsc]
+  site_audit:  [ahrefs_mcp, lighthouse]
+  serp:        [ahrefs_mcp, dataforseo, web]
+
+# Output rendering.
+render:
+  pdf_engine: chrome          # chrome | weasyprint  (chrome = headless print-to-pdf)
+  page_size: A4               # A4 | Letter
+  charts: svg                 # pure-python inline SVG
+
+# Deliverable defaults (overridable per project brand).
+brand:
+  primary: "#0E2A47"          # deep navy (matches reference decks)
+  accent:  "#2BBF77"          # green accent
+  muted:   "#7C8DA0"
+  ink:     "#1B2733"
+  paper:   "#FFFFFF"
+  font_stack: "'Inter', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+
+# Proposal defaults.
+proposal:
+  pillars: 3
+  scenarios: [conservative, probable, aggressive]
+  horizon_months: 6
+
+# Locale defaults.
+locale:
+  default_lang: en
+  default_country: US

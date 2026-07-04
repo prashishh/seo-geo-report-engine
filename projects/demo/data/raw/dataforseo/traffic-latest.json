@@ -1,0 +1,37 @@
+{
+  "rows": [
+    {
+      "company": "Globex Coffee",
+      "etv": 88400,
+      "share_pct": 54.0
+    },
+    {
+      "company": "Vandelay Roasters",
+      "etv": 41200,
+      "share_pct": 25.2
+    },
+    {
+      "company": "Initech Brew Co.",
+      "etv": 22600,
+      "share_pct": 13.8
+    },
+    {
+      "company": "Beanline",
+      "etv": 6900,
+      "share_pct": 4.2
+    },
+    {
+      "company": "Acme Roastworks",
+      "etv": 3120,
+      "share_pct": 1.9
+    },
+    {
+      "company": "Cupwell",
+      "etv": 1450,
+      "share_pct": 0.9
+    }
+  ],
+  "client_share_pct": 1.9,
+  "leader": "Globex Coffee",
+  "leader_share_pct": 54.0
+}

@@ -1,0 +1,68 @@
+{
+  "totals": {
+    "competitor_traffic_value_total": 1284000,
+    "competitor_etv_total": 256500,
+    "client_etv": 410,
+    "steal_count": 44,
+    "steal_volume": 31200
+  },
+  "overviews": {
+    "contoso-help.example": {
+      "etv": 214000
+    },
+    "fabrikam-support.example": {
+      "etv": 31400
+    },
+    "initrode.example": {
+      "etv": 8200
+    },
+    "hooli-desk.example": {
+      "etv": 2900
+    },
+    "northwind-desk.example": {
+      "etv": 410
+    }
+  },
+  "steal_list": [
+    {
+      "keyword": "help desk software for small business",
+      "volume": 4400,
+      "held_by": "Contoso Helpdesk"
+    },
+    {
+      "keyword": "shared inbox for support teams",
+      "volume": 2900,
+      "held_by": "Contoso Helpdesk"
+    },
+    {
+      "keyword": "help desk sla best practices",
+      "volume": 1900,
+      "held_by": "Fabrikam Support"
+    },
+    {
+      "keyword": "customer support metrics",
+      "volume": 3600,
+      "held_by": "Contoso Helpdesk"
+    },
+    {
+      "keyword": "ticketing system comparison",
+      "volume": 1600,
+      "held_by": "Fabrikam Support"
+    },
+    {
+      "keyword": "support ticket triage",
+      "volume": 880,
+      "held_by": "Initrode Systems"
+    },
+    {
+      "keyword": "escalation matrix template",
+      "volume": 2400,
+      "held_by": "Fabrikam Support"
+    },
+    {
+      "keyword": "first response time benchmark",
+      "volume": 720,
+      "held_by": "Contoso Helpdesk"
+    }
+  ]
+}

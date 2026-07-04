@@ -1,0 +1,169 @@
+{
+  "scored": [],
+  "points": [
+    {
+      "label": "escalation matrix template",
+      "x": 76,
+      "y": 90.7,
+      "size": 2400,
+      "tier": "greenfield"
+    },
+    {
+      "label": "support ticket triage playbook",
+      "x": 88,
+      "y": 87.9,
+      "size": 880,
+      "tier": "greenfield"
+    },
+    {
+      "label": "first response time benchmark",
+      "x": 84,
+      "y": 85.4,
+      "size": 720,
+      "tier": "greenfield"
+    },
+    {
+      "label": "support qa scorecard template",
+      "x": 92,
+      "y": 83.9,
+      "size": 590,
+      "tier": "greenfield"
+    },
+    {
+      "label": "help desk sla examples",
+      "x": 64,
+      "y": 82.6,
+      "size": 1300,
+      "tier": "greenfield"
+    },
+    {
+      "label": "customer support handoff template",
+      "x": 96,
+      "y": 81.0,
+      "size": 480,
+      "tier": "greenfield"
+    },
+    {
+      "label": "help desk software",
+      "x": 14,
+      "y": 97.0,
+      "size": 33100,
+      "tier": "fortress"
+    },
+    {
+      "label": "ticketing system",
+      "x": 21,
+      "y": 90.0,
+      "size": 14800,
+      "tier": "fortress"
+    },
+    {
+      "label": "help desk software for small business",
+      "x": 48,
+      "y": 66.0,
+      "size": 4400,
+      "tier": "contested"
+    },
+    {
+      "label": "shared inbox for support teams",
+      "x": 56,
+      "y": 58.0,
+      "size": 2900,
+      "tier": "contested"
+    },
+    {
+      "label": "free help desk",
+      "x": 44,
+      "y": 62.0,
+      "size": 8100,
+      "tier": "trap"
+    }
+  ],
+  "greenfield": [
+    {
+      "keyword": "escalation matrix template",
+      "volume": 2400,
+      "kd": 6,
+      "held_by": null,
+      "intent": "informational",
+      "buyer": true,
+      "demand": 82.0,
+      "winnability": 76,
+      "fit": 90,
+      "opportunity": 87.2,
+      "tier": "greenfield"
+    },
+    {
+      "keyword": "support ticket triage playbook",
+      "volume": 880,
+      "kd": 3,
+      "held_by": null,
+      "intent": "informational",
+      "buyer": true,
+      "demand": 79.4,
+      "winnability": 88,
+      "fit": 90,
+      "opportunity": 84.5,
+      "tier": "greenfield"
+    },
+    {
+      "keyword": "first response time benchmark",
+      "volume": 720,
+      "kd": 4,
+      "held_by": null,
+      "intent": "informational",
+      "buyer": true,
+      "demand": 77.2,
+      "winnability": 84,
+      "fit": 90,
+      "opportunity": 82.1,
+      "tier": "greenfield"
+    },
+    {
+      "keyword": "support qa scorecard template",
+      "volume": 590,
+      "kd": 2,
+      "held_by": null,
+      "intent": "informational",
+      "buyer": true,
+      "demand": 75.9,
+      "winnability": 92,
+      "fit": 90,
+      "opportunity": 80.7,
+      "tier": "greenfield"
+    },
+    {
+      "keyword": "help desk sla examples",
+      "volume": 1300,
+      "kd": 9,
+      "held_by": null,
+      "intent": "informational",
+      "buyer": true,
+      "demand": 74.6,
+      "winnability": 64,
+      "fit": 90,
+      "opportunity": 79.4,
+      "tier": "greenfield"
+    },
+    {
+      "keyword": "customer support handoff template",
+      "volume": 480,
+      "kd": 1,
+      "held_by": null,
+      "intent": "informational",
+      "buyer": true,
+      "demand": 73.2,
+      "winnability": 96,
+      "fit": 90,
+      "opportunity": 77.9,
+      "tier": "greenfield"
+    }
+  ],
+  "buyer_count": 18,
+  "counts": {
+    "greenfield": 6,
+    "contested": 2,
+    "fortress": 2,
+    "trap": 1
+  }
+}

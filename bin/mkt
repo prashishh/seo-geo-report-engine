@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# seo-geo-report-engine CLI launcher. Finds a usable Python (>= 3.8) and runs tools/mkt.py.
+# The system default python3 on this machine is an unusable 3.6, so we probe explicitly.
+set -euo pipefail
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
+find_py() {
+  if [ -n "${MKT_PYTHON:-}" ]; then echo "$MKT_PYTHON"; return 0; fi
+  for c in python3.13 python3.12 python3.11 python3.10 python3.9 python3.8 python3 python; do
+    if command -v "$c" >/dev/null 2>&1; then
+      if "$c" -c 'import sys; raise SystemExit(0 if sys.version_info[:2] >= (3,8) else 1)' 2>/dev/null; then
+        echo "$c"; return 0
+      fi
+    fi
+  done
+  return 1
+}
+
+PY="$(find_py || true)"
+if [ -z "$PY" ]; then
+  echo "seo-geo-report-engine: no Python >= 3.8 found. Set MKT_PYTHON=/path/to/python3" >&2
+  exit 1
+fi
+exec "$PY" "$ROOT/tools/mkt.py" "$@"

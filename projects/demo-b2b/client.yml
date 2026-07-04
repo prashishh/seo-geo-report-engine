@@ -1,0 +1,49 @@
+# Northwind Desk - the second FICTIONAL demo client (B2B SaaS vertical).
+# Everything in projects/demo-b2b/ is invented (.example domains, synthetic numbers) so the
+# report renders with zero API keys. Contrast with projects/demo/ (consumer brand) to see how
+# the report adapts. Try it:
+#   python3 tools/report/first_scan.py --project demo-b2b --date "sample data" --render
+client_name: Northwind Desk
+name: Northwind Desk
+slug: demo-b2b
+domain: northwind-desk.example
+
+profile: >
+  Northwind Desk is a fictional help-desk and shared-inbox SaaS for small support teams, used to
+  demonstrate this framework on a B2B vertical. It competes against larger fictional incumbents
+  on setup speed and simplicity.
+
+audience:
+  - "Support leads at 5-50 person SaaS and ecommerce companies"
+  - "Founders replacing a shared Gmail inbox with a real ticketing flow"
+  - "Ops managers comparing help-desk tools by total cost"
+
+competitors:
+  - { name: Contoso Helpdesk, domain: contoso-help.example }
+  - { name: Fabrikam Support, domain: fabrikam-support.example }
+  - { name: Initrode Systems, domain: initrode.example }
+  - { name: Hooli Desk, domain: hooli-desk.example }
+
+target_keywords:
+  - "help desk software"
+  - "ticketing system"
+  - "help desk software for small business"
+  - "shared inbox for support teams"
+  - "customer support metrics"
+  - "escalation matrix template"
+
+market: US
+
+messaging:
+  lanes:
+    - { tag: "Lane 1", name: "Own the AI answer", when: "invisible in AI answers today",
+        items: ["Be named when buyers ask AI for the best help desk for small teams", "Answer-first comparison and capability pages"] }
+    - { tag: "Lane 2", name: "Win the templates", when: "rivals win with guide content",
+        items: ["Own the SLA, escalation, and triage template queries", "Every template funnels to a trial"] }
+    - { tag: "Lane 3", name: "Simplicity proof", when: "the differentiator",
+        items: ["Five-minute setup against enterprise onboarding", "Transparent pricing against seat creep"] }
+  one_liner: "The help desk a small team actually sets up."
+
+brand:
+  primary: "#1B2A4A"
+  accent:  "#2F7FD4"

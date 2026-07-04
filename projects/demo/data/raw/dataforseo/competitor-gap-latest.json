@@ -1,0 +1,71 @@
+{
+  "totals": {
+    "competitor_traffic_value_total": 214600,
+    "competitor_etv_total": 160550,
+    "client_etv": 3120,
+    "steal_count": 38,
+    "steal_volume": 24800
+  },
+  "overviews": {
+    "globex-coffee.example": {
+      "etv": 88400
+    },
+    "vandelay-roasters.example": {
+      "etv": 41200
+    },
+    "initech-brew.example": {
+      "etv": 22600
+    },
+    "beanline.example": {
+      "etv": 6900
+    },
+    "acme-roastworks.example": {
+      "etv": 3120
+    },
+    "cupwell.example": {
+      "etv": 1450
+    }
+  },
+  "steal_list": [
+    {
+      "keyword": "best coffee subscription",
+      "volume": 6600,
+      "held_by": "Globex Coffee"
+    },
+    {
+      "keyword": "light roast vs dark roast",
+      "volume": 4400,
+      "held_by": "Initech Brew Co."
+    },
+    {
+      "keyword": "pour over coffee ratio",
+      "volume": 3600,
+      "held_by": "Vandelay Roasters"
+    },
+    {
+      "keyword": "single origin coffee subscription",
+      "volume": 2900,
+      "held_by": "Globex Coffee"
+    },
+    {
+      "keyword": "fresh roasted coffee beans online",
+      "volume": 1900,
+      "held_by": "Vandelay Roasters"
+    },
+    {
+      "keyword": "coffee gift subscription",
+      "volume": 1300,
+      "held_by": "Globex Coffee"
+    },
+    {
+      "keyword": "decaf coffee subscription",
+      "volume": 880,
+      "held_by": "Globex Coffee"
+    },
+    {
+      "keyword": "espresso beans subscription",
+      "volume": 720,
+      "held_by": "Beanline"
+    }
+  ]
+}

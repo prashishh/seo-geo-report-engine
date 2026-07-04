@@ -1,0 +1,47 @@
+{
+  "Northwind Desk": {
+    "domain": "northwind-desk.example",
+    "ads_count": 0,
+    "match_title": null,
+    "advertiser_id": null,
+    "confidence": "not found",
+    "advertisers_seen": 2,
+    "transparency_url": null
+  },
+  "Contoso Helpdesk": {
+    "domain": "contoso-help.example",
+    "ads_count": 480,
+    "match_title": "Contoso Helpdesk Inc.",
+    "advertiser_id": null,
+    "confidence": "high",
+    "advertisers_seen": 5,
+    "transparency_url": null
+  },
+  "Fabrikam Support": {
+    "domain": "fabrikam-support.example",
+    "ads_count": 130,
+    "match_title": "Fabrikam Support",
+    "advertiser_id": null,
+    "confidence": "high",
+    "advertisers_seen": 3,
+    "transparency_url": null
+  },
+  "Initrode Systems": {
+    "domain": "initrode.example",
+    "ads_count": 0,
+    "match_title": null,
+    "advertiser_id": null,
+    "confidence": "not found",
+    "advertisers_seen": 1,
+    "transparency_url": null
+  },
+  "Hooli Desk": {
+    "domain": "hooli-desk.example",
+    "ads_count": 0,
+    "match_title": null,
+    "advertiser_id": null,
+    "confidence": "not found",
+    "advertisers_seen": 0,
+    "transparency_url": null
+  }
+}

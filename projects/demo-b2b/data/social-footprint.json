@@ -1,0 +1,32 @@
+{
+  "date": "sample data",
+  "channel": "LinkedIn",
+  "source_label": "public LinkedIn company pages",
+  "rows": [
+    {
+      "name": "Contoso Helpdesk",
+      "followers": 48200,
+      "linkedin_followers": 48200
+    },
+    {
+      "name": "Fabrikam Support",
+      "followers": 12600,
+      "linkedin_followers": 12600
+    },
+    {
+      "name": "Initrode Systems",
+      "followers": 4100,
+      "linkedin_followers": 4100
+    },
+    {
+      "name": "Hooli Desk",
+      "followers": 2250,
+      "linkedin_followers": 2250
+    },
+    {
+      "name": "Northwind Desk",
+      "followers": 890,
+      "linkedin_followers": 890
+    }
+  ]
+}

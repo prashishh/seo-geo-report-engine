@@ -1,0 +1,41 @@
+{
+  "client": "Northwind Desk",
+  "client_share_pct": 1.2,
+  "rows": [
+    {
+      "name": "Contoso Helpdesk",
+      "term": "Contoso Helpdesk",
+      "avg_interest": 66.1,
+      "share_pct": 78.4,
+      "trend": "flat"
+    },
+    {
+      "name": "Fabrikam Support",
+      "term": "Fabrikam Support",
+      "avg_interest": 12.0,
+      "share_pct": 14.2,
+      "trend": "rising"
+    },
+    {
+      "name": "Initrode Systems",
+      "term": "Initrode",
+      "avg_interest": 3.6,
+      "share_pct": 4.3,
+      "trend": "fading"
+    },
+    {
+      "name": "Hooli Desk",
+      "term": "Hooli Desk",
+      "avg_interest": 1.6,
+      "share_pct": 1.9,
+      "trend": "flat"
+    },
+    {
+      "name": "Northwind Desk",
+      "term": "Northwind Desk",
+      "avg_interest": 1.0,
+      "share_pct": 1.2,
+      "trend": "rising"
+    }
+  ]
+}

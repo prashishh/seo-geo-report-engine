@@ -1,0 +1,203 @@
+{
+  "scored": [],
+  "points": [
+    {
+      "label": "how to store coffee beans",
+      "x": 84,
+      "y": 92.8,
+      "size": 8100,
+      "tier": "greenfield"
+    },
+    {
+      "label": "coffee grind size chart",
+      "x": 92,
+      "y": 90.4,
+      "size": 5400,
+      "tier": "greenfield"
+    },
+    {
+      "label": "cold brew coffee ratio",
+      "x": 76,
+      "y": 89.1,
+      "size": 6600,
+      "tier": "greenfield"
+    },
+    {
+      "label": "pour over coffee ratio",
+      "x": 68,
+      "y": 86.1,
+      "size": 3600,
+      "tier": "greenfield"
+    },
+    {
+      "label": "coffee bloom",
+      "x": 96,
+      "y": 83.2,
+      "size": 1900,
+      "tier": "greenfield"
+    },
+    {
+      "label": "single origin vs blend",
+      "x": 88,
+      "y": 81.4,
+      "size": 1600,
+      "tier": "greenfield"
+    },
+    {
+      "label": "how long do coffee beans last",
+      "x": 80,
+      "y": 80.6,
+      "size": 2900,
+      "tier": "greenfield"
+    },
+    {
+      "label": "coffee subscription",
+      "x": 22,
+      "y": 96.0,
+      "size": 27100,
+      "tier": "fortress"
+    },
+    {
+      "label": "best coffee subscription",
+      "x": 30,
+      "y": 88.0,
+      "size": 6600,
+      "tier": "fortress"
+    },
+    {
+      "label": "single origin coffee subscription",
+      "x": 55,
+      "y": 62.0,
+      "size": 2900,
+      "tier": "contested"
+    },
+    {
+      "label": "decaf coffee subscription",
+      "x": 61,
+      "y": 48.0,
+      "size": 880,
+      "tier": "contested"
+    },
+    {
+      "label": "espresso beans subscription",
+      "x": 58,
+      "y": 44.0,
+      "size": 720,
+      "tier": "contested"
+    },
+    {
+      "label": "coffee gift subscription",
+      "x": 52,
+      "y": 51.0,
+      "size": 1300,
+      "tier": "contested"
+    },
+    {
+      "label": "cheap coffee pods",
+      "x": 47,
+      "y": 58.0,
+      "size": 9900,
+      "tier": "trap"
+    }
+  ],
+  "greenfield": [
+    {
+      "keyword": "how to store coffee beans",
+      "volume": 8100,
+      "kd": 4,
+      "held_by": null,
+      "intent": "informational",
+      "buyer": true,
+      "demand": 84.0,
+      "winnability": 84,
+      "fit": 90,
+      "opportunity": 88.4,
+      "tier": "greenfield"
+    },
+    {
+      "keyword": "coffee grind size chart",
+      "volume": 5400,
+      "kd": 2,
+      "held_by": null,
+      "intent": "informational",
+      "buyer": true,
+      "demand": 81.8,
+      "winnability": 92,
+      "fit": 90,
+      "opportunity": 86.1,
+      "tier": "greenfield"
+    },
+    {
+      "keyword": "cold brew coffee ratio",
+      "volume": 6600,
+      "kd": 6,
+      "held_by": null,
+      "intent": "informational",
+      "buyer": true,
+      "demand": 80.7,
+      "winnability": 76,
+      "fit": 90,
+      "opportunity": 84.9,
+      "tier": "greenfield"
+    },
+    {
+      "keyword": "pour over coffee ratio",
+      "volume": 3600,
+      "kd": 8,
+      "held_by": null,
+      "intent": "informational",
+      "buyer": true,
+      "demand": 77.9,
+      "winnability": 68,
+      "fit": 90,
+      "opportunity": 82.0,
+      "tier": "greenfield"
+    },
+    {
+      "keyword": "coffee bloom",
+      "volume": 1900,
+      "kd": 1,
+      "held_by": null,
+      "intent": "informational",
+      "buyer": true,
+      "demand": 75.2,
+      "winnability": 96,
+      "fit": 90,
+      "opportunity": 79.2,
+      "tier": "greenfield"
+    },
+    {
+      "keyword": "single origin vs blend",
+      "volume": 1600,
+      "kd": 3,
+      "held_by": null,
+      "intent": "informational",
+      "buyer": true,
+      "demand": 73.6,
+      "winnability": 88,
+      "fit": 90,
+      "opportunity": 77.5,
+      "tier": "greenfield"
+    },
+    {
+      "keyword": "how long do coffee beans last",
+      "volume": 2900,
+      "kd": 5,
+      "held_by": null,
+      "intent": "informational",
+      "buyer": true,
+      "demand": 73.0,
+      "winnability": 80,
+      "fit": 90,
+      "opportunity": 76.8,
+      "tier": "greenfield"
+    }
+  ],
+  "buyer_count": 21,
+  "counts": {
+    "greenfield": 7,
+    "contested": 4,
+    "fortress": 2,
+    "trap": 1
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "client": "Acme Roastworks",
+  "field_depts": {
+    "Engineering": 41,
+    "Sales/GTM": 28,
+    "Support": 14,
+    "Finance": 9,
+    "Ops": 8
+  },
+  "total_field_roles": 100,
+  "companies": {
+    "Acme Roastworks": {
+      "open_roles": 4,
+      "latest_round": {}
+    },
+    "Globex Coffee": {
+      "open_roles": 62,
+      "latest_round": {
+        "amount": 40000000,
+        "type": "series_b",
+        "date": "2025-11-04"
+      }
+    },
+    "Vandelay Roasters": {
+      "open_roles": 23,
+      "latest_round": {
+        "amount": 12000000,
+        "type": "series_a",
+        "date": "2024-08-19"
+      }
+    },
+    "Initech Brew Co.": {
+      "open_roles": 11,
+      "latest_round": {
+        "amount": 4000000,
+        "type": "seed",
+        "date": "2024-02-27"
+      }
+    },
+    "Beanline": {
+      "open_roles": 3,
+      "latest_round": {}
+    },
+    "Cupwell": {
+      "open_roles": 1,
+      "latest_round": {}
+    }
+  }
+}

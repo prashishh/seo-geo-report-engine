@@ -1,0 +1,623 @@
+{
+  "domain": "northwind-desk.example",
+  "location": 2840,
+  "date": "sample data",
+  "engines": [
+    "google_aio",
+    "chatgpt",
+    "gemini",
+    "perplexity",
+    "claude"
+  ],
+  "rows": [
+    {
+      "prompt": "best help desk software for small teams",
+      "engine": "google_aio",
+      "model": "google_aio",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk",
+        "Fabrikam Support"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best help desk software for small teams",
+      "engine": "chatgpt",
+      "model": "chatgpt",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best help desk software for small teams",
+      "engine": "gemini",
+      "model": "gemini",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk",
+        "Fabrikam Support"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best help desk software for small teams",
+      "engine": "perplexity",
+      "model": "perplexity",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk",
+        "Fabrikam Support"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best help desk software for small teams",
+      "engine": "claude",
+      "model": "claude",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk",
+        "Fabrikam Support"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best ticketing system for startups",
+      "engine": "google_aio",
+      "model": "google_aio",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Initrode Systems"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best ticketing system for startups",
+      "engine": "chatgpt",
+      "model": "chatgpt",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk",
+        "Fabrikam Support"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best ticketing system for startups",
+      "engine": "gemini",
+      "model": "gemini",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best ticketing system for startups",
+      "engine": "perplexity",
+      "model": "perplexity",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Initrode Systems"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best ticketing system for startups",
+      "engine": "claude",
+      "model": "claude",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "shared inbox vs help desk",
+      "engine": "google_aio",
+      "model": "google_aio",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk",
+        "Fabrikam Support"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "shared inbox vs help desk",
+      "engine": "chatgpt",
+      "model": "chatgpt",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "shared inbox vs help desk",
+      "engine": "gemini",
+      "model": "gemini",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "shared inbox vs help desk",
+      "engine": "perplexity",
+      "model": "perplexity",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk",
+        "Fabrikam Support"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "shared inbox vs help desk",
+      "engine": "claude",
+      "model": "claude",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best customer support software",
+      "engine": "google_aio",
+      "model": "google_aio",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best customer support software",
+      "engine": "chatgpt",
+      "model": "chatgpt",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk",
+        "Fabrikam Support"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best customer support software",
+      "engine": "gemini",
+      "model": "gemini",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk",
+        "Fabrikam Support"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best customer support software",
+      "engine": "perplexity",
+      "model": "perplexity",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best customer support software",
+      "engine": "claude",
+      "model": "claude",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk",
+        "Fabrikam Support"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "affordable help desk software",
+      "engine": "google_aio",
+      "model": "google_aio",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "affordable help desk software",
+      "engine": "chatgpt",
+      "model": "chatgpt",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Initrode Systems"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "affordable help desk software",
+      "engine": "gemini",
+      "model": "gemini",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "affordable help desk software",
+      "engine": "perplexity",
+      "model": "perplexity",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "affordable help desk software",
+      "engine": "claude",
+      "model": "claude",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best help desk for ecommerce support",
+      "engine": "google_aio",
+      "model": "google_aio",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Fabrikam Support"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best help desk for ecommerce support",
+      "engine": "chatgpt",
+      "model": "chatgpt",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best help desk for ecommerce support",
+      "engine": "gemini",
+      "model": "gemini",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Fabrikam Support",
+        "Initrode Systems"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best help desk for ecommerce support",
+      "engine": "perplexity",
+      "model": "perplexity",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Fabrikam Support"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best help desk for ecommerce support",
+      "engine": "claude",
+      "model": "claude",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Fabrikam Support",
+        "Initrode Systems"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "help desk with the best automation",
+      "engine": "google_aio",
+      "model": "google_aio",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "help desk with the best automation",
+      "engine": "chatgpt",
+      "model": "chatgpt",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk",
+        "Fabrikam Support"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "help desk with the best automation",
+      "engine": "gemini",
+      "model": "gemini",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "help desk with the best automation",
+      "engine": "perplexity",
+      "model": "perplexity",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "help desk with the best automation",
+      "engine": "claude",
+      "model": "claude",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "easiest help desk to set up",
+      "engine": "google_aio",
+      "model": "google_aio",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk",
+        "Fabrikam Support"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "easiest help desk to set up",
+      "engine": "chatgpt",
+      "model": "chatgpt",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "easiest help desk to set up",
+      "engine": "gemini",
+      "model": "gemini",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "easiest help desk to set up",
+      "engine": "perplexity",
+      "model": "perplexity",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk",
+        "Fabrikam Support"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "easiest help desk to set up",
+      "engine": "claude",
+      "model": "claude",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Contoso Helpdesk"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    }
+  ]
+}

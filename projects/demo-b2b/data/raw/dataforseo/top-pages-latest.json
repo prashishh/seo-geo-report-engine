@@ -1,0 +1,62 @@
+{
+  "Contoso Helpdesk": {
+    "domain": "contoso-help.example",
+    "pages": [
+      {
+        "url": "https://contoso-help.example/",
+        "etv": 41200,
+        "keywords": 900
+      },
+      {
+        "url": "https://contoso-help.example/blog/customer-support-metrics",
+        "etv": 8800,
+        "keywords": 310
+      },
+      {
+        "url": "https://contoso-help.example/pricing",
+        "etv": 7100,
+        "keywords": 120
+      }
+    ]
+  },
+  "Fabrikam Support": {
+    "domain": "fabrikam-support.example",
+    "pages": [
+      {
+        "url": "https://fabrikam-support.example/guides/sla-best-practices",
+        "etv": 4900,
+        "keywords": 210
+      },
+      {
+        "url": "https://fabrikam-support.example/",
+        "etv": 3800,
+        "keywords": 150
+      },
+      {
+        "url": "https://fabrikam-support.example/templates/escalation-matrix",
+        "etv": 2600,
+        "keywords": 90
+      }
+    ]
+  },
+  "Initrode Systems": {
+    "domain": "initrode.example",
+    "pages": [
+      {
+        "url": "https://initrode.example/",
+        "etv": 1900,
+        "keywords": 80
+      }
+    ]
+  },
+  "Northwind Desk": {
+    "domain": "northwind-desk.example",
+    "pages": [
+      {
+        "url": "https://northwind-desk.example/",
+        "etv": 310,
+        "keywords": 25
+      }
+    ]
+  }
+}

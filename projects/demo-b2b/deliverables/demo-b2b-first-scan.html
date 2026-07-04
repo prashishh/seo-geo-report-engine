@@ -1,0 +1,370 @@
+<!doctype html><html><head><meta charset='utf-8'><style>/* seo-geo-report-engine proposal stylesheet — print-first, reproduces the reference deck look.
+   Colors come from CSS variables that tools/proposal/build.py injects per project brand. */
+:root{
+  --primary:#0E2A47; --accent:#2BBF77; --muted:#7C8DA0; --ink:#1B2733;
+  --paper:#FFFFFF; --grid:#E6EBF0; --soft:#F6F8FA; --band:#FFF4CC;
+  --font:'Inter',-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+}
+@page{ size:A4; margin:18mm 16mm 16mm 16mm; }
+*{ box-sizing:border-box; }
+html,body{ margin:0; padding:0; }
+body{ font-family:var(--font); color:var(--ink); font-size:13px; line-height:1.5; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+
+/* ---- running header ---- */
+.kicker{ display:flex; justify-content:space-between; align-items:center; font-size:10.5px; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--muted); font-weight:600; border-bottom:1px solid var(--grid); padding-bottom:8px; margin-bottom:26px; }
+.kicker .brandmark{ color:var(--primary); font-weight:800; letter-spacing:.04em; }
+
+/* ---- cover ---- */
+.cover{ padding-top:60px; page-break-after:always; }
+.cover h1{ font-size:46px; line-height:1.05; margin:18px 0 8px; color:var(--primary); font-weight:800; letter-spacing:-.01em; }
+.cover .sub{ font-size:16px; color:var(--muted); margin:0; }
+.cover .rule{ height:3px; width:100%; background:var(--primary); margin:28px 0; border:0; }
+.cover .logo{ height:30px; }
+
+/* ---- section scaffolding ---- */
+.section{ page-break-inside:avoid; margin:0 0 30px; }
+.section.break{ page-break-before:always; }
+.s-head{ display:flex; align-items:center; gap:12px; border-bottom:2px solid var(--primary); padding-bottom:8px; margin-bottom:16px; }
+.s-num{ background:var(--accent); color:#04321f; font-weight:800; font-size:12px; padding:3px 8px; border-radius:5px; letter-spacing:.06em; }
+.s-title{ font-size:22px; font-weight:800; color:var(--primary); margin:0; }
+
+ul.lead{ list-style:none; padding:0; margin:0; }
+ul.lead li{ position:relative; padding:5px 0 5px 20px; }
+ul.lead li::before{ content:""; position:absolute; left:2px; top:11px; width:7px; height:7px; border-radius:50%; background:var(--accent); }
+ul.lead li b, ul.lead li strong{ color:var(--primary); }
+
+/* ---- pillar cards ---- */
+.pillars{ display:flex; gap:14px; margin-top:6px; }
+.pillar{ flex:1; border:1px solid var(--grid); border-radius:8px; overflow:hidden; }
+.pillar .cap{ background:var(--primary); color:#fff; text-align:center; padding:10px; }
+.pillar:last-child .cap{ background:var(--accent); color:#04321f; }
+.pillar .cap .tag{ font-size:10px; letter-spacing:.14em; opacity:.85; text-transform:uppercase; }
+.pillar .cap .name{ font-size:15px; font-weight:800; }
+.pillar .cap .when{ font-size:9.5px; letter-spacing:.1em; opacity:.8; text-transform:uppercase; }
+.pillar ul{ list-style:none; margin:0; padding:12px 14px; }
+.pillar li{ position:relative; padding:4px 0 4px 14px; font-size:12px; }
+.pillar li::before{ content:""; position:absolute; left:0; top:10px; width:5px; height:5px; border-radius:50%; background:var(--muted); }
+
+/* ---- detail groups (pillar deep dives) ---- */
+.group{ margin:14px 0; }
+.group h4{ color:var(--primary); font-size:14px; margin:0 0 6px; }
+.deliverables{ background:var(--soft); border-radius:8px; padding:10px 14px; margin-top:8px; }
+.deliverables .lbl{ font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); font-weight:700; margin-bottom:4px; }
+
+/* ---- figure / chart box ---- */
+.figure{ border:1px solid var(--grid); border-radius:10px; padding:16px 18px; margin:12px 0; }
+.figure .fhead{ display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px; }
+.figure .ftitle{ font-weight:800; color:var(--ink); font-size:14px; }
+.figure .fnote, .note{ color:var(--muted); font-size:11.5px; margin-top:8px; }
+.callout{ background:var(--soft); border-left:3px solid var(--accent); padding:10px 14px; border-radius:0 8px 8px 0; margin:10px 0; }
+
+/* ---- tables ---- */
+table.kv{ width:100%; border-collapse:collapse; }
+table.kv th{ text-align:left; font-size:11px; letter-spacing:.04em; text-transform:uppercase; color:var(--muted);
+  border-bottom:2px solid var(--primary); padding:8px 10px; }
+table.kv td{ border-bottom:1px solid var(--grid); padding:7px 10px; font-size:12.5px; }
+table.kv tr.group-row td{ font-weight:700; color:var(--primary); border-bottom:none; padding-top:12px; }
+
+.cta{ background:var(--primary); color:#fff; border-radius:12px; padding:24px 26px; }
+.cta h3{ margin:0 0 6px; font-size:20px; }
+.cta a{ color:var(--accent); }
+.small{ font-size:11px; color:var(--muted); }
+.spacer{ height:10px; }
+
+:root{--accent:#2BBF77;--primary:#0E2A47;--ink:#1B2733;--paper:#FFFFFF;--muted:#7C8DA0;--font:'Inter', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;}
+.dense .cover{ page-break-after:auto; padding-top:0; }
+.dense .cover h1{ font-size:30px; margin:8px 0 6px; }
+.dense .cover .rule{ margin:12px 0 18px; }
+.dense .section{ page-break-inside:auto; margin:0 0 15px; }
+.dense .s-head{ margin-bottom:9px; padding-bottom:6px; }
+.dense .s-title{ font-size:17px; }
+.dense p{ margin:5px 0; font-size:12px; line-height:1.5; }
+.dense ul.lead li{ padding:3px 0 3px 18px; font-size:12px; line-height:1.45; }
+.dense .figure{ margin:8px 0; padding:10px 12px; page-break-inside:avoid; }
+.dense .pillars, .dense table.kv, .dense .pillar, .dense .deliverables, .dense .callout{ page-break-inside:avoid; }
+.dense table.kv td{ padding:4px 8px; font-size:11px; }
+.dense table.kv th{ padding:6px 8px; font-size:11px; }
+.dense .callout{ margin:8px 0; padding:8px 12px; }
+.dense .group{ margin:9px 0; }
+.dense .pillar li{ font-size:11px; padding:3px 0 3px 14px; }
+.dense .cta{ padding:18px 20px; }
+.dense .note, .dense .figure .fnote{ font-size:10.5px; margin-top:6px; }
+</style></head><body class='dense'><div class="cover"><div class="kicker"><span class="brandmark">Northwind Desk</span><span>Digital Presence Scan</span></div><h1>Northwind Desk: Your Digital Footprint and the Opportunity</h1><p class="sub">Where you stand, who is winning your buyers, and the winnable path to overtake them. Live data, sample data.</p><hr class="rule"><p class="small">sample data · seo-geo-report-engine</p></div><div class="section"><div class="s-head"><span class="s-num">01</span><h2 class="s-title">Where you stand today</h2></div><ul class="lead"><li><b>Authority: you sit 5th of 5</b> in the category (authority 21 vs the leader Contoso Helpdesk at 58). Authority here is a cross-source consensus (dataforseo, openpagerank).</li><li><b>You are about 0.2% of your category&#x27;s traffic; Contoso Helpdesk is 83.3%.</b> Organic share is winnable and far cheaper to take than paid.</li><li><b>You hold about 1.2% of branded search in your set, and it is rising.</b> Share of search is a leading indicator of market share, so this is the demand you are building before it converts.</li><li><b>Rivals rank for 44 buyer keywords, about 31,200 searches/mo, that you are absent from.</b> That gap in your niche, not their global traffic, is the addressable opening.</li><li><b>The field is scaling fast, and the hiring shows where.</b> Your rivals have 204 open roles right now, concentrated in engineering (88) and sales (64). Where they are not hiring is where the open ground is.</li><li><b>The opportunity is real demand you are not yet capturing.</b> &#x27;help desk software&#x27; alone is 33,100 searches/mo, and rivals already rank for 5 terms you do not.</li><li><b>6 greenfield opportunities</b>: real buyer demand, winnable difficulty, and no competitor has locked in the AI answer. This is where to attack first.</li><li><b>Your social reach trails the field.</b> Northwind Desk has about 890 LinkedIn followers; Contoso Helpdesk has 48,200. This is a low-cost channel to close.</li><li><b>AI visibility: you hold 0.0% share of voice</b> across 5 AI engines on 8 real queries; Contoso Helpdesk holds 57.7%. You appear in 0 of 5 engines. When someone asks an AI in your category, this is who it names.</li><li><b>In AI answers to buyer questions, you appear in 0 of 40 places.</b> Competitors own the rest. This is the shortlist your buyers now ask AI for first.</li></ul><div class="spacer"></div><div class="pillars"><div class="pillar"><div class="cap"><div class="tag">Lane 1</div><div class="name">Own the AI answer</div><div class="when">where you are absent today</div></div><ul><li>Be the cited source when AI names your category</li><li>Answer-first pages + third-party mentions</li></ul></div><div class="pillar"><div class="cap"><div class="tag">Lane 2</div><div class="name">Capture the demand gap</div><div class="when">searches rivals hold</div></div><ul><li>Build the pages for the queries you are missing</li><li>High-intent, winnable difficulty first</li></ul></div><div class="pillar"><div class="cap"><div class="tag">Lane 3</div><div class="name">Grow authority</div><div class="when">the compounding moat</div></div><ul><li>Earn the mentions that lift authority + AI citation</li><li>Turn tools/data into linkable assets</li></ul></div></div></div><div class="section"><div class="s-head"><span class="s-num">02</span><h2 class="s-title">Authority: how you stack up</h2></div><p>Domain authority estimates how much trust a site has earned. We read it from several independent sources and take the consensus, so no single tool&#x27;s quirk drives the picture. Taller is stronger.</p><div class="figure"><div class="fhead"><span class="ftitle">Cross-source domain authority (0-100)</span><span class="small">consensus of 2 sources, sample data</span></div><svg viewBox="0 0 720 230" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">
+<rect width="720" height="230" fill="#FFFFFF"/>
+<text x="140.0" y="69.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Contoso Helpdesk</text>
+<rect x="150" y="54" width="500.0" height="20" rx="3" fill="#0E2A47"/>
+<text x="658.0" y="69.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">58</text>
+<text x="140.0" y="103.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Fabrikam Support</text>
+<rect x="150" y="88" width="353.4" height="20" rx="3" fill="#0E2A47"/>
+<text x="511.4" y="103.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">41</text>
+<text x="140.0" y="137.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Initrode Systems</text>
+<rect x="150" y="122" width="284.5" height="20" rx="3" fill="#0E2A47"/>
+<text x="442.5" y="137.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">33</text>
+<text x="140.0" y="171.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Hooli Desk</text>
+<rect x="150" y="156" width="224.1" height="20" rx="3" fill="#0E2A47"/>
+<text x="382.1" y="171.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">26</text>
+<text x="140.0" y="205.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Northwind Desk</text>
+<rect x="150" y="190" width="181.0" height="20" rx="3" fill="#2BBF77"/>
+<text x="339.0" y="205.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">21</text>
+</svg><div class="fnote">Authority is earned mostly through other reputable sites linking to you. It is a proxy, not a Google metric, but it tracks how hard a domain is to outrank.</div></div></div><div class="section"><div class="s-head"><span class="s-num">03</span><h2 class="s-title">Backlinks: the authority gap and how to close it</h2></div><ul class="lead"><li>Links from other websites are still the strongest off-page ranking signal and a direct input to the authority that wins both search and AI citations. Northwind Desk has 180 referring domains, 5th of 5 in this set; Contoso Helpdesk has 6,200.</li><li>Volume is not the whole story. Contoso Helpdesk&#x27;s link profile carries a 14/100 spam score versus Northwind Desk&#x27;s 8/100, so a large share of that lead is low-quality directory and link-farm links, not editorial coverage. The goal is quality links, not the count.</li><li>We pulled the domains that link to Contoso Helpdesk, Fabrikam Support, Initrode Systems but not to Northwind Desk. 4 are real, relevant sites worth pursuing (for example helpdeskreview.example, supportstacknews.example, saasdirectory.example), and the full vetted list is handed off as a ready outreach target set. Every one it converts closes the gap above.</li></ul><div class="figure"><div class="fhead"><span class="ftitle">Referring domains by company</span><span class="small">unique linking domains</span></div><svg viewBox="0 0 720 230" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">
+<rect width="720" height="230" fill="#FFFFFF"/>
+<text x="140.0" y="69.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Contoso Helpdesk</text>
+<rect x="150" y="54" width="500.0" height="20" rx="3" fill="#0E2A47"/>
+<text x="658.0" y="69.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">6K</text>
+<text x="140.0" y="103.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Fabrikam Support</text>
+<rect x="150" y="88" width="169.4" height="20" rx="3" fill="#0E2A47"/>
+<text x="327.4" y="103.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">2K</text>
+<text x="140.0" y="137.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Initrode Systems</text>
+<rect x="150" y="122" width="79.0" height="20" rx="3" fill="#0E2A47"/>
+<text x="237.0" y="137.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">980</text>
+<text x="140.0" y="171.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Hooli Desk</text>
+<rect x="150" y="156" width="33.1" height="20" rx="3" fill="#0E2A47"/>
+<text x="191.1" y="171.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">410</text>
+<text x="140.0" y="205.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Northwind Desk</text>
+<rect x="150" y="190" width="14.5" height="20" rx="3" fill="#2BBF77"/>
+<text x="172.5" y="205.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">180</text>
+</svg><div class="fnote">Referring domains count unique websites linking to each domain, the clearest measure of earned authority. The gap list is a concrete, handoff-ready target set.</div></div></div><div class="section"><div class="s-head"><span class="s-num">04</span><h2 class="s-title">Traffic share: how much of the category you own</h2></div><ul class="lead"><li>This is estimated organic traffic, a directional share read. It reframes the authority gap as a market-share story: who owns the category&#x27;s attention today, and how much is still open to take.</li></ul><div class="figure"><div class="fhead"><span class="ftitle">Estimated organic traffic by company</span><span class="small">visits/mo, estimate</span></div><svg viewBox="0 0 720 230" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">
+<rect width="720" height="230" fill="#FFFFFF"/>
+<text x="140.0" y="69.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Contoso Helpdesk</text>
+<rect x="150" y="54" width="500.0" height="20" rx="3" fill="#0E2A47"/>
+<text x="658.0" y="69.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">214K</text>
+<text x="140.0" y="103.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Fabrikam Support</text>
+<rect x="150" y="88" width="73.4" height="20" rx="3" fill="#0E2A47"/>
+<text x="231.4" y="103.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">31K</text>
+<text x="140.0" y="137.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Initrode Systems</text>
+<rect x="150" y="122" width="19.2" height="20" rx="3" fill="#0E2A47"/>
+<text x="177.2" y="137.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">8K</text>
+<text x="140.0" y="171.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Hooli Desk</text>
+<rect x="150" y="156" width="6.8" height="20" rx="3" fill="#0E2A47"/>
+<text x="164.8" y="171.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">3K</text>
+<text x="140.0" y="205.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Northwind Desk</text>
+<rect x="150" y="190" width="2.0" height="20" rx="3" fill="#2BBF77"/>
+<text x="160.0" y="205.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">410</text>
+</svg></div><div class="note">Organic share is earned with content and proof, not ad spend, so a focused team can take it without out-spending the field.</div></div><div class="section"><div class="s-head"><span class="s-num">05</span><h2 class="s-title">Share of search: branded demand momentum</h2></div><ul class="lead"><li>Branded search interest predicts market share up to a year ahead. This is who buyers are actively looking for by name today.</li><li>Rising in the set: Fabrikam Support, Northwind Desk.</li></ul><div class="figure"><div class="fhead"><span class="ftitle">Share of branded search</span><span class="small">past 12 months</span></div><svg viewBox="0 0 720 230" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">
+<rect width="720" height="230" fill="#FFFFFF"/>
+<text x="140.0" y="69.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Contoso Helpdesk</text>
+<rect x="150" y="54" width="500.0" height="20" rx="3" fill="#0E2A47"/>
+<text x="658.0" y="69.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">78</text>
+<text x="140.0" y="103.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Fabrikam Support</text>
+<rect x="150" y="88" width="90.6" height="20" rx="3" fill="#0E2A47"/>
+<text x="248.6" y="103.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">14</text>
+<text x="140.0" y="137.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Initrode Systems</text>
+<rect x="150" y="122" width="27.4" height="20" rx="3" fill="#0E2A47"/>
+<text x="185.4" y="137.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">4</text>
+<text x="140.0" y="171.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Hooli Desk</text>
+<rect x="150" y="156" width="12.1" height="20" rx="3" fill="#0E2A47"/>
+<text x="170.1" y="171.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">2</text>
+<text x="140.0" y="205.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Northwind Desk</text>
+<rect x="150" y="190" width="7.7" height="20" rx="3" fill="#2BBF77"/>
+<text x="165.7" y="205.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">1</text>
+</svg></div><div class="note">Branded search on common-word names can include namesakes, so treat as directional. Growing branded demand is the compounding defense behind every other play.</div></div><div class="section"><div class="s-head"><span class="s-num">06</span><h2 class="s-title">The traffic and revenue you are not capturing</h2></div><ul class="lead"><li>The leaders are far larger overall, so the game is not matching their total traffic. It is the 44 commercial terms in your niche they rank for and you do not, about 31,200 searches a month of demand that already converts for them.</li><li>Winning even a handful of these niche terms is realistic and compounds, where chasing the incumbents&#x27; head terms would not.</li></ul><table class="kv"><thead><tr><th style="text-align:left">Keyword competitors rank for</th><th style="text-align:right">Searches/mo</th><th style="text-align:left">Held by</th></tr></thead><tbody><tr><td style="text-align:left">help desk software for small business</td><td style="text-align:right">4,400</td><td style="text-align:left">Contoso Helpdesk</td></tr><tr><td style="text-align:left">shared inbox for support teams</td><td style="text-align:right">2,900</td><td style="text-align:left">Contoso Helpdesk</td></tr><tr><td style="text-align:left">help desk sla best practices</td><td style="text-align:right">1,900</td><td style="text-align:left">Fabrikam Support</td></tr><tr><td style="text-align:left">customer support metrics</td><td style="text-align:right">3,600</td><td style="text-align:left">Contoso Helpdesk</td></tr><tr><td style="text-align:left">ticketing system comparison</td><td style="text-align:right">1,600</td><td style="text-align:left">Fabrikam Support</td></tr><tr><td style="text-align:left">support ticket triage</td><td style="text-align:right">880</td><td style="text-align:left">Initrode Systems</td></tr><tr><td style="text-align:left">escalation matrix template</td><td style="text-align:right">2,400</td><td style="text-align:left">Fabrikam Support</td></tr><tr><td style="text-align:left">first response time benchmark</td><td style="text-align:right">720</td><td style="text-align:left">Contoso Helpdesk</td></tr></tbody></table><div class="note">Traffic and value are directional estimates from live search data.</div></div><div class="section"><div class="s-head"><span class="s-num">07</span><h2 class="s-title">Where rivals are spending and hiring</h2></div><ul class="lead"><li>Recent funding: Contoso Helpdesk raised $80M (series c, 2025-09-16); Fabrikam Support raised $25M (series a, 2025-03-02); Hooli Desk raised $3M (seed, 2024-10-21). Funded rivals spend on the lanes they hire for, which is why those are the hardest to enter head-on.</li><li>Hiring shows the same story: 204 open roles across your rivals, 88 in engineering and 64 in sales/GTM.</li></ul><div class="figure"><div class="fhead"><span class="ftitle">Open roles by company</span><span class="small">public hiring records</span></div><svg viewBox="0 0 720 230" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">
+<rect width="720" height="230" fill="#FFFFFF"/>
+<text x="140.0" y="69.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Contoso Helpdesk</text>
+<rect x="150" y="54" width="500.0" height="20" rx="3" fill="#0E2A47"/>
+<text x="658.0" y="69.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">141</text>
+<text x="140.0" y="103.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Fabrikam Support</text>
+<rect x="150" y="88" width="156.0" height="20" rx="3" fill="#0E2A47"/>
+<text x="314.0" y="103.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">44</text>
+<text x="140.0" y="137.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Initrode Systems</text>
+<rect x="150" y="122" width="42.6" height="20" rx="3" fill="#0E2A47"/>
+<text x="200.6" y="137.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">12</text>
+<text x="140.0" y="171.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Hooli Desk</text>
+<rect x="150" y="156" width="14.2" height="20" rx="3" fill="#0E2A47"/>
+<text x="172.2" y="171.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">4</text>
+<text x="140.0" y="205.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Northwind Desk</text>
+<rect x="150" y="190" width="10.6" height="20" rx="3" fill="#2BBF77"/>
+<text x="168.6" y="205.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">3</text>
+</svg></div><div class="note">Where the money and hiring are absent is where the open ground is.</div></div><div class="section"><div class="s-head"><span class="s-num">08</span><h2 class="s-title">Search demand and where the gap is</h2></div><ul class="lead"><li>These are the highest-intent queries in your market with real monthly demand. Volume is what people search; difficulty (KD) is how contested it is.</li></ul><table class="kv"><thead><tr><th style="text-align:left">Query</th><th style="text-align:right">Searches/mo</th><th style="text-align:right">Difficulty</th><th style="text-align:left">Intent</th></tr></thead><tbody><tr><td style="text-align:left">help desk software</td><td style="text-align:right">33,100</td><td style="text-align:right">71</td><td style="text-align:left">Commercial</td></tr><tr><td style="text-align:left">ticketing system</td><td style="text-align:right">14,800</td><td style="text-align:right">58</td><td style="text-align:left">Commercial</td></tr><tr><td style="text-align:left">help desk software for small business</td><td style="text-align:right">4,400</td><td style="text-align:right">34</td><td style="text-align:left">Commercial</td></tr><tr><td style="text-align:left">customer support metrics</td><td style="text-align:right">3,600</td><td style="text-align:right">16</td><td style="text-align:left">Informational</td></tr><tr><td style="text-align:left">shared inbox for support teams</td><td style="text-align:right">2,900</td><td style="text-align:right">22</td><td style="text-align:left">Commercial</td></tr><tr><td style="text-align:left">escalation matrix template</td><td style="text-align:right">2,400</td><td style="text-align:right">6</td><td style="text-align:left">Informational</td></tr></tbody></table><div class="note">Competitors already rank for: customer support metrics (3,600/mo, Contoso Helpdesk), escalation matrix template (2,400/mo, Fabrikam Support), help desk sla best practices (1,900/mo, Fabrikam Support), ticketing system comparison (1,600/mo, Fabrikam Support), support ticket triage (880/mo, Initrode Systems) - demand they capture and you do not, yet.</div></div><div class="section"><div class="s-head"><span class="s-num">09</span><h2 class="s-title">Greenfield opportunity map</h2></div><ul class="lead"><li>Each bubble is a buyer query. Right means winnable (lower difficulty), up means more demand, bigger means more searches. The green zone (top-right) is open demand you can take without fighting the giants head-on.</li><li>Greenfield 6  |  Winnable niche 2  |  Fortress, hard 2.</li></ul><div class="figure"><div class="fhead"><span class="ftitle">Demand vs winnability</span><span class="small">buyer queries, live data</span></div><svg viewBox="0 0 720 440" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">
+<rect width="720" height="440" fill="#FFFFFF"/>
+<rect x="378.0" y="46.0" width="318.0" height="174.0" fill="#2BBF77" opacity="0.07"/>
+<line x1="378.0" y1="46" x2="378.0" y2="394" stroke="#E6EBF0" stroke-dasharray="4 4"/>
+<line x1="60" y1="220.0" x2="696" y2="220.0" stroke="#E6EBF0" stroke-dasharray="4 4"/>
+<rect x="60" y="46" width="636.0" height="348.0" fill="none" stroke="#E6EBF0"/>
+<text x="378.0" y="424.0" font-size="10" fill="#7C8DA0" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">WINNABILITY  →</text>
+<text x="18" y="220.0" font-size="10" fill="#7C8DA0" font-weight="600" text-anchor="middle" transform="rotate(-90 18 220.0)" font-family="Inter, sans-serif">DEMAND  →</text>
+<text x="537.0" y="62.0" font-size="10" fill="#2BBF77" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">GREENFIELD</text>
+<text x="219.0" y="62.0" font-size="9" fill="#7C8DA0" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">LOW-DEMAND</text>
+<text x="219.0" y="386.0" font-size="9" fill="#7C8DA0" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">FORTRESS</text>
+<text x="537.0" y="386.0" font-size="9" fill="#7C8DA0" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">CONTESTED</text>
+<circle cx="543.4" cy="78.4" r="15.0" fill="#2BBF77" opacity="0.78"/>
+<text x="543.4" y="59.4" font-size="10.5" fill="#1B2733" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">escalation matrix template</text>
+<circle cx="619.7" cy="88.1" r="12.2" fill="#2BBF77" opacity="0.78"/>
+<text x="619.7" y="71.9" font-size="10.5" fill="#1B2733" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">support ticket triage playbook</text>
+<circle cx="594.2" cy="96.8" r="11.8" fill="#2BBF77" opacity="0.78"/>
+<text x="594.2" y="81.0" font-size="10.5" fill="#1B2733" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">first response time benchmark</text>
+<circle cx="645.1" cy="102.0" r="11.5" fill="#2BBF77" opacity="0.78"/>
+<text x="645.1" y="86.6" font-size="10.5" fill="#1B2733" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">support qa scorecard template</text>
+<circle cx="467.0" cy="106.6" r="13.2" fill="#2BBF77" opacity="0.78"/>
+<text x="467.0" y="89.4" font-size="10.5" fill="#1B2733" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">help desk sla examples</text>
+<circle cx="670.6" cy="112.1" r="11.1" fill="#2BBF77" opacity="0.78"/>
+<text x="670.6" y="97.0" font-size="10.5" fill="#1B2733" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">customer support handoff template</text>
+<circle cx="149.0" cy="56.4" r="34.0" fill="#7C8DA0" opacity="0.78"/>
+<text x="149.0" y="18.4" font-size="10.5" fill="#1B2733" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">help desk software</text>
+<circle cx="193.6" cy="80.8" r="25.4" fill="#7C8DA0" opacity="0.78"/>
+<text x="193.6" y="51.4" font-size="10.5" fill="#1B2733" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">ticketing system</text>
+<circle cx="365.3" cy="164.3" r="17.5" fill="#1F6F8B" opacity="0.78"/>
+<text x="365.3" y="142.8" font-size="10.5" fill="#1B2733" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">help desk software for small business</text>
+<circle cx="416.2" cy="192.2" r="15.7" fill="#1F6F8B" opacity="0.78"/>
+<text x="416.2" y="172.5" font-size="10.5" fill="#1B2733" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">shared inbox for support teams</text>
+<circle cx="339.8" cy="178.2" r="20.9" fill="#E1526B" opacity="0.78"/>
+<text x="339.8" y="153.4" font-size="10.5" fill="#1B2733" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">free help desk</text>
+</svg></div><table class="kv"><thead><tr><th style="text-align:left">Greenfield query</th><th style="text-align:right">Searches/mo</th><th style="text-align:right">Difficulty</th><th style="text-align:left">Lane</th></tr></thead><tbody><tr><td style="text-align:left">escalation matrix template</td><td style="text-align:right">2,400</td><td style="text-align:right">6</td><td style="text-align:left">Greenfield</td></tr><tr><td style="text-align:left">support ticket triage playbook</td><td style="text-align:right">880</td><td style="text-align:right">3</td><td style="text-align:left">Greenfield</td></tr><tr><td style="text-align:left">first response time benchmark</td><td style="text-align:right">720</td><td style="text-align:right">4</td><td style="text-align:left">Greenfield</td></tr><tr><td style="text-align:left">support qa scorecard template</td><td style="text-align:right">590</td><td style="text-align:right">2</td><td style="text-align:left">Greenfield</td></tr><tr><td style="text-align:left">help desk sla examples</td><td style="text-align:right">1,300</td><td style="text-align:right">9</td><td style="text-align:left">Greenfield</td></tr><tr><td style="text-align:left">customer support handoff template</td><td style="text-align:right">480</td><td style="text-align:right">1</td><td style="text-align:left">Greenfield</td></tr></tbody></table></div><div class="section"><div class="s-head"><span class="s-num">10</span><h2 class="s-title">What competitors are winning with</h2></div><table class="kv"><thead><tr><th style="text-align:left">Competitor</th><th style="text-align:left">Top-traffic page</th><th style="text-align:right">Est. visits/mo</th></tr></thead><tbody><tr><td style="text-align:left">Contoso Helpdesk</td><td style="text-align:left">/</td><td style="text-align:right">41,200</td></tr><tr><td style="text-align:left">Contoso Helpdesk</td><td style="text-align:left">/blog/customer-support-metrics</td><td style="text-align:right">8,800</td></tr><tr><td style="text-align:left">Contoso Helpdesk</td><td style="text-align:left">/pricing</td><td style="text-align:right">7,100</td></tr><tr><td style="text-align:left">Fabrikam Support</td><td style="text-align:left">/guides/sla-best-practices</td><td style="text-align:right">4,900</td></tr><tr><td style="text-align:left">Fabrikam Support</td><td style="text-align:left">/</td><td style="text-align:right">3,800</td></tr><tr><td style="text-align:left">Fabrikam Support</td><td style="text-align:left">/templates/escalation-matrix</td><td style="text-align:right">2,600</td></tr><tr><td style="text-align:left">Initrode Systems</td><td style="text-align:left">/</td><td style="text-align:right">1,900</td></tr><tr><td style="text-align:left">Northwind Desk</td><td style="text-align:left">/</td><td style="text-align:right">310</td></tr></tbody></table><div class="note">Their traffic leaders are mostly their own home and category pages, built around what buyers search. The winnable move is to build the pages you are missing and out-structure theirs, so you rank for the terms that matter. Notably, Contoso Helpdesk&#x27;s single biggest page is an editorial post, not a room page: content marketing most of the field ignores and you can win.</div></div><div class="section"><div class="s-head"><span class="s-num">11</span><h2 class="s-title">Reputation and the switching wedge</h2></div><table class="kv"><thead><tr><th style="text-align:left">Company</th><th style="text-align:right">Rating</th><th style="text-align:right">Reviews</th><th style="text-align:left">Top complaint (the wedge)</th></tr></thead><tbody><tr><td style="text-align:left">Northwind Desk</td><td style="text-align:right">4.8 stars</td><td style="text-align:right">-</td><td style="text-align:left">-</td></tr><tr><td style="text-align:left">Contoso Helpdesk</td><td style="text-align:right">4.4 stars</td><td style="text-align:right">3180</td><td style="text-align:left">support wait times after the price increase</td></tr><tr><td style="text-align:left">Fabrikam Support</td><td style="text-align:right">4.5 stars</td><td style="text-align:right">940</td><td style="text-align:left">limited reporting on the starter plan</td></tr><tr><td style="text-align:left">Initrode Systems</td><td style="text-align:right">4.1 stars</td><td style="text-align:right">-</td><td style="text-align:left">dated interface</td></tr><tr><td style="text-align:left">Hooli Desk</td><td style="text-align:right">4.3 stars</td><td style="text-align:right">120</td><td style="text-align:left">-</td></tr></tbody></table><div class="note">Each rival&#x27;s recurring complaint is the wedge: point your comparison pages and outbound at their weakest point, and pre-empt the complaints that would land on you.</div></div><div class="section"><div class="s-head"><span class="s-num">12</span><h2 class="s-title">Where the field is buying attention: Google ads</h2></div><ul class="lead"><li>Google&#x27;s Ads Transparency Center shows Contoso Helpdesk running about 480 live ads. Northwind Desk runs 0. Every rival&#x27;s live ads are viewable in Google&#x27;s public Ads Transparency Center.</li><li>This is not a call to match their spend. It shows the field is buying attention while you are not, so paid is a selective lever once your proof pages exist to convert it.</li></ul><div class="figure"><div class="fhead"><span class="ftitle">Live Google ads by company</span><span class="small">Ads Transparency, high-confidence matches</span></div><svg viewBox="0 0 720 162" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">
+<rect width="720" height="162" fill="#FFFFFF"/>
+<text x="140.0" y="69.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Contoso Helpdesk</text>
+<rect x="150" y="54" width="500.0" height="20" rx="3" fill="#0E2A47"/>
+<text x="658.0" y="69.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">480</text>
+<text x="140.0" y="103.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Fabrikam Support</text>
+<rect x="150" y="88" width="135.4" height="20" rx="3" fill="#0E2A47"/>
+<text x="293.4" y="103.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">130</text>
+<text x="140.0" y="137.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Northwind Desk</text>
+<rect x="150" y="122" width="2.0" height="20" rx="3" fill="#2BBF77"/>
+<text x="160.0" y="137.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">0</text>
+</svg><div class="fnote">Only advertisers matched with high confidence are shown; ambiguous single-name matches are excluded.</div></div></div><div class="section"><div class="s-head"><span class="s-num">13</span><h2 class="s-title">Social presence</h2></div><ul class="lead"><li>LinkedIn is one of the most-cited sources in AI answers and a proven channel for this category. This is where buyers research and where presence compounds into visibility.</li><li>This is a low-cost, high-leverage channel where you are currently underweight.</li></ul><div class="figure"><div class="fhead"><span class="ftitle">LinkedIn followers</span><span class="small">public profiles</span></div><svg viewBox="0 0 720 230" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">
+<rect width="720" height="230" fill="#FFFFFF"/>
+<text x="140.0" y="69.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Contoso Helpdesk</text>
+<rect x="150" y="54" width="500.0" height="20" rx="3" fill="#0E2A47"/>
+<text x="658.0" y="69.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">48K</text>
+<text x="140.0" y="103.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Fabrikam Support</text>
+<rect x="150" y="88" width="130.7" height="20" rx="3" fill="#0E2A47"/>
+<text x="288.7" y="103.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">13K</text>
+<text x="140.0" y="137.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Initrode Systems</text>
+<rect x="150" y="122" width="42.5" height="20" rx="3" fill="#0E2A47"/>
+<text x="200.5" y="137.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">4K</text>
+<text x="140.0" y="171.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Hooli Desk</text>
+<rect x="150" y="156" width="23.3" height="20" rx="3" fill="#0E2A47"/>
+<text x="181.3" y="171.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">2K</text>
+<text x="140.0" y="205.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Northwind Desk</text>
+<rect x="150" y="190" width="9.2" height="20" rx="3" fill="#2BBF77"/>
+<text x="167.2" y="205.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">890</text>
+</svg></div><div class="note">LinkedIn reach compounds quickly for this category. This is a low-cost, high-leverage channel to own.</div></div><div class="section"><div class="s-head"><span class="s-num">14</span><h2 class="s-title">Site speed and Core Web Vitals</h2></div><ul class="lead"><li>Northwind Desk is among the faster sites in this set (2nd of 5). Core Web Vitals are a Google ranking input and a real conversion lever. On mobile, Northwind Desk scores 64 of 100 on a mobile speed test but still fails Core Web Vitals (LCP poor, layout shift good, blocking good). No competitor in this set passes Core Web Vitals, so this is shared, winnable ground.</li></ul><div class="figure"><div class="fhead"><span class="ftitle">Mobile performance score</span><span class="small">0-100, higher is better</span></div><svg viewBox="0 0 720 230" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">
+<rect width="720" height="230" fill="#FFFFFF"/>
+<text x="140.0" y="69.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Fabrikam Support</text>
+<rect x="150" y="54" width="500.0" height="20" rx="3" fill="#0E2A47"/>
+<text x="658.0" y="69.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">69</text>
+<text x="140.0" y="103.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Northwind Desk</text>
+<rect x="150" y="88" width="463.8" height="20" rx="3" fill="#2BBF77"/>
+<text x="621.8" y="103.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">64</text>
+<text x="140.0" y="137.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Hooli Desk</text>
+<rect x="150" y="122" width="420.3" height="20" rx="3" fill="#0E2A47"/>
+<text x="578.3" y="137.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">58</text>
+<text x="140.0" y="171.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Contoso Helpdesk</text>
+<rect x="150" y="156" width="376.8" height="20" rx="3" fill="#0E2A47"/>
+<text x="534.8" y="171.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">52</text>
+<text x="140.0" y="205.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Initrode Systems</text>
+<rect x="150" y="190" width="224.6" height="20" rx="3" fill="#0E2A47"/>
+<text x="382.6" y="205.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">31</text>
+</svg></div><div class="note">This is a controlled lab test that works for any site, including a brand-new one.</div></div><div class="section"><div class="s-head"><span class="s-num">15</span><h2 class="s-title">AI visibility: is AI recommending you?</h2></div><p>More buyers now ask ChatGPT, Gemini, Perplexity, Claude, and Google&#x27;s AI Overview for recommendations instead of scrolling search results. Share of Voice is how often each brand is named or cited across those engines, weighted by how much people search each query. This is who the models put in front of your buyers.</p><div class="figure"><div class="fhead"><span class="ftitle">AI Share of Voice (% of brand mentions across engines)</span><span class="small">8 queries x 5 engines</span></div><svg viewBox="0 0 720 162" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">
+<rect width="720" height="162" fill="#FFFFFF"/>
+<text x="140.0" y="69.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Contoso Helpdesk</text>
+<rect x="150" y="54" width="500.0" height="20" rx="3" fill="#0E2A47"/>
+<text x="658.0" y="69.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">58</text>
+<text x="140.0" y="103.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Fabrikam Support</text>
+<rect x="150" y="88" width="283.4" height="20" rx="3" fill="#0E2A47"/>
+<text x="441.4" y="103.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">33</text>
+<text x="140.0" y="137.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Initrode Systems</text>
+<rect x="150" y="122" width="83.2" height="20" rx="3" fill="#0E2A47"/>
+<text x="241.2" y="137.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">10</text>
+</svg><div class="fnote">Scope is your tracked demand set. A single scan is a sample; the value is the trend as we move you up it.</div></div></div><div class="section"><div class="s-head"><span class="s-num">16</span><h2 class="s-title">AI visibility matrix: who AI recommends</h2></div><ul class="lead"><li>Buyers increasingly ask AI engines for a vendor shortlist. This maps each buyer question against each engine: are you cited, named, or absent while a competitor is named instead.</li></ul><div class="figure"><svg viewBox="0 0 720 334" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">
+<rect width="720" height="334" fill="#FFFFFF"/>
+<text x="296.2" y="50.0" font-size="10" fill="#7C8DA0" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">AI Overview</text>
+<text x="388.6" y="50.0" font-size="10" fill="#7C8DA0" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">ChatGPT</text>
+<text x="481.0" y="50.0" font-size="10" fill="#7C8DA0" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Gemini</text>
+<text x="573.4" y="50.0" font-size="10" fill="#7C8DA0" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Perplexity</text>
+<text x="665.8" y="50.0" font-size="10" fill="#7C8DA0" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Claude</text>
+<text x="240.0" y="77.8" font-size="11" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">best help desk software for small teams</text>
+<rect x="252.0" y="60.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="296.2" y="77.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="344.4" y="60.0" width="88.4" height="26.0" rx="4" fill="#E6EBF0"/>
+<rect x="436.8" y="60.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="481.0" y="77.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="529.2" y="60.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="573.4" y="77.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="621.6" y="60.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="665.8" y="77.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<text x="240.0" y="107.8" font-size="11" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">best ticketing system for startups</text>
+<rect x="252.0" y="90.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="296.2" y="107.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="344.4" y="90.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="388.6" y="107.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="436.8" y="90.0" width="88.4" height="26.0" rx="4" fill="#E6EBF0"/>
+<rect x="529.2" y="90.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="573.4" y="107.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="621.6" y="90.0" width="88.4" height="26.0" rx="4" fill="#E6EBF0"/>
+<text x="240.0" y="137.8" font-size="11" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">shared inbox vs help desk</text>
+<rect x="252.0" y="120.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="296.2" y="137.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="344.4" y="120.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="388.6" y="137.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="436.8" y="120.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="481.0" y="137.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="529.2" y="120.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="573.4" y="137.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="621.6" y="120.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="665.8" y="137.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<text x="240.0" y="167.8" font-size="11" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">best customer support software</text>
+<rect x="252.0" y="150.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="296.2" y="167.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="344.4" y="150.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="388.6" y="167.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="436.8" y="150.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="481.0" y="167.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="529.2" y="150.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="573.4" y="167.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="621.6" y="150.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="665.8" y="167.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<text x="240.0" y="197.8" font-size="11" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">affordable help desk software</text>
+<rect x="252.0" y="180.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="296.2" y="197.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="344.4" y="180.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="388.6" y="197.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="436.8" y="180.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="481.0" y="197.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="529.2" y="180.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="573.4" y="197.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="621.6" y="180.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="665.8" y="197.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<text x="240.0" y="227.8" font-size="11" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">best help desk for ecommerce support</text>
+<rect x="252.0" y="210.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="296.2" y="227.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="344.4" y="210.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="388.6" y="227.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="436.8" y="210.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="481.0" y="227.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="529.2" y="210.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="573.4" y="227.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="621.6" y="210.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="665.8" y="227.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<text x="240.0" y="257.8" font-size="11" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">help desk with the best automation</text>
+<rect x="252.0" y="240.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="296.2" y="257.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="344.4" y="240.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="388.6" y="257.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="436.8" y="240.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="481.0" y="257.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="529.2" y="240.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="573.4" y="257.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="621.6" y="240.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="665.8" y="257.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<text x="240.0" y="287.8" font-size="11" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">easiest help desk to set up</text>
+<rect x="252.0" y="270.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="296.2" y="287.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="344.4" y="270.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="388.6" y="287.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="436.8" y="270.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="481.0" y="287.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="529.2" y="270.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="573.4" y="287.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="621.6" y="270.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="665.8" y="287.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="250.0" y="306" width="12" height="12" rx="3" fill="#1B8A5A"/>
+<text x="267.0" y="316.0" font-size="10" fill="#7C8DA0" text-anchor="start" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Cited</text>
+<rect x="312.0" y="306" width="12" height="12" rx="3" fill="#2BBF77"/>
+<text x="329.0" y="316.0" font-size="10" fill="#7C8DA0" text-anchor="start" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Named</text>
+<rect x="374.0" y="306" width="12" height="12" rx="3" fill="#F0B429"/>
+<text x="391.0" y="316.0" font-size="10" fill="#7C8DA0" text-anchor="start" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Weak</text>
+<rect x="429.6" y="306" width="12" height="12" rx="3" fill="#E6EBF0"/>
+<text x="446.6" y="316.0" font-size="10" fill="#7C8DA0" text-anchor="start" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Absent</text>
+<rect x="498.0" y="306" width="12" height="12" rx="3" fill="#0E2A47"/>
+<text x="515.0" y="316.0" font-size="10" fill="#7C8DA0" text-anchor="start" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Competitor owns</text>
+</svg></div></div><div class="section"><div class="cta"><h3>The opportunity, and how we take it</h3><p>This is a live snapshot of Northwind Desk&#x27;s digital footprint against the field. The gaps above are the opening: the queries and AI answers your competitors have not locked down. We have the machine and the plan to move you up each one, and to prove it with the same live data you just saw. The full strategy and 90-day sequence is the next step.</p><p class="small" style="color:#cdd8e4">Prepared from live search, review, and AI-answer data</p></div></div></body></html>

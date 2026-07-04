@@ -1,0 +1,870 @@
+{
+  "meta": {
+    "dense": true,
+    "badge": "Digital Presence Scan",
+    "client": "Northwind Desk",
+    "title": "Northwind Desk: Your Digital Footprint and the Opportunity",
+    "subtitle": "Where you stand, who is winning your buyers, and the winnable path to overtake them. Live data, sample data.",
+    "date": "sample data",
+    "author": "seo-geo-report-engine"
+  },
+  "sections": [
+    {
+      "type": "summary",
+      "num": "01",
+      "title": "Where you stand today",
+      "bullets": [
+        "**Authority: you sit 5th of 5** in the category (authority 21 vs the leader Contoso Helpdesk at 58). Authority here is a cross-source consensus (dataforseo, openpagerank).",
+        "**You are about 0.2% of your category's traffic; Contoso Helpdesk is 83.3%.** Organic share is winnable and far cheaper to take than paid.",
+        "**You hold about 1.2% of branded search in your set, and it is rising.** Share of search is a leading indicator of market share, so this is the demand you are building before it converts.",
+        "**Rivals rank for 44 buyer keywords, about 31,200 searches/mo, that you are absent from.** That gap in your niche, not their global traffic, is the addressable opening.",
+        "**The field is scaling fast, and the hiring shows where.** Your rivals have 204 open roles right now, concentrated in engineering (88) and sales (64). Where they are not hiring is where the open ground is.",
+        "**The opportunity is real demand you are not yet capturing.** 'help desk software' alone is 33,100 searches/mo, and rivals already rank for 5 terms you do not.",
+        "**6 greenfield opportunities**: real buyer demand, winnable difficulty, and no competitor has locked in the AI answer. This is where to attack first.",
+        "**Your social reach trails the field.** Northwind Desk has about 890 LinkedIn followers; Contoso Helpdesk has 48,200. This is a low-cost channel to close.",
+        "**AI visibility: you hold 0.0% share of voice** across 5 AI engines on 8 real queries; Contoso Helpdesk holds 57.7%. You appear in 0 of 5 engines. When someone asks an AI in your category, this is who it names.",
+        "**In AI answers to buyer questions, you appear in 0 of 40 places.** Competitors own the rest. This is the shortlist your buyers now ask AI for first."
+      ],
+      "pillars": [
+        {
+          "tag": "Lane 1",
+          "name": "Own the AI answer",
+          "when": "where you are absent today",
+          "items": [
+            "Be the cited source when AI names your category",
+            "Answer-first pages + third-party mentions"
+          ]
+        },
+        {
+          "tag": "Lane 2",
+          "name": "Capture the demand gap",
+          "when": "searches rivals hold",
+          "items": [
+            "Build the pages for the queries you are missing",
+            "High-intent, winnable difficulty first"
+          ]
+        },
+        {
+          "tag": "Lane 3",
+          "name": "Grow authority",
+          "when": "the compounding moat",
+          "items": [
+            "Earn the mentions that lift authority + AI citation",
+            "Turn tools/data into linkable assets"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "num": "02",
+      "title": "Authority: how you stack up",
+      "paragraphs": [
+        "Domain authority estimates how much trust a site has earned. We read it from several independent sources and take the consensus, so no single tool's quirk drives the picture. Taller is stronger."
+      ],
+      "figure_title": "Cross-source domain authority (0-100)",
+      "figure_unit": "consensus of 2 sources, sample data",
+      "chart": {
+        "type": "bar_h",
+        "kind": "compact",
+        "highlight": "Northwind Desk",
+        "rows": [
+          [
+            "Contoso Helpdesk",
+            58
+          ],
+          [
+            "Fabrikam Support",
+            41
+          ],
+          [
+            "Initrode Systems",
+            33
+          ],
+          [
+            "Hooli Desk",
+            26
+          ],
+          [
+            "Northwind Desk",
+            21
+          ]
+        ]
+      },
+      "figure_note": "Authority is earned mostly through other reputable sites linking to you. It is a proxy, not a Google metric, but it tracks how hard a domain is to outrank."
+    },
+    {
+      "type": "scenarios",
+      "num": "03",
+      "title": "Backlinks: the authority gap and how to close it",
+      "bullets": [
+        "Links from other websites are still the strongest off-page ranking signal and a direct input to the authority that wins both search and AI citations. Northwind Desk has 180 referring domains, 5th of 5 in this set; Contoso Helpdesk has 6,200.",
+        "Volume is not the whole story. Contoso Helpdesk's link profile carries a 14/100 spam score versus Northwind Desk's 8/100, so a large share of that lead is low-quality directory and link-farm links, not editorial coverage. The goal is quality links, not the count.",
+        "We pulled the domains that link to Contoso Helpdesk, Fabrikam Support, Initrode Systems but not to Northwind Desk. 4 are real, relevant sites worth pursuing (for example helpdeskreview.example, supportstacknews.example, saasdirectory.example), and the full vetted list is handed off as a ready outreach target set. Every one it converts closes the gap above."
+      ],
+      "figure_title": "Referring domains by company",
+      "figure_unit": "unique linking domains",
+      "chart": {
+        "type": "bar_h",
+        "kind": "compact",
+        "highlight": "Northwind Desk",
+        "rows": [
+          [
+            "Contoso Helpdesk",
+            6200
+          ],
+          [
+            "Fabrikam Support",
+            2100
+          ],
+          [
+            "Initrode Systems",
+            980
+          ],
+          [
+            "Hooli Desk",
+            410
+          ],
+          [
+            "Northwind Desk",
+            180
+          ]
+        ]
+      },
+      "figure_note": "Referring domains count unique websites linking to each domain, the clearest measure of earned authority. The gap list is a concrete, handoff-ready target set."
+    },
+    {
+      "type": "scenarios",
+      "num": "04",
+      "title": "Traffic share: how much of the category you own",
+      "bullets": [
+        "This is estimated organic traffic, a directional share read. It reframes the authority gap as a market-share story: who owns the category's attention today, and how much is still open to take."
+      ],
+      "figure_title": "Estimated organic traffic by company",
+      "figure_unit": "visits/mo, estimate",
+      "chart": {
+        "type": "bar_h",
+        "kind": "compact",
+        "highlight": "Northwind Desk",
+        "rows": [
+          [
+            "Contoso Helpdesk",
+            214000
+          ],
+          [
+            "Fabrikam Support",
+            31400
+          ],
+          [
+            "Initrode Systems",
+            8200
+          ],
+          [
+            "Hooli Desk",
+            2900
+          ],
+          [
+            "Northwind Desk",
+            410
+          ]
+        ]
+      },
+      "note": "Organic share is earned with content and proof, not ad spend, so a focused team can take it without out-spending the field."
+    },
+    {
+      "type": "scenarios",
+      "num": "05",
+      "title": "Share of search: branded demand momentum",
+      "bullets": [
+        "Branded search interest predicts market share up to a year ahead. This is who buyers are actively looking for by name today.",
+        "Rising in the set: Fabrikam Support, Northwind Desk."
+      ],
+      "figure_title": "Share of branded search",
+      "figure_unit": "past 12 months",
+      "chart": {
+        "type": "bar_h",
+        "kind": "compact",
+        "highlight": "Northwind Desk",
+        "rows": [
+          [
+            "Contoso Helpdesk",
+            78.4
+          ],
+          [
+            "Fabrikam Support",
+            14.2
+          ],
+          [
+            "Initrode Systems",
+            4.3
+          ],
+          [
+            "Hooli Desk",
+            1.9
+          ],
+          [
+            "Northwind Desk",
+            1.2
+          ]
+        ]
+      },
+      "note": "Branded search on common-word names can include namesakes, so treat as directional. Growing branded demand is the compounding defense behind every other play."
+    },
+    {
+      "type": "scenarios",
+      "num": "06",
+      "title": "The traffic and revenue you are not capturing",
+      "bullets": [
+        "The leaders are far larger overall, so the game is not matching their total traffic. It is the 44 commercial terms in your niche they rank for and you do not, about 31,200 searches a month of demand that already converts for them.",
+        "Winning even a handful of these niche terms is realistic and compounds, where chasing the incumbents' head terms would not."
+      ],
+      "note": "Traffic and value are directional estimates from live search data.",
+      "table": {
+        "headers": [
+          "Keyword competitors rank for",
+          "Searches/mo",
+          "Held by"
+        ],
+        "rows": [
+          [
+            "help desk software for small business",
+            "4,400",
+            "Contoso Helpdesk"
+          ],
+          [
+            "shared inbox for support teams",
+            "2,900",
+            "Contoso Helpdesk"
+          ],
+          [
+            "help desk sla best practices",
+            "1,900",
+            "Fabrikam Support"
+          ],
+          [
+            "customer support metrics",
+            "3,600",
+            "Contoso Helpdesk"
+          ],
+          [
+            "ticketing system comparison",
+            "1,600",
+            "Fabrikam Support"
+          ],
+          [
+            "support ticket triage",
+            "880",
+            "Initrode Systems"
+          ],
+          [
+            "escalation matrix template",
+            "2,400",
+            "Fabrikam Support"
+          ],
+          [
+            "first response time benchmark",
+            "720",
+            "Contoso Helpdesk"
+          ]
+        ],
+        "align": [
+          "left",
+          "right",
+          "left"
+        ]
+      }
+    },
+    {
+      "type": "scenarios",
+      "num": "07",
+      "title": "Where rivals are spending and hiring",
+      "bullets": [
+        "Recent funding: Contoso Helpdesk raised $80M (series c, 2025-09-16); Fabrikam Support raised $25M (series a, 2025-03-02); Hooli Desk raised $3M (seed, 2024-10-21). Funded rivals spend on the lanes they hire for, which is why those are the hardest to enter head-on.",
+        "Hiring shows the same story: 204 open roles across your rivals, 88 in engineering and 64 in sales/GTM."
+      ],
+      "figure_title": "Open roles by company",
+      "figure_unit": "public hiring records",
+      "chart": {
+        "type": "bar_h",
+        "kind": "compact",
+        "highlight": "Northwind Desk",
+        "rows": [
+          [
+            "Contoso Helpdesk",
+            141
+          ],
+          [
+            "Fabrikam Support",
+            44
+          ],
+          [
+            "Initrode Systems",
+            12
+          ],
+          [
+            "Hooli Desk",
+            4
+          ],
+          [
+            "Northwind Desk",
+            3
+          ]
+        ]
+      },
+      "note": "Where the money and hiring are absent is where the open ground is."
+    },
+    {
+      "type": "scenarios",
+      "num": "08",
+      "title": "Search demand and where the gap is",
+      "bullets": [
+        "These are the highest-intent queries in your market with real monthly demand. Volume is what people search; difficulty (KD) is how contested it is."
+      ],
+      "figure_title": "",
+      "table": {
+        "headers": [
+          "Query",
+          "Searches/mo",
+          "Difficulty",
+          "Intent"
+        ],
+        "rows": [
+          [
+            "help desk software",
+            "33,100",
+            "71",
+            "Commercial"
+          ],
+          [
+            "ticketing system",
+            "14,800",
+            "58",
+            "Commercial"
+          ],
+          [
+            "help desk software for small business",
+            "4,400",
+            "34",
+            "Commercial"
+          ],
+          [
+            "customer support metrics",
+            "3,600",
+            "16",
+            "Informational"
+          ],
+          [
+            "shared inbox for support teams",
+            "2,900",
+            "22",
+            "Commercial"
+          ],
+          [
+            "escalation matrix template",
+            "2,400",
+            "6",
+            "Informational"
+          ]
+        ],
+        "align": [
+          "left",
+          "right",
+          "right",
+          "left"
+        ]
+      },
+      "note": "Competitors already rank for: customer support metrics (3,600/mo, Contoso Helpdesk), escalation matrix template (2,400/mo, Fabrikam Support), help desk sla best practices (1,900/mo, Fabrikam Support), ticketing system comparison (1,600/mo, Fabrikam Support), support ticket triage (880/mo, Initrode Systems) - demand they capture and you do not, yet."
+    },
+    {
+      "type": "scenarios",
+      "num": "09",
+      "title": "Greenfield opportunity map",
+      "bullets": [
+        "Each bubble is a buyer query. Right means winnable (lower difficulty), up means more demand, bigger means more searches. The green zone (top-right) is open demand you can take without fighting the giants head-on.",
+        "Greenfield 6  |  Winnable niche 2  |  Fortress, hard 2."
+      ],
+      "figure_title": "Demand vs winnability",
+      "figure_unit": "buyer queries, live data",
+      "chart": {
+        "type": "bubble",
+        "points": [
+          {
+            "label": "escalation matrix template",
+            "x": 76,
+            "y": 90.7,
+            "size": 2400,
+            "tier": "greenfield"
+          },
+          {
+            "label": "support ticket triage playbook",
+            "x": 88,
+            "y": 87.9,
+            "size": 880,
+            "tier": "greenfield"
+          },
+          {
+            "label": "first response time benchmark",
+            "x": 84,
+            "y": 85.4,
+            "size": 720,
+            "tier": "greenfield"
+          },
+          {
+            "label": "support qa scorecard template",
+            "x": 92,
+            "y": 83.9,
+            "size": 590,
+            "tier": "greenfield"
+          },
+          {
+            "label": "help desk sla examples",
+            "x": 64,
+            "y": 82.6,
+            "size": 1300,
+            "tier": "greenfield"
+          },
+          {
+            "label": "customer support handoff template",
+            "x": 96,
+            "y": 81.0,
+            "size": 480,
+            "tier": "greenfield"
+          },
+          {
+            "label": "help desk software",
+            "x": 14,
+            "y": 97.0,
+            "size": 33100,
+            "tier": "fortress"
+          },
+          {
+            "label": "ticketing system",
+            "x": 21,
+            "y": 90.0,
+            "size": 14800,
+            "tier": "fortress"
+          },
+          {
+            "label": "help desk software for small business",
+            "x": 48,
+            "y": 66.0,
+            "size": 4400,
+            "tier": "contested"
+          },
+          {
+            "label": "shared inbox for support teams",
+            "x": 56,
+            "y": 58.0,
+            "size": 2900,
+            "tier": "contested"
+          },
+          {
+            "label": "free help desk",
+            "x": 44,
+            "y": 62.0,
+            "size": 8100,
+            "tier": "trap"
+          }
+        ],
+        "x_label": "WINNABILITY",
+        "y_label": "DEMAND"
+      },
+      "table": {
+        "headers": [
+          "Greenfield query",
+          "Searches/mo",
+          "Difficulty",
+          "Lane"
+        ],
+        "rows": [
+          [
+            "escalation matrix template",
+            "2,400",
+            "6",
+            "Greenfield"
+          ],
+          [
+            "support ticket triage playbook",
+            "880",
+            "3",
+            "Greenfield"
+          ],
+          [
+            "first response time benchmark",
+            "720",
+            "4",
+            "Greenfield"
+          ],
+          [
+            "support qa scorecard template",
+            "590",
+            "2",
+            "Greenfield"
+          ],
+          [
+            "help desk sla examples",
+            "1,300",
+            "9",
+            "Greenfield"
+          ],
+          [
+            "customer support handoff template",
+            "480",
+            "1",
+            "Greenfield"
+          ]
+        ],
+        "align": [
+          "left",
+          "right",
+          "right",
+          "left"
+        ]
+      }
+    },
+    {
+      "type": "table",
+      "num": "10",
+      "title": "What competitors are winning with",
+      "table": {
+        "headers": [
+          "Competitor",
+          "Top-traffic page",
+          "Est. visits/mo"
+        ],
+        "rows": [
+          [
+            "Contoso Helpdesk",
+            "/",
+            "41,200"
+          ],
+          [
+            "Contoso Helpdesk",
+            "/blog/customer-support-metrics",
+            "8,800"
+          ],
+          [
+            "Contoso Helpdesk",
+            "/pricing",
+            "7,100"
+          ],
+          [
+            "Fabrikam Support",
+            "/guides/sla-best-practices",
+            "4,900"
+          ],
+          [
+            "Fabrikam Support",
+            "/",
+            "3,800"
+          ],
+          [
+            "Fabrikam Support",
+            "/templates/escalation-matrix",
+            "2,600"
+          ],
+          [
+            "Initrode Systems",
+            "/",
+            "1,900"
+          ],
+          [
+            "Northwind Desk",
+            "/",
+            "310"
+          ]
+        ],
+        "align": [
+          "left",
+          "left",
+          "right"
+        ]
+      },
+      "note": "Their traffic leaders are mostly their own home and category pages, built around what buyers search. The winnable move is to build the pages you are missing and out-structure theirs, so you rank for the terms that matter. Notably, Contoso Helpdesk's single biggest page is an editorial post, not a room page: content marketing most of the field ignores and you can win."
+    },
+    {
+      "type": "table",
+      "num": "11",
+      "title": "Reputation and the switching wedge",
+      "table": {
+        "headers": [
+          "Company",
+          "Rating",
+          "Reviews",
+          "Top complaint (the wedge)"
+        ],
+        "rows": [
+          [
+            "Northwind Desk",
+            "4.8 stars",
+            "-",
+            "-"
+          ],
+          [
+            "Contoso Helpdesk",
+            "4.4 stars",
+            "3180",
+            "support wait times after the price increase"
+          ],
+          [
+            "Fabrikam Support",
+            "4.5 stars",
+            "940",
+            "limited reporting on the starter plan"
+          ],
+          [
+            "Initrode Systems",
+            "4.1 stars",
+            "-",
+            "dated interface"
+          ],
+          [
+            "Hooli Desk",
+            "4.3 stars",
+            "120",
+            "-"
+          ]
+        ],
+        "align": [
+          "left",
+          "right",
+          "right",
+          "left"
+        ]
+      },
+      "note": "Each rival's recurring complaint is the wedge: point your comparison pages and outbound at their weakest point, and pre-empt the complaints that would land on you."
+    },
+    {
+      "type": "scenarios",
+      "num": "12",
+      "title": "Where the field is buying attention: Google ads",
+      "bullets": [
+        "Google's Ads Transparency Center shows Contoso Helpdesk running about 480 live ads. Northwind Desk runs 0. Every rival's live ads are viewable in Google's public Ads Transparency Center.",
+        "This is not a call to match their spend. It shows the field is buying attention while you are not, so paid is a selective lever once your proof pages exist to convert it."
+      ],
+      "figure_title": "Live Google ads by company",
+      "figure_unit": "Ads Transparency, high-confidence matches",
+      "chart": {
+        "type": "bar_h",
+        "kind": "compact",
+        "highlight": "Northwind Desk",
+        "rows": [
+          [
+            "Contoso Helpdesk",
+            480
+          ],
+          [
+            "Fabrikam Support",
+            130
+          ],
+          [
+            "Northwind Desk",
+            0
+          ]
+        ]
+      },
+      "figure_note": "Only advertisers matched with high confidence are shown; ambiguous single-name matches are excluded."
+    },
+    {
+      "type": "scenarios",
+      "num": "13",
+      "title": "Social presence",
+      "bullets": [
+        "LinkedIn is one of the most-cited sources in AI answers and a proven channel for this category. This is where buyers research and where presence compounds into visibility.",
+        "This is a low-cost, high-leverage channel where you are currently underweight."
+      ],
+      "figure_title": "LinkedIn followers",
+      "figure_unit": "public profiles",
+      "chart": {
+        "type": "bar_h",
+        "kind": "compact",
+        "highlight": "Northwind Desk",
+        "rows": [
+          [
+            "Contoso Helpdesk",
+            48200
+          ],
+          [
+            "Fabrikam Support",
+            12600
+          ],
+          [
+            "Initrode Systems",
+            4100
+          ],
+          [
+            "Hooli Desk",
+            2250
+          ],
+          [
+            "Northwind Desk",
+            890
+          ]
+        ]
+      },
+      "note": "LinkedIn reach compounds quickly for this category. This is a low-cost, high-leverage channel to own."
+    },
+    {
+      "type": "scenarios",
+      "num": "14",
+      "title": "Site speed and Core Web Vitals",
+      "bullets": [
+        "Northwind Desk is among the faster sites in this set (2nd of 5). Core Web Vitals are a Google ranking input and a real conversion lever. On mobile, Northwind Desk scores 64 of 100 on a mobile speed test but still fails Core Web Vitals (LCP poor, layout shift good, blocking good). No competitor in this set passes Core Web Vitals, so this is shared, winnable ground."
+      ],
+      "figure_title": "Mobile performance score",
+      "figure_unit": "0-100, higher is better",
+      "chart": {
+        "type": "bar_h",
+        "kind": "compact",
+        "highlight": "Northwind Desk",
+        "rows": [
+          [
+            "Fabrikam Support",
+            69
+          ],
+          [
+            "Northwind Desk",
+            64
+          ],
+          [
+            "Hooli Desk",
+            58
+          ],
+          [
+            "Contoso Helpdesk",
+            52
+          ],
+          [
+            "Initrode Systems",
+            31
+          ]
+        ]
+      },
+      "note": "This is a controlled lab test that works for any site, including a brand-new one."
+    },
+    {
+      "type": "prose",
+      "num": "15",
+      "title": "AI visibility: is AI recommending you?",
+      "paragraphs": [
+        "More buyers now ask ChatGPT, Gemini, Perplexity, Claude, and Google's AI Overview for recommendations instead of scrolling search results. Share of Voice is how often each brand is named or cited across those engines, weighted by how much people search each query. This is who the models put in front of your buyers."
+      ],
+      "figure_title": "AI Share of Voice (% of brand mentions across engines)",
+      "figure_unit": "8 queries x 5 engines",
+      "chart": {
+        "type": "bar_h",
+        "kind": "compact",
+        "highlight": "Northwind Desk",
+        "rows": [
+          [
+            "Contoso Helpdesk",
+            57.7
+          ],
+          [
+            "Fabrikam Support",
+            32.7
+          ],
+          [
+            "Initrode Systems",
+            9.6
+          ]
+        ]
+      },
+      "figure_note": "Scope is your tracked demand set. A single scan is a sample; the value is the trend as we move you up it."
+    },
+    {
+      "type": "scenarios",
+      "num": "16",
+      "title": "AI visibility matrix: who AI recommends",
+      "bullets": [
+        "Buyers increasingly ask AI engines for a vendor shortlist. This maps each buyer question against each engine: are you cited, named, or absent while a competitor is named instead."
+      ],
+      "figure_title": "",
+      "chart": {
+        "type": "heatmap",
+        "row_labels": [
+          "best help desk software for small teams",
+          "best ticketing system for startups",
+          "shared inbox vs help desk",
+          "best customer support software",
+          "affordable help desk software",
+          "best help desk for ecommerce support",
+          "help desk with the best automation",
+          "easiest help desk to set up"
+        ],
+        "col_labels": [
+          "AI Overview",
+          "ChatGPT",
+          "Gemini",
+          "Perplexity",
+          "Claude"
+        ],
+        "cells": [
+          [
+            "competitor",
+            "absent",
+            "competitor",
+            "competitor",
+            "competitor"
+          ],
+          [
+            "competitor",
+            "competitor",
+            "absent",
+            "competitor",
+            "absent"
+          ],
+          [
+            "competitor",
+            "competitor",
+            "competitor",
+            "competitor",
+            "competitor"
+          ],
+          [
+            "competitor",
+            "competitor",
+            "competitor",
+            "competitor",
+            "competitor"
+          ],
+          [
+            "competitor",
+            "competitor",
+            "competitor",
+            "competitor",
+            "competitor"
+          ],
+          [
+            "competitor",
+            "competitor",
+            "competitor",
+            "competitor",
+            "competitor"
+          ],
+          [
+            "competitor",
+            "competitor",
+            "competitor",
+            "competitor",
+            "competitor"
+          ],
+          [
+            "competitor",
+            "competitor",
+            "competitor",
+            "competitor",
+            "competitor"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "cta",
+      "num": "17",
+      "title": "The opportunity, and how we take it",
+      "body": "This is a live snapshot of Northwind Desk's digital footprint against the field. The gaps above are the opening: the queries and AI answers your competitors have not locked down. We have the machine and the plan to move you up each one, and to prove it with the same live data you just saw. The full strategy and 90-day sequence is the next step.",
+      "contact": "Prepared from live search, review, and AI-answer data"
+    }
+  ]
+}

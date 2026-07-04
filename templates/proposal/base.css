@@ -1,0 +1,73 @@
+/* seo-geo-report-engine proposal stylesheet — print-first, reproduces the reference deck look.
+   Colors come from CSS variables that tools/proposal/build.py injects per project brand. */
+:root{
+  --primary:#0E2A47; --accent:#2BBF77; --muted:#7C8DA0; --ink:#1B2733;
+  --paper:#FFFFFF; --grid:#E6EBF0; --soft:#F6F8FA; --band:#FFF4CC;
+  --font:'Inter',-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+}
+@page{ size:A4; margin:18mm 16mm 16mm 16mm; }
+*{ box-sizing:border-box; }
+html,body{ margin:0; padding:0; }
+body{ font-family:var(--font); color:var(--ink); font-size:13px; line-height:1.5; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+
+/* ---- running header ---- */
+.kicker{ display:flex; justify-content:space-between; align-items:center; font-size:10.5px; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--muted); font-weight:600; border-bottom:1px solid var(--grid); padding-bottom:8px; margin-bottom:26px; }
+.kicker .brandmark{ color:var(--primary); font-weight:800; letter-spacing:.04em; }
+
+/* ---- cover ---- */
+.cover{ padding-top:60px; page-break-after:always; }
+.cover h1{ font-size:46px; line-height:1.05; margin:18px 0 8px; color:var(--primary); font-weight:800; letter-spacing:-.01em; }
+.cover .sub{ font-size:16px; color:var(--muted); margin:0; }
+.cover .rule{ height:3px; width:100%; background:var(--primary); margin:28px 0; border:0; }
+.cover .logo{ height:30px; }
+
+/* ---- section scaffolding ---- */
+.section{ page-break-inside:avoid; margin:0 0 30px; }
+.section.break{ page-break-before:always; }
+.s-head{ display:flex; align-items:center; gap:12px; border-bottom:2px solid var(--primary); padding-bottom:8px; margin-bottom:16px; }
+.s-num{ background:var(--accent); color:#04321f; font-weight:800; font-size:12px; padding:3px 8px; border-radius:5px; letter-spacing:.06em; }
+.s-title{ font-size:22px; font-weight:800; color:var(--primary); margin:0; }
+
+ul.lead{ list-style:none; padding:0; margin:0; }
+ul.lead li{ position:relative; padding:5px 0 5px 20px; }
+ul.lead li::before{ content:""; position:absolute; left:2px; top:11px; width:7px; height:7px; border-radius:50%; background:var(--accent); }
+ul.lead li b, ul.lead li strong{ color:var(--primary); }
+
+/* ---- pillar cards ---- */
+.pillars{ display:flex; gap:14px; margin-top:6px; }
+.pillar{ flex:1; border:1px solid var(--grid); border-radius:8px; overflow:hidden; }
+.pillar .cap{ background:var(--primary); color:#fff; text-align:center; padding:10px; }
+.pillar:last-child .cap{ background:var(--accent); color:#04321f; }
+.pillar .cap .tag{ font-size:10px; letter-spacing:.14em; opacity:.85; text-transform:uppercase; }
+.pillar .cap .name{ font-size:15px; font-weight:800; }
+.pillar .cap .when{ font-size:9.5px; letter-spacing:.1em; opacity:.8; text-transform:uppercase; }
+.pillar ul{ list-style:none; margin:0; padding:12px 14px; }
+.pillar li{ position:relative; padding:4px 0 4px 14px; font-size:12px; }
+.pillar li::before{ content:""; position:absolute; left:0; top:10px; width:5px; height:5px; border-radius:50%; background:var(--muted); }
+
+/* ---- detail groups (pillar deep dives) ---- */
+.group{ margin:14px 0; }
+.group h4{ color:var(--primary); font-size:14px; margin:0 0 6px; }
+.deliverables{ background:var(--soft); border-radius:8px; padding:10px 14px; margin-top:8px; }
+.deliverables .lbl{ font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); font-weight:700; margin-bottom:4px; }
+
+/* ---- figure / chart box ---- */
+.figure{ border:1px solid var(--grid); border-radius:10px; padding:16px 18px; margin:12px 0; }
+.figure .fhead{ display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px; }
+.figure .ftitle{ font-weight:800; color:var(--ink); font-size:14px; }
+.figure .fnote, .note{ color:var(--muted); font-size:11.5px; margin-top:8px; }
+.callout{ background:var(--soft); border-left:3px solid var(--accent); padding:10px 14px; border-radius:0 8px 8px 0; margin:10px 0; }
+
+/* ---- tables ---- */
+table.kv{ width:100%; border-collapse:collapse; }
+table.kv th{ text-align:left; font-size:11px; letter-spacing:.04em; text-transform:uppercase; color:var(--muted);
+  border-bottom:2px solid var(--primary); padding:8px 10px; }
+table.kv td{ border-bottom:1px solid var(--grid); padding:7px 10px; font-size:12.5px; }
+table.kv tr.group-row td{ font-weight:700; color:var(--primary); border-bottom:none; padding-top:12px; }
+
+.cta{ background:var(--primary); color:#fff; border-radius:12px; padding:24px 26px; }
+.cta h3{ margin:0 0 6px; font-size:20px; }
+.cta a{ color:var(--accent); }
+.small{ font-size:11px; color:var(--muted); }
+.spacer{ height:10px; }

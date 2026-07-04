@@ -1,0 +1,72 @@
+{
+  "Vandelay Roasters": {
+    "domain": "vandelay-roasters.example",
+    "pages": [
+      {
+        "url": "https://vandelay-roasters.example/learn/how-to-store-coffee-beans",
+        "etv": 5200,
+        "keywords": 210
+      },
+      {
+        "url": "https://vandelay-roasters.example/",
+        "etv": 3900,
+        "keywords": 160
+      },
+      {
+        "url": "https://vandelay-roasters.example/learn/cold-brew-ratio",
+        "etv": 2800,
+        "keywords": 120
+      }
+    ]
+  },
+  "Globex Coffee": {
+    "domain": "globex-coffee.example",
+    "pages": [
+      {
+        "url": "https://globex-coffee.example/",
+        "etv": 8900,
+        "keywords": 320
+      },
+      {
+        "url": "https://globex-coffee.example/subscriptions",
+        "etv": 6100,
+        "keywords": 240
+      },
+      {
+        "url": "https://globex-coffee.example/gifts",
+        "etv": 2400,
+        "keywords": 90
+      }
+    ]
+  },
+  "Initech Brew Co.": {
+    "domain": "initech-brew.example",
+    "pages": [
+      {
+        "url": "https://initech-brew.example/blog/grind-size-chart",
+        "etv": 2300,
+        "keywords": 140
+      },
+      {
+        "url": "https://initech-brew.example/",
+        "etv": 1900,
+        "keywords": 85
+      }
+    ]
+  },
+  "Acme Roastworks": {
+    "domain": "acme-roastworks.example",
+    "pages": [
+      {
+        "url": "https://acme-roastworks.example/",
+        "etv": 260,
+        "keywords": 30
+      },
+      {
+        "url": "https://acme-roastworks.example/shop",
+        "etv": 120,
+        "keywords": 18
+      }
+    ]
+  }
+}

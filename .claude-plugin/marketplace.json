@@ -1,0 +1,17 @@
+{
+  "name": "seo-geo-report-engine",
+  "owner": {
+    "name": "Prashish Rajbhandari",
+    "email": "namaste@prashish.xyz"
+  },
+  "plugins": [
+    {
+      "name": "seo-geo-report-engine",
+      "source": "./",
+      "description": "SEO / GEO report engine \u2014 skills, workflows, tools, and branded deliverables.",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "productivity"
+    }
+  ]
+}

@@ -1,0 +1,633 @@
+{
+  "domain": "acme-roastworks.example",
+  "location": 2840,
+  "date": "sample data",
+  "engines": [
+    "google_aio",
+    "chatgpt",
+    "gemini",
+    "perplexity",
+    "claude"
+  ],
+  "rows": [
+    {
+      "prompt": "best coffee subscription service",
+      "engine": "google_aio",
+      "model": "google_aio",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters",
+        "Globex Coffee"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best coffee subscription service",
+      "engine": "chatgpt",
+      "model": "chatgpt",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters",
+        "Globex Coffee"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best coffee subscription service",
+      "engine": "gemini",
+      "model": "gemini",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Globex Coffee"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best coffee subscription service",
+      "engine": "perplexity",
+      "model": "perplexity",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters",
+        "Globex Coffee"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best coffee subscription service",
+      "engine": "claude",
+      "model": "claude",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Globex Coffee"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best single origin coffee online",
+      "engine": "google_aio",
+      "model": "google_aio",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters",
+        "Globex Coffee"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best single origin coffee online",
+      "engine": "chatgpt",
+      "model": "chatgpt",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters",
+        "Initech Brew Co."
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best single origin coffee online",
+      "engine": "gemini",
+      "model": "gemini",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best single origin coffee online",
+      "engine": "perplexity",
+      "model": "perplexity",
+      "answered": true,
+      "brand_mentioned": true,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters",
+        "Globex Coffee"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best single origin coffee online",
+      "engine": "claude",
+      "model": "claude",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters",
+        "Beanline"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "freshest coffee beans delivered",
+      "engine": "google_aio",
+      "model": "google_aio",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "freshest coffee beans delivered",
+      "engine": "chatgpt",
+      "model": "chatgpt",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Globex Coffee"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "freshest coffee beans delivered",
+      "engine": "gemini",
+      "model": "gemini",
+      "answered": true,
+      "brand_mentioned": true,
+      "brand_cited": true,
+      "cited_domains": [
+        "acme-roastworks.example"
+      ],
+      "competitors_present": [
+        "Vandelay Roasters",
+        "Globex Coffee",
+        "Initech Brew Co."
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "freshest coffee beans delivered",
+      "engine": "perplexity",
+      "model": "perplexity",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "freshest coffee beans delivered",
+      "engine": "claude",
+      "model": "claude",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters",
+        "Globex Coffee",
+        "Initech Brew Co."
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best coffee subscription for gifts",
+      "engine": "google_aio",
+      "model": "google_aio",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters",
+        "Globex Coffee"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best coffee subscription for gifts",
+      "engine": "chatgpt",
+      "model": "chatgpt",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best coffee subscription for gifts",
+      "engine": "gemini",
+      "model": "gemini",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Globex Coffee"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best coffee subscription for gifts",
+      "engine": "perplexity",
+      "model": "perplexity",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters",
+        "Globex Coffee"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best coffee subscription for gifts",
+      "engine": "claude",
+      "model": "claude",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Globex Coffee"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best light roast coffee online",
+      "engine": "google_aio",
+      "model": "google_aio",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best light roast coffee online",
+      "engine": "chatgpt",
+      "model": "chatgpt",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters",
+        "Globex Coffee"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best light roast coffee online",
+      "engine": "gemini",
+      "model": "gemini",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best light roast coffee online",
+      "engine": "perplexity",
+      "model": "perplexity",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters",
+        "Beanline"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best light roast coffee online",
+      "engine": "claude",
+      "model": "claude",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "coffee subscription vs buying bags",
+      "engine": "google_aio",
+      "model": "google_aio",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Globex Coffee",
+        "Initech Brew Co."
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "coffee subscription vs buying bags",
+      "engine": "chatgpt",
+      "model": "chatgpt",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Globex Coffee"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "coffee subscription vs buying bags",
+      "engine": "gemini",
+      "model": "gemini",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters",
+        "Globex Coffee"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "coffee subscription vs buying bags",
+      "engine": "perplexity",
+      "model": "perplexity",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Globex Coffee",
+        "Initech Brew Co."
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "coffee subscription vs buying bags",
+      "engine": "claude",
+      "model": "claude",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters",
+        "Globex Coffee"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best specialty coffee roaster online",
+      "engine": "google_aio",
+      "model": "google_aio",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters",
+        "Globex Coffee"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best specialty coffee roaster online",
+      "engine": "chatgpt",
+      "model": "chatgpt",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best specialty coffee roaster online",
+      "engine": "gemini",
+      "model": "gemini",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best specialty coffee roaster online",
+      "engine": "perplexity",
+      "model": "perplexity",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters",
+        "Globex Coffee"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best specialty coffee roaster online",
+      "engine": "claude",
+      "model": "claude",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best decaf coffee subscription",
+      "engine": "google_aio",
+      "model": "google_aio",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best decaf coffee subscription",
+      "engine": "chatgpt",
+      "model": "chatgpt",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters",
+        "Globex Coffee"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best decaf coffee subscription",
+      "engine": "gemini",
+      "model": "gemini",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters",
+        "Globex Coffee",
+        "Beanline"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best decaf coffee subscription",
+      "engine": "perplexity",
+      "model": "perplexity",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    },
+    {
+      "prompt": "best decaf coffee subscription",
+      "engine": "claude",
+      "model": "claude",
+      "answered": true,
+      "brand_mentioned": false,
+      "brand_cited": false,
+      "cited_domains": [],
+      "competitors_present": [
+        "Vandelay Roasters",
+        "Globex Coffee"
+      ],
+      "snippet": "",
+      "cost": 0,
+      "error": null
+    }
+  ]
+}

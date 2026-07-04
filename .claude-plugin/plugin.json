@@ -1,0 +1,21 @@
+{
+  "name": "seo-geo-report-engine",
+  "displayName": "SEO GEO Report",
+  "description": "Open-source SEO / AI-search (GEO) report engine \u2014 18-section competitive scans, keyword and backlink gaps, AI-visibility matrix across 5 engines, branded PDF reports and growth proposals.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Prashish Rajbhandari",
+    "email": "namaste@prashish.xyz"
+  },
+  "license": "MIT",
+  "keywords": [
+    "seo",
+    "geo",
+    "ai-search",
+    "marketing",
+    "growth",
+    "ahrefs",
+    "programmatic-seo",
+    "reporting"
+  ]
+}

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>seo-geo-report-engine, an open-source SEO and AI-search report engine</title>
+<meta name="description" content="Are you seen across search, AI, and social? An open-source SEO and AI-search (GEO) report engine. Point it at any website for an 18-section competitive report as a branded PDF covering AI visibility, backlinks, traffic share, greenfield keywords, reputation, social and more.">
+<link rel="canonical" href="https://geoseo-visibility.prashish.xyz/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Turn any URL into a full competitive report">
+<meta property="og:description" content="Are you seen across search, AI, and social? An open-source SEO and AI-search (GEO) report engine. Point it at any website for an 18-section competitive report as a branded PDF covering AI visibility, backlinks, traffic share, greenfield keywords, reputation, social and more.">
+<meta property="og:url" content="https://geoseo-visibility.prashish.xyz/">
+<meta property="og:image" content="https://geoseo-visibility.prashish.xyz/assets/shot-summary.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Turn any URL into a full competitive report">
+<meta name="twitter:description" content="Are you seen across search, AI, and social? An open-source SEO and AI-search (GEO) report engine. Point it at any website for an 18-section competitive report as a branded PDF covering AI visibility, backlinks, traffic share, greenfield keywords, reputation, social and more.">
+<meta name="twitter:image" content="https://geoseo-visibility.prashish.xyz/assets/shot-summary.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "seo-geo-report-engine", "description": "Are you seen across search, AI, and social? An open-source SEO and AI-search (GEO) report engine. Point it at any website for an 18-section competitive report as a branded PDF covering AI visibility, backlinks, traffic share, greenfield keywords, reputation, social and more.", "url": "https://geoseo-visibility.prashish.xyz/", "applicationCategory": "BusinessApplication", "operatingSystem": "macOS, Linux, Windows", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "license": "https://opensource.org/license/mit/", "sameAs": ["https://github.com/prashishh/seo-geo-report-engine"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does this actually check?", "acceptedAnswer": {"@type": "Answer", "text": "It checks how visible a company is across classic search and AI answers. Rankings, backlinks, traffic share, reviews, ads, social reach, site speed, and whether ChatGPT, Gemini, Claude, Perplexity and Google AI Overviews recommend the brand or its competitors."}}, {"@type": "Question", "name": "How much does it cost to run?", "acceptedAnswer": {"@type": "Answer", "text": "The software is free and MIT licensed. The demo report renders with no accounts at all. A real scan of one company plus about eight competitors costs one to two dollars in pay-as-you-go API credit."}}, {"@type": "Question", "name": "What is GEO?", "acceptedAnswer": {"@type": "Answer", "text": "GEO stands for generative engine optimization, the practice of making a brand visible and citable inside AI answers. It is the AI-era counterpart to SEO, and this engine measures both."}}, {"@type": "Question", "name": "Can I get the report without installing anything?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Email your website to namaste@prashish.xyz and the first scan comes back as soon as possible."}}]}</script>
+<style>
+  :root{
+    --paper:#faf7f2; --ink:#191613; --muted:#6b6459; --accent:#20563a;
+    --rule:#191613; --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+    --serif:"Iowan Old Style",Palatino,"Palatino Linotype",Georgia,serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{font-size:17px}
+  body{background:var(--paper);color:var(--ink);font-family:var(--serif);line-height:1.55}
+  .wrap{max-width:60rem;margin:0 auto;padding:0 1.5rem}
+  a{color:var(--accent)}
+  header.wrap{padding-top:5.5rem}
+  h1{font-size:2.5rem;line-height:1.12;font-weight:600;margin:0 0 1rem;letter-spacing:-.01em;max-width:52rem}
+  .sub{font-size:1.18rem;font-style:italic;color:#40392f;margin-bottom:1.4rem;max-width:46rem}
+  .expect{list-style:none;margin:0 0 1.6rem}
+  .expect li{padding:.24rem 0 .24rem 1.4rem;position:relative;font-size:.98rem;max-width:46rem}
+  .expect li::before{content:"·";position:absolute;left:.2rem;color:var(--accent);font-weight:700}
+  .rule{border:0;border-top:1px solid var(--rule);margin:3.4rem 0 2.8rem}
+  section{padding:0}
+  h2{font-size:1.45rem;font-weight:600;margin-bottom:.9rem}
+  h3{font-size:1.02rem;font-weight:600;margin:1.2rem 0 .35rem}
+  p{margin-bottom:.95rem;max-width:46rem}
+  .term{background:var(--ink);color:#e9e4da;font-family:var(--mono);font-size:.8rem;line-height:1.7;padding:1.1rem 1.2rem;overflow-x:auto;margin:1.4rem 0;white-space:pre}
+  .term .c{color:#8a8378}
+  .term .g{color:#7fbf9a}
+  figure{margin:1.8rem 0}
+  figure img{width:100%;display:block;border:1px solid var(--ink)}
+  figcaption{font-family:var(--mono);font-size:.72rem;letter-spacing:.04em;color:var(--muted);margin-top:.5rem}
+  .steps{counter-reset:s;list-style:none;margin:.4rem 0 1.2rem}
+  .steps li{counter-increment:s;padding:.55rem 0 .55rem 2.6rem;position:relative;max-width:46rem}
+  .steps li::before{content:counter(s,decimal-leading-zero);position:absolute;left:0;top:.7rem;font-family:var(--mono);font-size:.72rem;color:var(--accent)}
+  .steps b{font-weight:600}
+  table{border-collapse:collapse;width:100%;font-size:.86rem;margin:.8rem 0 1.2rem}
+  th,td{text-align:left;padding:.5rem .6rem .5rem 0;border-bottom:1px solid #d8d1c3;vertical-align:top}
+  th{font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:500}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:.6rem}
+  @media(max-width:700px){.split{grid-template-columns:1fr}html{font-size:16px}h1{font-size:1.95rem}header.wrap{padding-top:3.5rem}}
+  .btn{display:inline-block;font-family:var(--mono);font-size:.8rem;letter-spacing:.06em;padding:.65rem 1.1rem;border:1px solid var(--ink);color:var(--ink);text-decoration:none;background:transparent;margin:0 .5rem .5rem 0}
+  .btn:hover{background:var(--ink);color:var(--paper)}
+  .btn.solid{background:var(--accent);border-color:var(--accent);color:#fff}
+  .btn.solid:hover{background:#17402b;border-color:#17402b}
+  footer{margin-top:3.4rem;padding:1.6rem 0 3.2rem;border-top:1px solid var(--rule);font-family:var(--mono);font-size:.74rem}
+  .fine{font-size:.82rem;color:var(--muted);max-width:46rem}
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <h1>Turn any URL into a full competitive report</h1>
+  <p class="sub">See where your product stands, who is winning its buyers, and what to do about it</p>
+  <ul class="expect">
+    <li>AI visibility across ChatGPT, Gemini, Claude, Perplexity and Google AI Overviews</li>
+    <li>Backlink profile and the link gap, with a vetted outreach list</li>
+    <li>Traffic share, share of search and a greenfield keyword map</li>
+    <li>Reputation, ads footprint, social reach and site speed against every rival</li>
+    <li>An 18-section branded PDF, ready to send the same day</li>
+  </ul>
+  <p>
+    <a class="btn" href="https://github.com/prashishh/seo-geo-report-engine">View on GitHub</a>
+    <a class="btn" href="assets/sample-report-1.pdf">Sample report 1 (PDF)</a>
+    <a class="btn" href="assets/sample-report-2.pdf">Sample report 2 (PDF)</a>
+    <a class="btn" href="capabilities.html">All capabilities</a>
+  </p>
+  <hr class="rule">
+</header>
+
+<section class="wrap">
+  <h2>What it looks like</h2>
+  <p>Both sample reports come from the fictional demo companies that ship with the repo, so you
+  can reproduce every page yourself before adding a single API key.</p>
+  <figure>
+    <img src="assets/shot-summary.png" alt="Report opening page with headline findings and a domain authority chart" loading="lazy">
+    <figcaption>Every headline on the opening spread is computed from the scan's own numbers</figcaption>
+  </figure>
+  <figure>
+    <img src="assets/shot-greenfield.png" alt="Greenfield opportunity map plotting demand against winnability for buyer queries" loading="lazy">
+    <figcaption>The greenfield map plots demand against winnability for every buyer query in the niche</figcaption>
+  </figure>
+  <figure>
+    <img src="assets/shot-matrix.png" alt="AI visibility matrix showing eight buyer questions across five AI engines" loading="lazy">
+    <figcaption>The AI visibility matrix checks eight buyer questions across five engines, cell by cell</figcaption>
+  </figure>
+  <hr class="rule">
+</section>
+
+<section class="wrap">
+  <h2>How it works</h2>
+  <p>Give it a website. Yours, a client's, or a competitor's.</p>
+  <ol class="steps">
+    <li><b>It maps the field.</b> You name the competitors, or let it find them from the site
+        itself.</li>
+    <li><b>It pulls the live numbers.</b> Search rankings and traffic, backlinks, review counts
+        and ratings, live Google Ads activity, social following, site speed, and what ChatGPT,
+        Gemini, Claude, Perplexity and Google AI actually say when buyers ask for a
+        recommendation.</li>
+    <li><b>It finds the story.</b> Who owns the category's traffic. Which links competitors have
+        that you are missing, and which are worth chasing. Which keywords are wide-open greenfield
+        nobody has claimed. Whether AI engines recommend you or your rivals, question by
+        question.</li>
+    <li><b>It writes the report.</b> A branded PDF where every headline comes straight from the
+        data. Send it as is, or edit it first. There is also a live dashboard if you would rather
+        browse the data than read a deck.</li>
+  </ol>
+  <p><b>Free to download and run.</b> The demo report costs nothing and needs no accounts. A real
+  scan of a company plus eight competitors costs about one to two dollars in API credit.</p>
+  <div class="term"><span class="c"># try it in two minutes, no API keys</span>
+$ git clone https://github.com/prashishh/seo-geo-report-engine.git &amp;&amp; cd seo-geo-report-engine
+$ python3 tools/report/first_scan.py --project demo --date "sample data" --render
+<span class="g">assembled first-scan report: 18 sections</span>
+<span class="g">rendered -&gt; projects/demo/deliverables/demo-first-scan.pdf</span></div>
+  <table>
+    <tr><th>Account</th><th>What it powers</th><th>Cost</th></tr>
+    <tr><td>DataForSEO</td><td>rankings, keywords, backlinks, AI answers, reviews, ads, speed tests</td><td>pay as you go, $1 to $2 per full scan</td></tr>
+    <tr><td>OpenRouter</td><td>reputation themes and cited live research</td><td>optional, cents</td></tr>
+    <tr><td>Apify</td><td>social following and public profile data</td><td>optional, free tier</td></tr>
+    <tr><td>PredictLeads, Open PageRank, Moz</td><td>funding signals and authority cross-checks</td><td>optional, free tiers</td></tr>
+  </table>
+  <p class="fine">The report is one part of a larger kit. There are 33 skills and 8 workflows
+  covering keyword research, comparison pages, programmatic SEO, growth proposals and recurring
+  client reports. <a href="capabilities.html">See everything it can do.</a></p>
+  <hr class="rule">
+</section>
+
+<section class="wrap">
+  <h2>For AI agents</h2>
+  <p>Working inside Claude Code, Codex, or another agent harness? Clone the repo and read
+  <a href="https://github.com/prashishh/seo-geo-report-engine/blob/main/CLAUDE.md">CLAUDE.md</a>
+  for routing. The skills register automatically, every tool is plain stdlib Python with flags an
+  agent can call directly, and a machine-readable summary lives at
+  <a href="llms.txt">llms.txt</a>. The <a href="capabilities.html">capabilities page</a> lists
+  every skill, workflow and report section in one place.</p>
+  <hr class="rule">
+</section>
+
+<section class="wrap">
+  <h2>Common questions</h2>
+  <h3>What does this actually check?</h3>
+  <p>It checks how visible a company is across classic search and AI answers. Rankings, backlinks, traffic share, reviews, ads, social reach, site speed, and whether ChatGPT, Gemini, Claude, Perplexity and Google AI Overviews recommend the brand or its competitors.</p>
+  <h3>How much does it cost to run?</h3>
+  <p>The software is free and MIT licensed. The demo report renders with no accounts at all. A real scan of one company plus about eight competitors costs one to two dollars in pay-as-you-go API credit.</p>
+  <h3>What is GEO?</h3>
+  <p>GEO stands for generative engine optimization, the practice of making a brand visible and citable inside AI answers. It is the AI-era counterpart to SEO, and this engine measures both.</p>
+  <h3>Can I get the report without installing anything?</h3>
+  <p>Yes. Email your website to namaste@prashish.xyz and the first scan comes back as soon as possible.</p>
+  <hr class="rule">
+</section>
+
+<section class="wrap" id="contact">
+  <div class="split">
+    <div>
+      <h2>Run it yourself</h2>
+      <p>Clone the repo, add your keys, and the whole practice is yours. The skills, the report
+      pipeline, and the playbooks that explain the methodology behind each one. MIT licensed,
+      used in production, provided as-is.</p>
+      <p><a class="btn" href="https://github.com/prashishh/seo-geo-report-engine">github.com/prashishh/seo-geo-report-engine</a></p>
+    </div>
+    <div>
+      <h2>Or have it run for you</h2>
+      <p>Want this report for your company without touching a terminal? Email me your website and
+      I will send the first scan back as soon as possible.</p>
+      <p><a class="btn solid" href="mailto:namaste@prashish.xyz?subject=First%20scan%20request">namaste@prashish.xyz</a></p>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <a href="https://github.com/prashishh/seo-geo-report-engine">seo-geo-report-engine on GitHub</a>
+</footer>
+
+</body>
+</html>

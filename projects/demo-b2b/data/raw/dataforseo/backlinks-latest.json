@@ -1,0 +1,261 @@
+{
+  "client": "Northwind Desk",
+  "client_domain": "northwind-desk.example",
+  "profiles": {
+    "Contoso Helpdesk": {
+      "domain": "contoso-help.example",
+      "referring_domains": 6200,
+      "backlinks": 84100,
+      "rank": 580,
+      "rank_norm": 58.0,
+      "spam_score": 14
+    },
+    "Fabrikam Support": {
+      "domain": "fabrikam-support.example",
+      "referring_domains": 2100,
+      "backlinks": 18800,
+      "rank": 410,
+      "rank_norm": 41.0,
+      "spam_score": 19
+    },
+    "Initrode Systems": {
+      "domain": "initrode.example",
+      "referring_domains": 980,
+      "backlinks": 7400,
+      "rank": 330,
+      "rank_norm": 33.0,
+      "spam_score": 24
+    },
+    "Hooli Desk": {
+      "domain": "hooli-desk.example",
+      "referring_domains": 410,
+      "backlinks": 1900,
+      "rank": 260,
+      "rank_norm": 26.0,
+      "spam_score": 12
+    },
+    "Northwind Desk": {
+      "domain": "northwind-desk.example",
+      "referring_domains": 180,
+      "backlinks": 520,
+      "rank": 210,
+      "rank_norm": 21.0,
+      "spam_score": 8
+    }
+  },
+  "client_top_refs": [
+    {
+      "domain": "supportstacknews.example",
+      "rank": 175,
+      "backlinks": 1
+    },
+    {
+      "domain": "founderblog.example",
+      "rank": 45,
+      "backlinks": 3
+    }
+  ],
+  "gap_targets_from": [
+    "Contoso Helpdesk",
+    "Fabrikam Support",
+    "Initrode Systems"
+  ],
+  "gap_count": 28,
+  "gap_quality_count": 4,
+  "gap_quality": [
+    {
+      "domain": "helpdeskreview.example",
+      "rank": 230,
+      "spam": 3,
+      "intersections": 3
+    },
+    {
+      "domain": "supportstacknews.example",
+      "rank": 175,
+      "spam": 5,
+      "intersections": 3
+    },
+    {
+      "domain": "saasdirectory.example",
+      "rank": 150,
+      "spam": 7,
+      "intersections": 2
+    },
+    {
+      "domain": "cxweekly.example",
+      "rank": 128,
+      "spam": 4,
+      "intersections": 2
+    }
+  ],
+  "gap": [
+    {
+      "domain": "helpdeskreview.example",
+      "rank": 230,
+      "spam": 3,
+      "intersections": 3
+    },
+    {
+      "domain": "supportstacknews.example",
+      "rank": 175,
+      "spam": 5,
+      "intersections": 3
+    },
+    {
+      "domain": "saasdirectory.example",
+      "rank": 150,
+      "spam": 7,
+      "intersections": 2
+    },
+    {
+      "domain": "cxweekly.example",
+      "rank": 128,
+      "spam": 4,
+      "intersections": 2
+    },
+    {
+      "domain": "seofarm0.example",
+      "rank": 0,
+      "spam": 55,
+      "intersections": 2
+    },
+    {
+      "domain": "seofarm1.example",
+      "rank": 0,
+      "spam": 56,
+      "intersections": 2
+    },
+    {
+      "domain": "seofarm2.example",
+      "rank": 0,
+      "spam": 57,
+      "intersections": 2
+    },
+    {
+      "domain": "seofarm3.example",
+      "rank": 0,
+      "spam": 58,
+      "intersections": 2
+    },
+    {
+      "domain": "seofarm4.example",
+      "rank": 0,
+      "spam": 59,
+      "intersections": 2
+    },
+    {
+      "domain": "seofarm5.example",
+      "rank": 0,
+      "spam": 60,
+      "intersections": 2
+    },
+    {
+      "domain": "seofarm6.example",
+      "rank": 0,
+      "spam": 61,
+      "intersections": 2
+    },
+    {
+      "domain": "seofarm7.example",
+      "rank": 0,
+      "spam": 62,
+      "intersections": 2
+    },
+    {
+      "domain": "seofarm8.example",
+      "rank": 0,
+      "spam": 63,
+      "intersections": 2
+    },
+    {
+      "domain": "seofarm9.example",
+      "rank": 0,
+      "spam": 64,
+      "intersections": 2
+    },
+    {
+      "domain": "seofarm10.example",
+      "rank": 0,
+      "spam": 65,
+      "intersections": 2
+    },
+    {
+      "domain": "seofarm11.example",
+      "rank": 0,
+      "spam": 66,
+      "intersections": 2
+    },
+    {
+      "domain": "seofarm12.example",
+      "rank": 0,
+      "spam": 67,
+      "intersections": 2
+    },
+    {
+      "domain": "seofarm13.example",
+      "rank": 0,
+      "spam": 68,
+      "intersections": 2
+    },
+    {
+      "domain": "seofarm14.example",
+      "rank": 0,
+      "spam": 69,
+      "intersections": 2
+    },
+    {
+      "domain": "seofarm15.example",
+      "rank": 0,
+      "spam": 70,
+      "intersections": 2
+    },
+    {
+      "domain": "seofarm16.example",
+      "rank": 0,
+      "spam": 71,
+      "intersections": 2
+    },
+    {
+      "domain": "seofarm17.example",
+      "rank": 0,
+      "spam": 72,
+      "intersections": 2
+    },
+    {
+      "domain": "seofarm18.example",
+      "rank": 0,
+      "spam": 73,
+      "intersections": 2
+    },
+    {
+      "domain": "seofarm19.example",
+      "rank": 0,
+      "spam": 74,
+      "intersections": 2
+    },
+    {
+      "domain": "seofarm20.example",
+      "rank": 0,
+      "spam": 75,
+      "intersections": 2
+    },
+    {
+      "domain": "seofarm21.example",
+      "rank": 0,
+      "spam": 76,
+      "intersections": 2
+    },
+    {
+      "domain": "seofarm22.example",
+      "rank": 0,
+      "spam": 77,
+      "intersections": 2
+    },
+    {
+      "domain": "seofarm23.example",
+      "rank": 0,
+      "spam": 78,
+      "intersections": 2
+    }
+  ]
+}

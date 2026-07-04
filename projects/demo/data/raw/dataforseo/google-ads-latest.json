@@ -1,0 +1,56 @@
+{
+  "Acme Roastworks": {
+    "domain": "acme-roastworks.example",
+    "ads_count": 0,
+    "match_title": null,
+    "advertiser_id": null,
+    "confidence": "not found",
+    "advertisers_seen": 4,
+    "transparency_url": null
+  },
+  "Globex Coffee": {
+    "domain": "globex-coffee.example",
+    "ads_count": 240,
+    "match_title": "Globex Coffee Inc.",
+    "advertiser_id": null,
+    "confidence": "high",
+    "advertisers_seen": 6,
+    "transparency_url": null
+  },
+  "Vandelay Roasters": {
+    "domain": "vandelay-roasters.example",
+    "ads_count": 85,
+    "match_title": "Vandelay Roasters",
+    "advertiser_id": null,
+    "confidence": "high",
+    "advertisers_seen": 3,
+    "transparency_url": null
+  },
+  "Initech Brew Co.": {
+    "domain": "initech-brew.example",
+    "ads_count": 12,
+    "match_title": "Initech Brew Co.",
+    "advertiser_id": null,
+    "confidence": "high",
+    "advertisers_seen": 2,
+    "transparency_url": null
+  },
+  "Beanline": {
+    "domain": "beanline.example",
+    "ads_count": 0,
+    "match_title": null,
+    "advertiser_id": null,
+    "confidence": "not found",
+    "advertisers_seen": 1,
+    "transparency_url": null
+  },
+  "Cupwell": {
+    "domain": "cupwell.example",
+    "ads_count": 0,
+    "match_title": null,
+    "advertiser_id": null,
+    "confidence": "not found",
+    "advertisers_seen": 0,
+    "transparency_url": null
+  }
+}

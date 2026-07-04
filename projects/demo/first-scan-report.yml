@@ -1,0 +1,963 @@
+{
+  "meta": {
+    "dense": true,
+    "badge": "Digital Presence Scan",
+    "client": "Acme Roastworks",
+    "title": "Acme Roastworks: Your Digital Footprint and the Opportunity",
+    "subtitle": "Where you stand, who is winning your buyers, and the winnable path to overtake them. Live data, sample data.",
+    "date": "sample data",
+    "author": "seo-geo-report-engine"
+  },
+  "sections": [
+    {
+      "type": "summary",
+      "num": "01",
+      "title": "Where you stand today",
+      "bullets": [
+        "**Authority: you sit 5th of 6** in the category (authority 24 vs the leader Globex Coffee at 52). Authority here is a cross-source consensus (dataforseo, openpagerank).",
+        "**You are about 1.9% of your category's traffic; Globex Coffee is 54.0%.** Organic share is winnable and far cheaper to take than paid.",
+        "**You hold about 4.1% of branded search in your set, and it is rising.** Share of search is a leading indicator of market share, so this is the demand you are building before it converts.",
+        "**You are leaving about $214,600/mo of organic traffic value on the table.** Competitors capture ~160,550 visits/mo; you capture ~3,120. 38 buyer keywords they rank for and you do not.",
+        "**The field is scaling fast, and the hiring shows where.** Your rivals have 100 open roles right now, concentrated in engineering (41) and sales (28). Where they are not hiring is where the open ground is.",
+        "**The opportunity is real demand you are not yet capturing.** 'coffee subscription' alone is 27,100 searches/mo, and rivals already rank for 6 terms you do not.",
+        "**7 greenfield opportunities**: real buyer demand, winnable difficulty, and no competitor has locked in the AI answer. This is where to attack first.",
+        "**Your social reach trails the field.** Acme Roastworks has about 9,200 Instagram followers; Globex Coffee has 148,000. This is a low-cost channel to close.",
+        "**AI visibility: you hold 3.2% share of voice** across 5 AI engines on 8 real queries; Vandelay Roasters holds 44.4%. You appear in 2 of 5 engines (gemini, perplexity). When someone asks an AI in your category, this is who it names.",
+        "**In AI answers to buyer questions, you appear in 2 of 40 places.** Competitors own the rest. This is the shortlist your buyers now ask AI for first."
+      ],
+      "pillars": [
+        {
+          "tag": "Lane 1",
+          "name": "Own the AI answer",
+          "when": "where you are absent today",
+          "items": [
+            "Be the cited source when AI names your category",
+            "Answer-first pages + third-party mentions"
+          ]
+        },
+        {
+          "tag": "Lane 2",
+          "name": "Capture the demand gap",
+          "when": "searches rivals hold",
+          "items": [
+            "Build the pages for the queries you are missing",
+            "High-intent, winnable difficulty first"
+          ]
+        },
+        {
+          "tag": "Lane 3",
+          "name": "Grow authority",
+          "when": "the compounding moat",
+          "items": [
+            "Earn the mentions that lift authority + AI citation",
+            "Turn tools/data into linkable assets"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "num": "02",
+      "title": "Authority: how you stack up",
+      "paragraphs": [
+        "Domain authority estimates how much trust a site has earned. We read it from several independent sources and take the consensus, so no single tool's quirk drives the picture. Taller is stronger."
+      ],
+      "figure_title": "Cross-source domain authority (0-100)",
+      "figure_unit": "consensus of 2 sources, sample data",
+      "chart": {
+        "type": "bar_h",
+        "kind": "compact",
+        "highlight": "Acme Roastworks",
+        "rows": [
+          [
+            "Globex Coffee",
+            52
+          ],
+          [
+            "Vandelay Roasters",
+            44
+          ],
+          [
+            "Initech Brew Co.",
+            38
+          ],
+          [
+            "Beanline",
+            27
+          ],
+          [
+            "Acme Roastworks",
+            24
+          ],
+          [
+            "Cupwell",
+            19
+          ]
+        ]
+      },
+      "figure_note": "Authority is earned mostly through other reputable sites linking to you. It is a proxy, not a Google metric, but it tracks how hard a domain is to outrank."
+    },
+    {
+      "type": "scenarios",
+      "num": "03",
+      "title": "Backlinks: the authority gap and how to close it",
+      "bullets": [
+        "Links from other websites are still the strongest off-page ranking signal and a direct input to the authority that wins both search and AI citations. Acme Roastworks has 310 referring domains, 5th of 6 in this set; Globex Coffee has 4,100.",
+        "Volume is not the whole story. Globex Coffee's link profile carries a 28/100 spam score versus Acme Roastworks' 11/100, so a large share of that lead is low-quality directory and link-farm links, not editorial coverage. The goal is quality links, not the count.",
+        "We pulled the domains that link to Globex Coffee, Vandelay Roasters, Initech Brew Co. but not to Acme Roastworks. 6 are real, relevant sites worth pursuing (for example brewtrade.example, roastersguild.example, coffeereviewhub.example), and the full vetted list is handed off as a ready outreach target set. Every one it converts closes the gap above."
+      ],
+      "figure_title": "Referring domains by company",
+      "figure_unit": "unique linking domains",
+      "chart": {
+        "type": "bar_h",
+        "kind": "compact",
+        "highlight": "Acme Roastworks",
+        "rows": [
+          [
+            "Globex Coffee",
+            4100
+          ],
+          [
+            "Vandelay Roasters",
+            2900
+          ],
+          [
+            "Initech Brew Co.",
+            1750
+          ],
+          [
+            "Beanline",
+            640
+          ],
+          [
+            "Acme Roastworks",
+            310
+          ],
+          [
+            "Cupwell",
+            220
+          ]
+        ]
+      },
+      "figure_note": "Referring domains count unique websites linking to each domain, the clearest measure of earned authority. The gap list is a concrete, handoff-ready target set."
+    },
+    {
+      "type": "prose",
+      "num": "04",
+      "title": "Press and awards: credibility you already own",
+      "paragraphs": [
+        "Acme Roastworks owns something no competitor in this set can buy: tier-1 press. It has been featured in The Daily Grind Journal and Pourover Weekly. For an unknown luxury camp in a remote park, this is the single most powerful top-of-funnel asset, the first touch that turns a stranger into a brand searcher.",
+        "1 of these features link to you, passing real authority. The next move is to turn each into an award-anchored, answer-first page you control, so AI engines repeat your credentials when travelers ask for the best lodge in Nepal."
+      ]
+    },
+    {
+      "type": "scenarios",
+      "num": "05",
+      "title": "Traffic share: how much of the category you own",
+      "bullets": [
+        "This is estimated organic traffic, a directional share read. It reframes the authority gap as a market-share story: who owns the category's attention today, and how much is still open to take."
+      ],
+      "figure_title": "Estimated organic traffic by company",
+      "figure_unit": "visits/mo, estimate",
+      "chart": {
+        "type": "bar_h",
+        "kind": "compact",
+        "highlight": "Acme Roastworks",
+        "rows": [
+          [
+            "Globex Coffee",
+            88400
+          ],
+          [
+            "Vandelay Roasters",
+            41200
+          ],
+          [
+            "Initech Brew Co.",
+            22600
+          ],
+          [
+            "Beanline",
+            6900
+          ],
+          [
+            "Acme Roastworks",
+            3120
+          ],
+          [
+            "Cupwell",
+            1450
+          ]
+        ]
+      },
+      "note": "Organic share is earned with content and proof, not ad spend, so a focused team can take it without out-spending the field."
+    },
+    {
+      "type": "scenarios",
+      "num": "06",
+      "title": "Share of search: branded demand momentum",
+      "bullets": [
+        "Branded search interest predicts market share up to a year ahead. This is who buyers are actively looking for by name today.",
+        "Rising in the set: Globex Coffee, Acme Roastworks."
+      ],
+      "figure_title": "Share of branded search",
+      "figure_unit": "past 12 months",
+      "chart": {
+        "type": "bar_h",
+        "kind": "compact",
+        "highlight": "Acme Roastworks",
+        "rows": [
+          [
+            "Globex Coffee",
+            61.2
+          ],
+          [
+            "Vandelay Roasters",
+            22.4
+          ],
+          [
+            "Initech Brew Co.",
+            9.8
+          ],
+          [
+            "Acme Roastworks",
+            4.1
+          ],
+          [
+            "Beanline",
+            1.7
+          ],
+          [
+            "Cupwell",
+            0.8
+          ]
+        ]
+      },
+      "note": "Branded search on common-word names can include namesakes, so treat as directional. Growing branded demand is the compounding defense behind every other play."
+    },
+    {
+      "type": "scenarios",
+      "num": "07",
+      "title": "The traffic and revenue you are not capturing",
+      "bullets": [
+        "Competitors in your set capture an estimated 160,550 organic visits/mo, worth about $214,600 if bought as ads. Your site captures about 3,120.",
+        "They rank for 38 commercial keywords you are absent from, roughly 24,800 searches every month.",
+        "This is the size of the opening: demand that already exists and already converts for someone else."
+      ],
+      "note": "Traffic and value are directional estimates from live search data.",
+      "table": {
+        "headers": [
+          "Keyword competitors rank for",
+          "Searches/mo",
+          "Held by"
+        ],
+        "rows": [
+          [
+            "best coffee subscription",
+            "6,600",
+            "Globex Coffee"
+          ],
+          [
+            "light roast vs dark roast",
+            "4,400",
+            "Initech Brew Co."
+          ],
+          [
+            "pour over coffee ratio",
+            "3,600",
+            "Vandelay Roasters"
+          ],
+          [
+            "single origin coffee subscription",
+            "2,900",
+            "Globex Coffee"
+          ],
+          [
+            "fresh roasted coffee beans online",
+            "1,900",
+            "Vandelay Roasters"
+          ],
+          [
+            "coffee gift subscription",
+            "1,300",
+            "Globex Coffee"
+          ],
+          [
+            "decaf coffee subscription",
+            "880",
+            "Globex Coffee"
+          ],
+          [
+            "espresso beans subscription",
+            "720",
+            "Beanline"
+          ]
+        ],
+        "align": [
+          "left",
+          "right",
+          "left"
+        ]
+      }
+    },
+    {
+      "type": "scenarios",
+      "num": "08",
+      "title": "Where rivals are spending and hiring",
+      "bullets": [
+        "Recent funding: Globex Coffee raised $40M (series b, 2025-11-04); Vandelay Roasters raised $12M (series a, 2024-08-19); Initech Brew Co. raised $4M (seed, 2024-02-27). Funded rivals spend on the lanes they hire for, which is why those are the hardest to enter head-on.",
+        "Hiring shows the same story: 100 open roles across your rivals, 41 in engineering and 28 in sales/GTM."
+      ],
+      "figure_title": "Open roles by company",
+      "figure_unit": "public hiring records",
+      "chart": {
+        "type": "bar_h",
+        "kind": "compact",
+        "highlight": "Acme Roastworks",
+        "rows": [
+          [
+            "Globex Coffee",
+            62
+          ],
+          [
+            "Vandelay Roasters",
+            23
+          ],
+          [
+            "Initech Brew Co.",
+            11
+          ],
+          [
+            "Acme Roastworks",
+            4
+          ],
+          [
+            "Beanline",
+            3
+          ],
+          [
+            "Cupwell",
+            1
+          ]
+        ]
+      },
+      "note": "Where the money and hiring are absent is where the open ground is."
+    },
+    {
+      "type": "scenarios",
+      "num": "09",
+      "title": "Search demand and where the gap is",
+      "bullets": [
+        "These are the highest-intent queries in your market with real monthly demand. Volume is what people search; difficulty (KD) is how contested it is."
+      ],
+      "figure_title": "",
+      "table": {
+        "headers": [
+          "Query",
+          "Searches/mo",
+          "Difficulty",
+          "Intent"
+        ],
+        "rows": [
+          [
+            "coffee subscription",
+            "27,100",
+            "62",
+            "Commercial"
+          ],
+          [
+            "single origin coffee",
+            "9,900",
+            "38",
+            "Commercial"
+          ],
+          [
+            "best coffee subscription",
+            "6,600",
+            "45",
+            "Commercial"
+          ],
+          [
+            "light roast vs dark roast",
+            "4,400",
+            "12",
+            "Informational"
+          ],
+          [
+            "pour over coffee ratio",
+            "3,600",
+            "8",
+            "Informational"
+          ],
+          [
+            "fresh roasted coffee beans",
+            "2,900",
+            "27",
+            "Commercial"
+          ]
+        ],
+        "align": [
+          "left",
+          "right",
+          "right",
+          "left"
+        ]
+      },
+      "note": "Competitors already rank for: how to store coffee beans (8,100/mo, Vandelay Roasters), cold brew coffee ratio (6,600/mo, Vandelay Roasters), coffee grind size chart (5,400/mo, Initech Brew Co.), french press coffee ratio (4,400/mo, Vandelay Roasters), arabica vs robusta (3,600/mo, Initech Brew Co.) - demand they capture and you do not, yet."
+    },
+    {
+      "type": "scenarios",
+      "num": "10",
+      "title": "Greenfield opportunity map",
+      "bullets": [
+        "Each bubble is a buyer query. Right means winnable (lower difficulty), up means more demand, bigger means more searches. The green zone (top-right) is open demand you can take without fighting the giants head-on.",
+        "Greenfield 7  |  Winnable niche 4  |  Fortress, hard 2."
+      ],
+      "figure_title": "Demand vs winnability",
+      "figure_unit": "buyer queries, live data",
+      "chart": {
+        "type": "bubble",
+        "points": [
+          {
+            "label": "how to store coffee beans",
+            "x": 84,
+            "y": 92.8,
+            "size": 8100,
+            "tier": "greenfield"
+          },
+          {
+            "label": "coffee grind size chart",
+            "x": 92,
+            "y": 90.4,
+            "size": 5400,
+            "tier": "greenfield"
+          },
+          {
+            "label": "cold brew coffee ratio",
+            "x": 76,
+            "y": 89.1,
+            "size": 6600,
+            "tier": "greenfield"
+          },
+          {
+            "label": "pour over coffee ratio",
+            "x": 68,
+            "y": 86.1,
+            "size": 3600,
+            "tier": "greenfield"
+          },
+          {
+            "label": "coffee bloom",
+            "x": 96,
+            "y": 83.2,
+            "size": 1900,
+            "tier": "greenfield"
+          },
+          {
+            "label": "single origin vs blend",
+            "x": 88,
+            "y": 81.4,
+            "size": 1600,
+            "tier": "greenfield"
+          },
+          {
+            "label": "how long do coffee beans last",
+            "x": 80,
+            "y": 80.6,
+            "size": 2900,
+            "tier": "greenfield"
+          },
+          {
+            "label": "coffee subscription",
+            "x": 22,
+            "y": 96.0,
+            "size": 27100,
+            "tier": "fortress"
+          },
+          {
+            "label": "best coffee subscription",
+            "x": 30,
+            "y": 88.0,
+            "size": 6600,
+            "tier": "fortress"
+          },
+          {
+            "label": "single origin coffee subscription",
+            "x": 55,
+            "y": 62.0,
+            "size": 2900,
+            "tier": "contested"
+          },
+          {
+            "label": "decaf coffee subscription",
+            "x": 61,
+            "y": 48.0,
+            "size": 880,
+            "tier": "contested"
+          },
+          {
+            "label": "espresso beans subscription",
+            "x": 58,
+            "y": 44.0,
+            "size": 720,
+            "tier": "contested"
+          },
+          {
+            "label": "coffee gift subscription",
+            "x": 52,
+            "y": 51.0,
+            "size": 1300,
+            "tier": "contested"
+          },
+          {
+            "label": "cheap coffee pods",
+            "x": 47,
+            "y": 58.0,
+            "size": 9900,
+            "tier": "trap"
+          }
+        ],
+        "x_label": "WINNABILITY",
+        "y_label": "DEMAND"
+      },
+      "table": {
+        "headers": [
+          "Greenfield query",
+          "Searches/mo",
+          "Difficulty",
+          "Lane"
+        ],
+        "rows": [
+          [
+            "how to store coffee beans",
+            "8,100",
+            "4",
+            "Greenfield"
+          ],
+          [
+            "coffee grind size chart",
+            "5,400",
+            "2",
+            "Greenfield"
+          ],
+          [
+            "cold brew coffee ratio",
+            "6,600",
+            "6",
+            "Greenfield"
+          ],
+          [
+            "pour over coffee ratio",
+            "3,600",
+            "8",
+            "Greenfield"
+          ],
+          [
+            "coffee bloom",
+            "1,900",
+            "1",
+            "Greenfield"
+          ],
+          [
+            "single origin vs blend",
+            "1,600",
+            "3",
+            "Greenfield"
+          ],
+          [
+            "how long do coffee beans last",
+            "2,900",
+            "5",
+            "Greenfield"
+          ]
+        ],
+        "align": [
+          "left",
+          "right",
+          "right",
+          "left"
+        ]
+      }
+    },
+    {
+      "type": "table",
+      "num": "11",
+      "title": "What competitors are winning with",
+      "table": {
+        "headers": [
+          "Competitor",
+          "Top-traffic page",
+          "Est. visits/mo"
+        ],
+        "rows": [
+          [
+            "Vandelay Roasters",
+            "/learn/how-to-store-coffee-beans",
+            "5,200"
+          ],
+          [
+            "Vandelay Roasters",
+            "/",
+            "3,900"
+          ],
+          [
+            "Vandelay Roasters",
+            "/learn/cold-brew-ratio",
+            "2,800"
+          ],
+          [
+            "Globex Coffee",
+            "/",
+            "8,900"
+          ],
+          [
+            "Globex Coffee",
+            "/subscriptions",
+            "6,100"
+          ],
+          [
+            "Globex Coffee",
+            "/gifts",
+            "2,400"
+          ],
+          [
+            "Initech Brew Co.",
+            "/blog/grind-size-chart",
+            "2,300"
+          ],
+          [
+            "Initech Brew Co.",
+            "/",
+            "1,900"
+          ],
+          [
+            "Acme Roastworks",
+            "/",
+            "260"
+          ],
+          [
+            "Acme Roastworks",
+            "/shop",
+            "120"
+          ]
+        ],
+        "align": [
+          "left",
+          "left",
+          "right"
+        ]
+      },
+      "note": "Their traffic leaders are mostly their own home and category pages, built around what buyers search. The winnable move is to build the pages you are missing and out-structure theirs, so you rank for the terms that matter. Notably, Vandelay Roasters's single biggest page is an editorial post, not a room page: content marketing most of the field ignores and you can win."
+    },
+    {
+      "type": "table",
+      "num": "12",
+      "title": "Reputation and the switching wedge",
+      "table": {
+        "headers": [
+          "Company",
+          "Rating",
+          "Reviews",
+          "Top complaint (the wedge)"
+        ],
+        "rows": [
+          [
+            "Acme Roastworks",
+            "4.9 stars",
+            "86",
+            "-"
+          ],
+          [
+            "Globex Coffee",
+            "4.3 stars",
+            "4120",
+            "stale batches when pausing a subscription"
+          ],
+          [
+            "Vandelay Roasters",
+            "4.6 stars",
+            "2210",
+            "shipping delays in summer"
+          ],
+          [
+            "Initech Brew Co.",
+            "4.4 stars",
+            "-",
+            "billing surprises on renewals"
+          ],
+          [
+            "Beanline",
+            "4.7 stars",
+            "310",
+            "-"
+          ],
+          [
+            "Cupwell",
+            "3.9 stars",
+            "145",
+            "inconsistent roast quality"
+          ]
+        ],
+        "align": [
+          "left",
+          "right",
+          "right",
+          "left"
+        ]
+      },
+      "note": "Acme Roastworks shows a 4.9-star rating on just 86 public reviews; Globex Coffee has 4,120. In local and AI search, review volume is the social proof that gets you shown and cited. Closing this gap is one of the fastest, lowest-cost trust wins. Each rival's recurring complaint is the wedge: point your comparison pages and outbound at their weakest point, and pre-empt the complaints that would land on you."
+    },
+    {
+      "type": "scenarios",
+      "num": "13",
+      "title": "Where the field is buying attention: Google ads",
+      "bullets": [
+        "Google's Ads Transparency Center shows Globex Coffee running about 240 live ads. Acme Roastworks runs 0. Every rival's live ads are viewable in Google's public Ads Transparency Center.",
+        "This is not a call to match their spend. It shows the field is buying attention while you are not, so paid is a selective lever once your proof pages exist to convert it."
+      ],
+      "figure_title": "Live Google ads by company",
+      "figure_unit": "Ads Transparency, high-confidence matches",
+      "chart": {
+        "type": "bar_h",
+        "kind": "compact",
+        "highlight": "Acme Roastworks",
+        "rows": [
+          [
+            "Globex Coffee",
+            240
+          ],
+          [
+            "Vandelay Roasters",
+            85
+          ],
+          [
+            "Initech Brew Co.",
+            12
+          ],
+          [
+            "Acme Roastworks",
+            0
+          ]
+        ]
+      },
+      "figure_note": "Only advertisers matched with high confidence are shown; ambiguous single-name matches are excluded."
+    },
+    {
+      "type": "scenarios",
+      "num": "14",
+      "title": "Social presence",
+      "bullets": [
+        "Instagram is where design-forward consumer brands get discovered and where a photogenic product seeds the branded searches that convert. This is the aspirational front door before anyone buys.",
+        "This is a low-cost, high-leverage channel where you are currently underweight."
+      ],
+      "figure_title": "Instagram followers",
+      "figure_unit": "public profiles",
+      "chart": {
+        "type": "bar_h",
+        "kind": "compact",
+        "highlight": "Acme Roastworks",
+        "rows": [
+          [
+            "Globex Coffee",
+            148000
+          ],
+          [
+            "Vandelay Roasters",
+            61000
+          ],
+          [
+            "Initech Brew Co.",
+            18400
+          ],
+          [
+            "Acme Roastworks",
+            9200
+          ],
+          [
+            "Beanline",
+            4100
+          ],
+          [
+            "Cupwell",
+            1800
+          ]
+        ]
+      },
+      "note": "Instagram reach compounds quickly for this category. This is a low-cost, high-leverage channel to own."
+    },
+    {
+      "type": "scenarios",
+      "num": "15",
+      "title": "Site speed and Core Web Vitals",
+      "bullets": [
+        "Good news first: Acme Roastworks has the fastest site in this competitive set. Core Web Vitals are a Google ranking input and a real conversion lever. On mobile, Acme Roastworks scores 88 of 100 on a mobile speed test and passes Core Web Vitals. Rivals passing Core Web Vitals: Acme Roastworks."
+      ],
+      "figure_title": "Mobile performance score",
+      "figure_unit": "0-100, higher is better",
+      "chart": {
+        "type": "bar_h",
+        "kind": "compact",
+        "highlight": "Acme Roastworks",
+        "rows": [
+          [
+            "Acme Roastworks",
+            88
+          ],
+          [
+            "Beanline",
+            71
+          ],
+          [
+            "Vandelay Roasters",
+            61
+          ],
+          [
+            "Globex Coffee",
+            46
+          ],
+          [
+            "Initech Brew Co.",
+            34
+          ],
+          [
+            "Cupwell",
+            24
+          ]
+        ]
+      },
+      "note": "This is a controlled lab test that works for any site, including a brand-new one."
+    },
+    {
+      "type": "prose",
+      "num": "16",
+      "title": "AI visibility: is AI recommending you?",
+      "paragraphs": [
+        "More buyers now ask ChatGPT, Gemini, Perplexity, Claude, and Google's AI Overview for recommendations instead of scrolling search results. Share of Voice is how often each brand is named or cited across those engines, weighted by how much people search each query. This is who the models put in front of your buyers."
+      ],
+      "figure_title": "AI Share of Voice (% of brand mentions across engines)",
+      "figure_unit": "8 queries x 5 engines",
+      "chart": {
+        "type": "bar_h",
+        "kind": "compact",
+        "highlight": "Acme Roastworks",
+        "rows": [
+          [
+            "Vandelay Roasters",
+            44.4
+          ],
+          [
+            "Globex Coffee",
+            39.7
+          ],
+          [
+            "Initech Brew Co.",
+            7.9
+          ],
+          [
+            "Beanline",
+            4.8
+          ],
+          [
+            "Acme Roastworks",
+            3.2
+          ]
+        ]
+      },
+      "figure_note": "Scope is your tracked demand set. A single scan is a sample; the value is the trend as we move you up it."
+    },
+    {
+      "type": "scenarios",
+      "num": "17",
+      "title": "AI visibility matrix: who AI recommends",
+      "bullets": [
+        "Buyers increasingly ask AI engines for a vendor shortlist. This maps each buyer question against each engine: are you cited, named, or absent while a competitor is named instead."
+      ],
+      "figure_title": "",
+      "chart": {
+        "type": "heatmap",
+        "row_labels": [
+          "best coffee subscription service",
+          "best single origin coffee online",
+          "freshest coffee beans delivered",
+          "best coffee subscription for gifts",
+          "best light roast coffee online",
+          "coffee subscription vs buying bags",
+          "best specialty coffee roaster online",
+          "best decaf coffee subscription"
+        ],
+        "col_labels": [
+          "AI Overview",
+          "ChatGPT",
+          "Gemini",
+          "Perplexity",
+          "Claude"
+        ],
+        "cells": [
+          [
+            "competitor",
+            "competitor",
+            "competitor",
+            "competitor",
+            "competitor"
+          ],
+          [
+            "competitor",
+            "competitor",
+            "competitor",
+            "named",
+            "competitor"
+          ],
+          [
+            "absent",
+            "competitor",
+            "cited",
+            "absent",
+            "competitor"
+          ],
+          [
+            "competitor",
+            "competitor",
+            "competitor",
+            "competitor",
+            "competitor"
+          ],
+          [
+            "competitor",
+            "competitor",
+            "competitor",
+            "competitor",
+            "competitor"
+          ],
+          [
+            "competitor",
+            "competitor",
+            "competitor",
+            "competitor",
+            "competitor"
+          ],
+          [
+            "competitor",
+            "competitor",
+            "absent",
+            "competitor",
+            "absent"
+          ],
+          [
+            "competitor",
+            "competitor",
+            "competitor",
+            "competitor",
+            "competitor"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "cta",
+      "num": "18",
+      "title": "The opportunity, and how we take it",
+      "body": "This is a live snapshot of Acme Roastworks' digital footprint against the field. The gaps above are the opening: the queries and AI answers your competitors have not locked down. We have the machine and the plan to move you up each one, and to prove it with the same live data you just saw. The full strategy and 90-day sequence is the next step.",
+      "contact": "Prepared from live search, review, and AI-answer data"
+    }
+  ]
+}

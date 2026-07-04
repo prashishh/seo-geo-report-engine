@@ -1,0 +1,34 @@
+{
+  "date": "sample data",
+  "active_sources": [
+    "dataforseo",
+    "openpagerank"
+  ],
+  "rows": [
+    {
+      "domain": "contoso-help.example",
+      "consensus": 58,
+      "referring_domains": 6200
+    },
+    {
+      "domain": "fabrikam-support.example",
+      "consensus": 41,
+      "referring_domains": 2100
+    },
+    {
+      "domain": "initrode.example",
+      "consensus": 33,
+      "referring_domains": 980
+    },
+    {
+      "domain": "hooli-desk.example",
+      "consensus": 26,
+      "referring_domains": 410
+    },
+    {
+      "domain": "northwind-desk.example",
+      "consensus": 21,
+      "referring_domains": 180
+    }
+  ]
+}

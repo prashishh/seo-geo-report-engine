@@ -1,0 +1,69 @@
+{
+  "Acme Roastworks": {
+    "rating": 4.9,
+    "rating_source": "Google",
+    "review_count": 86,
+    "top_praise": [
+      "exceptional freshness",
+      "beautiful packaging"
+    ],
+    "top_complaints": [],
+    "note": "small but stellar review base"
+  },
+  "Globex Coffee": {
+    "rating": 4.3,
+    "rating_source": "Google",
+    "review_count": 4120,
+    "top_praise": [
+      "wide selection"
+    ],
+    "top_complaints": [
+      "stale batches when pausing a subscription"
+    ],
+    "note": ""
+  },
+  "Vandelay Roasters": {
+    "rating": 4.6,
+    "rating_source": "Google",
+    "review_count": 2210,
+    "top_praise": [
+      "single-origin quality"
+    ],
+    "top_complaints": [
+      "shipping delays in summer"
+    ],
+    "note": ""
+  },
+  "Initech Brew Co.": {
+    "rating": 4.4,
+    "rating_source": "Trustpilot",
+    "review_count": null,
+    "top_praise": [
+      "consistent roast"
+    ],
+    "top_complaints": [
+      "billing surprises on renewals"
+    ],
+    "note": ""
+  },
+  "Beanline": {
+    "rating": 4.7,
+    "rating_source": "Google",
+    "review_count": 310,
+    "top_praise": [
+      "fast shipping"
+    ],
+    "top_complaints": [],
+    "note": ""
+  },
+  "Cupwell": {
+    "rating": 3.9,
+    "rating_source": "Google",
+    "review_count": 145,
+    "top_praise": [],
+    "top_complaints": [
+      "inconsistent roast quality"
+    ],
+    "note": ""
+  }
+}

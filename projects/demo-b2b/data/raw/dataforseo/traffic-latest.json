@@ -1,0 +1,32 @@
+{
+  "rows": [
+    {
+      "company": "Contoso Helpdesk",
+      "etv": 214000,
+      "share_pct": 83.3
+    },
+    {
+      "company": "Fabrikam Support",
+      "etv": 31400,
+      "share_pct": 12.2
+    },
+    {
+      "company": "Initrode Systems",
+      "etv": 8200,
+      "share_pct": 3.2
+    },
+    {
+      "company": "Hooli Desk",
+      "etv": 2900,
+      "share_pct": 1.1
+    },
+    {
+      "company": "Northwind Desk",
+      "etv": 410,
+      "share_pct": 0.2
+    }
+  ],
+  "client_share_pct": 0.2,
+  "leader": "Contoso Helpdesk",
+  "leader_share_pct": 83.3
+}

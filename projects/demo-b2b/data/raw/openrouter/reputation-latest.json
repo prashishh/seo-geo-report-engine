@@ -1,0 +1,57 @@
+{
+  "Northwind Desk": {
+    "rating": 4.8,
+    "rating_source": "Trustpilot",
+    "review_count": null,
+    "top_praise": [
+      "setup speed",
+      "responsive founders"
+    ],
+    "top_complaints": [],
+    "note": "small early review base"
+  },
+  "Contoso Helpdesk": {
+    "rating": 4.4,
+    "rating_source": "Google",
+    "review_count": 3180,
+    "top_praise": [
+      "feature depth"
+    ],
+    "top_complaints": [
+      "support wait times after the price increase"
+    ],
+    "note": ""
+  },
+  "Fabrikam Support": {
+    "rating": 4.5,
+    "rating_source": "Google",
+    "review_count": 940,
+    "top_praise": [
+      "clean interface"
+    ],
+    "top_complaints": [
+      "limited reporting on the starter plan"
+    ],
+    "note": ""
+  },
+  "Initrode Systems": {
+    "rating": 4.1,
+    "rating_source": "Trustpilot",
+    "review_count": null,
+    "top_praise": [],
+    "top_complaints": [
+      "dated interface"
+    ],
+    "note": ""
+  },
+  "Hooli Desk": {
+    "rating": 4.3,
+    "rating_source": "Google",
+    "review_count": 120,
+    "top_praise": [
+      "price"
+    ],
+    "top_complaints": [],
+    "note": ""
+  }
+}

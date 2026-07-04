@@ -1,0 +1,5 @@
+# All crawlers welcome, including AI crawlers. This site preaches AI visibility, it practices it.
+User-agent: *
+Allow: /
+
+Sitemap: https://geoseo-visibility.prashish.xyz/sitemap.xml

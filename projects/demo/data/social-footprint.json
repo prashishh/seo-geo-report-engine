@@ -1,0 +1,37 @@
+{
+  "date": "sample data",
+  "channel": "Instagram",
+  "source_label": "public Instagram profiles",
+  "rows": [
+    {
+      "name": "Globex Coffee",
+      "followers": 148000,
+      "instagram_followers": 148000
+    },
+    {
+      "name": "Vandelay Roasters",
+      "followers": 61000,
+      "instagram_followers": 61000
+    },
+    {
+      "name": "Initech Brew Co.",
+      "followers": 18400,
+      "instagram_followers": 18400
+    },
+    {
+      "name": "Acme Roastworks",
+      "followers": 9200,
+      "instagram_followers": 9200
+    },
+    {
+      "name": "Beanline",
+      "followers": 4100,
+      "instagram_followers": 4100
+    },
+    {
+      "name": "Cupwell",
+      "followers": 1800,
+      "instagram_followers": 1800
+    }
+  ]
+}

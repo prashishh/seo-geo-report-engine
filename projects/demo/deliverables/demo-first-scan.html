@@ -1,0 +1,405 @@
+<!doctype html><html><head><meta charset='utf-8'><style>/* seo-geo-report-engine proposal stylesheet — print-first, reproduces the reference deck look.
+   Colors come from CSS variables that tools/proposal/build.py injects per project brand. */
+:root{
+  --primary:#0E2A47; --accent:#2BBF77; --muted:#7C8DA0; --ink:#1B2733;
+  --paper:#FFFFFF; --grid:#E6EBF0; --soft:#F6F8FA; --band:#FFF4CC;
+  --font:'Inter',-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+}
+@page{ size:A4; margin:18mm 16mm 16mm 16mm; }
+*{ box-sizing:border-box; }
+html,body{ margin:0; padding:0; }
+body{ font-family:var(--font); color:var(--ink); font-size:13px; line-height:1.5; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+
+/* ---- running header ---- */
+.kicker{ display:flex; justify-content:space-between; align-items:center; font-size:10.5px; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--muted); font-weight:600; border-bottom:1px solid var(--grid); padding-bottom:8px; margin-bottom:26px; }
+.kicker .brandmark{ color:var(--primary); font-weight:800; letter-spacing:.04em; }
+
+/* ---- cover ---- */
+.cover{ padding-top:60px; page-break-after:always; }
+.cover h1{ font-size:46px; line-height:1.05; margin:18px 0 8px; color:var(--primary); font-weight:800; letter-spacing:-.01em; }
+.cover .sub{ font-size:16px; color:var(--muted); margin:0; }
+.cover .rule{ height:3px; width:100%; background:var(--primary); margin:28px 0; border:0; }
+.cover .logo{ height:30px; }
+
+/* ---- section scaffolding ---- */
+.section{ page-break-inside:avoid; margin:0 0 30px; }
+.section.break{ page-break-before:always; }
+.s-head{ display:flex; align-items:center; gap:12px; border-bottom:2px solid var(--primary); padding-bottom:8px; margin-bottom:16px; }
+.s-num{ background:var(--accent); color:#04321f; font-weight:800; font-size:12px; padding:3px 8px; border-radius:5px; letter-spacing:.06em; }
+.s-title{ font-size:22px; font-weight:800; color:var(--primary); margin:0; }
+
+ul.lead{ list-style:none; padding:0; margin:0; }
+ul.lead li{ position:relative; padding:5px 0 5px 20px; }
+ul.lead li::before{ content:""; position:absolute; left:2px; top:11px; width:7px; height:7px; border-radius:50%; background:var(--accent); }
+ul.lead li b, ul.lead li strong{ color:var(--primary); }
+
+/* ---- pillar cards ---- */
+.pillars{ display:flex; gap:14px; margin-top:6px; }
+.pillar{ flex:1; border:1px solid var(--grid); border-radius:8px; overflow:hidden; }
+.pillar .cap{ background:var(--primary); color:#fff; text-align:center; padding:10px; }
+.pillar:last-child .cap{ background:var(--accent); color:#04321f; }
+.pillar .cap .tag{ font-size:10px; letter-spacing:.14em; opacity:.85; text-transform:uppercase; }
+.pillar .cap .name{ font-size:15px; font-weight:800; }
+.pillar .cap .when{ font-size:9.5px; letter-spacing:.1em; opacity:.8; text-transform:uppercase; }
+.pillar ul{ list-style:none; margin:0; padding:12px 14px; }
+.pillar li{ position:relative; padding:4px 0 4px 14px; font-size:12px; }
+.pillar li::before{ content:""; position:absolute; left:0; top:10px; width:5px; height:5px; border-radius:50%; background:var(--muted); }
+
+/* ---- detail groups (pillar deep dives) ---- */
+.group{ margin:14px 0; }
+.group h4{ color:var(--primary); font-size:14px; margin:0 0 6px; }
+.deliverables{ background:var(--soft); border-radius:8px; padding:10px 14px; margin-top:8px; }
+.deliverables .lbl{ font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); font-weight:700; margin-bottom:4px; }
+
+/* ---- figure / chart box ---- */
+.figure{ border:1px solid var(--grid); border-radius:10px; padding:16px 18px; margin:12px 0; }
+.figure .fhead{ display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px; }
+.figure .ftitle{ font-weight:800; color:var(--ink); font-size:14px; }
+.figure .fnote, .note{ color:var(--muted); font-size:11.5px; margin-top:8px; }
+.callout{ background:var(--soft); border-left:3px solid var(--accent); padding:10px 14px; border-radius:0 8px 8px 0; margin:10px 0; }
+
+/* ---- tables ---- */
+table.kv{ width:100%; border-collapse:collapse; }
+table.kv th{ text-align:left; font-size:11px; letter-spacing:.04em; text-transform:uppercase; color:var(--muted);
+  border-bottom:2px solid var(--primary); padding:8px 10px; }
+table.kv td{ border-bottom:1px solid var(--grid); padding:7px 10px; font-size:12.5px; }
+table.kv tr.group-row td{ font-weight:700; color:var(--primary); border-bottom:none; padding-top:12px; }
+
+.cta{ background:var(--primary); color:#fff; border-radius:12px; padding:24px 26px; }
+.cta h3{ margin:0 0 6px; font-size:20px; }
+.cta a{ color:var(--accent); }
+.small{ font-size:11px; color:var(--muted); }
+.spacer{ height:10px; }
+
+:root{--primary:#0E2A47;--muted:#7C8DA0;--ink:#1B2733;--paper:#FFFFFF;--accent:#2BBF77;--font:'Inter', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;}
+.dense .cover{ page-break-after:auto; padding-top:0; }
+.dense .cover h1{ font-size:30px; margin:8px 0 6px; }
+.dense .cover .rule{ margin:12px 0 18px; }
+.dense .section{ page-break-inside:auto; margin:0 0 15px; }
+.dense .s-head{ margin-bottom:9px; padding-bottom:6px; }
+.dense .s-title{ font-size:17px; }
+.dense p{ margin:5px 0; font-size:12px; line-height:1.5; }
+.dense ul.lead li{ padding:3px 0 3px 18px; font-size:12px; line-height:1.45; }
+.dense .figure{ margin:8px 0; padding:10px 12px; page-break-inside:avoid; }
+.dense .pillars, .dense table.kv, .dense .pillar, .dense .deliverables, .dense .callout{ page-break-inside:avoid; }
+.dense table.kv td{ padding:4px 8px; font-size:11px; }
+.dense table.kv th{ padding:6px 8px; font-size:11px; }
+.dense .callout{ margin:8px 0; padding:8px 12px; }
+.dense .group{ margin:9px 0; }
+.dense .pillar li{ font-size:11px; padding:3px 0 3px 14px; }
+.dense .cta{ padding:18px 20px; }
+.dense .note, .dense .figure .fnote{ font-size:10.5px; margin-top:6px; }
+</style></head><body class='dense'><div class="cover"><div class="kicker"><span class="brandmark">Acme Roastworks</span><span>Digital Presence Scan</span></div><h1>Acme Roastworks: Your Digital Footprint and the Opportunity</h1><p class="sub">Where you stand, who is winning your buyers, and the winnable path to overtake them. Live data, sample data.</p><hr class="rule"><p class="small">sample data · seo-geo-report-engine</p></div><div class="section"><div class="s-head"><span class="s-num">01</span><h2 class="s-title">Where you stand today</h2></div><ul class="lead"><li><b>Authority: you sit 5th of 6</b> in the category (authority 24 vs the leader Globex Coffee at 52). Authority here is a cross-source consensus (dataforseo, openpagerank).</li><li><b>You are about 1.9% of your category&#x27;s traffic; Globex Coffee is 54.0%.</b> Organic share is winnable and far cheaper to take than paid.</li><li><b>You hold about 4.1% of branded search in your set, and it is rising.</b> Share of search is a leading indicator of market share, so this is the demand you are building before it converts.</li><li><b>You are leaving about $214,600/mo of organic traffic value on the table.</b> Competitors capture ~160,550 visits/mo; you capture ~3,120. 38 buyer keywords they rank for and you do not.</li><li><b>The field is scaling fast, and the hiring shows where.</b> Your rivals have 100 open roles right now, concentrated in engineering (41) and sales (28). Where they are not hiring is where the open ground is.</li><li><b>The opportunity is real demand you are not yet capturing.</b> &#x27;coffee subscription&#x27; alone is 27,100 searches/mo, and rivals already rank for 6 terms you do not.</li><li><b>7 greenfield opportunities</b>: real buyer demand, winnable difficulty, and no competitor has locked in the AI answer. This is where to attack first.</li><li><b>Your social reach trails the field.</b> Acme Roastworks has about 9,200 Instagram followers; Globex Coffee has 148,000. This is a low-cost channel to close.</li><li><b>AI visibility: you hold 3.2% share of voice</b> across 5 AI engines on 8 real queries; Vandelay Roasters holds 44.4%. You appear in 2 of 5 engines (gemini, perplexity). When someone asks an AI in your category, this is who it names.</li><li><b>In AI answers to buyer questions, you appear in 2 of 40 places.</b> Competitors own the rest. This is the shortlist your buyers now ask AI for first.</li></ul><div class="spacer"></div><div class="pillars"><div class="pillar"><div class="cap"><div class="tag">Lane 1</div><div class="name">Own the AI answer</div><div class="when">where you are absent today</div></div><ul><li>Be the cited source when AI names your category</li><li>Answer-first pages + third-party mentions</li></ul></div><div class="pillar"><div class="cap"><div class="tag">Lane 2</div><div class="name">Capture the demand gap</div><div class="when">searches rivals hold</div></div><ul><li>Build the pages for the queries you are missing</li><li>High-intent, winnable difficulty first</li></ul></div><div class="pillar"><div class="cap"><div class="tag">Lane 3</div><div class="name">Grow authority</div><div class="when">the compounding moat</div></div><ul><li>Earn the mentions that lift authority + AI citation</li><li>Turn tools/data into linkable assets</li></ul></div></div></div><div class="section"><div class="s-head"><span class="s-num">02</span><h2 class="s-title">Authority: how you stack up</h2></div><p>Domain authority estimates how much trust a site has earned. We read it from several independent sources and take the consensus, so no single tool&#x27;s quirk drives the picture. Taller is stronger.</p><div class="figure"><div class="fhead"><span class="ftitle">Cross-source domain authority (0-100)</span><span class="small">consensus of 2 sources, sample data</span></div><svg viewBox="0 0 720 264" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">
+<rect width="720" height="264" fill="#FFFFFF"/>
+<text x="140.0" y="69.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Globex Coffee</text>
+<rect x="150" y="54" width="500.0" height="20" rx="3" fill="#0E2A47"/>
+<text x="658.0" y="69.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">52</text>
+<text x="140.0" y="103.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Vandelay Roasters</text>
+<rect x="150" y="88" width="423.1" height="20" rx="3" fill="#0E2A47"/>
+<text x="581.1" y="103.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">44</text>
+<text x="140.0" y="137.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Initech Brew Co.</text>
+<rect x="150" y="122" width="365.4" height="20" rx="3" fill="#0E2A47"/>
+<text x="523.4" y="137.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">38</text>
+<text x="140.0" y="171.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Beanline</text>
+<rect x="150" y="156" width="259.6" height="20" rx="3" fill="#0E2A47"/>
+<text x="417.6" y="171.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">27</text>
+<text x="140.0" y="205.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Acme Roastworks</text>
+<rect x="150" y="190" width="230.8" height="20" rx="3" fill="#2BBF77"/>
+<text x="388.8" y="205.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">24</text>
+<text x="140.0" y="239.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Cupwell</text>
+<rect x="150" y="224" width="182.7" height="20" rx="3" fill="#0E2A47"/>
+<text x="340.7" y="239.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">19</text>
+</svg><div class="fnote">Authority is earned mostly through other reputable sites linking to you. It is a proxy, not a Google metric, but it tracks how hard a domain is to outrank.</div></div></div><div class="section"><div class="s-head"><span class="s-num">03</span><h2 class="s-title">Backlinks: the authority gap and how to close it</h2></div><ul class="lead"><li>Links from other websites are still the strongest off-page ranking signal and a direct input to the authority that wins both search and AI citations. Acme Roastworks has 310 referring domains, 5th of 6 in this set; Globex Coffee has 4,100.</li><li>Volume is not the whole story. Globex Coffee&#x27;s link profile carries a 28/100 spam score versus Acme Roastworks&#x27; 11/100, so a large share of that lead is low-quality directory and link-farm links, not editorial coverage. The goal is quality links, not the count.</li><li>We pulled the domains that link to Globex Coffee, Vandelay Roasters, Initech Brew Co. but not to Acme Roastworks. 6 are real, relevant sites worth pursuing (for example brewtrade.example, roastersguild.example, coffeereviewhub.example), and the full vetted list is handed off as a ready outreach target set. Every one it converts closes the gap above.</li></ul><div class="figure"><div class="fhead"><span class="ftitle">Referring domains by company</span><span class="small">unique linking domains</span></div><svg viewBox="0 0 720 264" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">
+<rect width="720" height="264" fill="#FFFFFF"/>
+<text x="140.0" y="69.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Globex Coffee</text>
+<rect x="150" y="54" width="500.0" height="20" rx="3" fill="#0E2A47"/>
+<text x="658.0" y="69.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">4K</text>
+<text x="140.0" y="103.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Vandelay Roasters</text>
+<rect x="150" y="88" width="353.7" height="20" rx="3" fill="#0E2A47"/>
+<text x="511.7" y="103.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">3K</text>
+<text x="140.0" y="137.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Initech Brew Co.</text>
+<rect x="150" y="122" width="213.4" height="20" rx="3" fill="#0E2A47"/>
+<text x="371.4" y="137.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">2K</text>
+<text x="140.0" y="171.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Beanline</text>
+<rect x="150" y="156" width="78.0" height="20" rx="3" fill="#0E2A47"/>
+<text x="236.0" y="171.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">640</text>
+<text x="140.0" y="205.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Acme Roastworks</text>
+<rect x="150" y="190" width="37.8" height="20" rx="3" fill="#2BBF77"/>
+<text x="195.8" y="205.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">310</text>
+<text x="140.0" y="239.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Cupwell</text>
+<rect x="150" y="224" width="26.8" height="20" rx="3" fill="#0E2A47"/>
+<text x="184.8" y="239.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">220</text>
+</svg><div class="fnote">Referring domains count unique websites linking to each domain, the clearest measure of earned authority. The gap list is a concrete, handoff-ready target set.</div></div></div><div class="section"><div class="s-head"><span class="s-num">04</span><h2 class="s-title">Press and awards: credibility you already own</h2></div><p>Acme Roastworks owns something no competitor in this set can buy: tier-1 press. It has been featured in The Daily Grind Journal and Pourover Weekly. For an unknown luxury camp in a remote park, this is the single most powerful top-of-funnel asset, the first touch that turns a stranger into a brand searcher.</p><p>1 of these features link to you, passing real authority. The next move is to turn each into an award-anchored, answer-first page you control, so AI engines repeat your credentials when travelers ask for the best lodge in Nepal.</p></div><div class="section"><div class="s-head"><span class="s-num">05</span><h2 class="s-title">Traffic share: how much of the category you own</h2></div><ul class="lead"><li>This is estimated organic traffic, a directional share read. It reframes the authority gap as a market-share story: who owns the category&#x27;s attention today, and how much is still open to take.</li></ul><div class="figure"><div class="fhead"><span class="ftitle">Estimated organic traffic by company</span><span class="small">visits/mo, estimate</span></div><svg viewBox="0 0 720 264" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">
+<rect width="720" height="264" fill="#FFFFFF"/>
+<text x="140.0" y="69.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Globex Coffee</text>
+<rect x="150" y="54" width="500.0" height="20" rx="3" fill="#0E2A47"/>
+<text x="658.0" y="69.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">88K</text>
+<text x="140.0" y="103.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Vandelay Roasters</text>
+<rect x="150" y="88" width="233.0" height="20" rx="3" fill="#0E2A47"/>
+<text x="391.0" y="103.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">41K</text>
+<text x="140.0" y="137.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Initech Brew Co.</text>
+<rect x="150" y="122" width="127.8" height="20" rx="3" fill="#0E2A47"/>
+<text x="285.8" y="137.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">23K</text>
+<text x="140.0" y="171.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Beanline</text>
+<rect x="150" y="156" width="39.0" height="20" rx="3" fill="#0E2A47"/>
+<text x="197.0" y="171.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">7K</text>
+<text x="140.0" y="205.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Acme Roastworks</text>
+<rect x="150" y="190" width="17.6" height="20" rx="3" fill="#2BBF77"/>
+<text x="175.6" y="205.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">3K</text>
+<text x="140.0" y="239.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Cupwell</text>
+<rect x="150" y="224" width="8.2" height="20" rx="3" fill="#0E2A47"/>
+<text x="166.2" y="239.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">1K</text>
+</svg></div><div class="note">Organic share is earned with content and proof, not ad spend, so a focused team can take it without out-spending the field.</div></div><div class="section"><div class="s-head"><span class="s-num">06</span><h2 class="s-title">Share of search: branded demand momentum</h2></div><ul class="lead"><li>Branded search interest predicts market share up to a year ahead. This is who buyers are actively looking for by name today.</li><li>Rising in the set: Globex Coffee, Acme Roastworks.</li></ul><div class="figure"><div class="fhead"><span class="ftitle">Share of branded search</span><span class="small">past 12 months</span></div><svg viewBox="0 0 720 264" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">
+<rect width="720" height="264" fill="#FFFFFF"/>
+<text x="140.0" y="69.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Globex Coffee</text>
+<rect x="150" y="54" width="500.0" height="20" rx="3" fill="#0E2A47"/>
+<text x="658.0" y="69.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">61</text>
+<text x="140.0" y="103.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Vandelay Roasters</text>
+<rect x="150" y="88" width="183.0" height="20" rx="3" fill="#0E2A47"/>
+<text x="341.0" y="103.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">22</text>
+<text x="140.0" y="137.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Initech Brew Co.</text>
+<rect x="150" y="122" width="80.1" height="20" rx="3" fill="#0E2A47"/>
+<text x="238.1" y="137.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">10</text>
+<text x="140.0" y="171.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Acme Roastworks</text>
+<rect x="150" y="156" width="33.5" height="20" rx="3" fill="#2BBF77"/>
+<text x="191.5" y="171.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">4</text>
+<text x="140.0" y="205.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Beanline</text>
+<rect x="150" y="190" width="13.9" height="20" rx="3" fill="#0E2A47"/>
+<text x="171.9" y="205.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">2</text>
+<text x="140.0" y="239.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Cupwell</text>
+<rect x="150" y="224" width="6.5" height="20" rx="3" fill="#0E2A47"/>
+<text x="164.5" y="239.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">1</text>
+</svg></div><div class="note">Branded search on common-word names can include namesakes, so treat as directional. Growing branded demand is the compounding defense behind every other play.</div></div><div class="section"><div class="s-head"><span class="s-num">07</span><h2 class="s-title">The traffic and revenue you are not capturing</h2></div><ul class="lead"><li>Competitors in your set capture an estimated 160,550 organic visits/mo, worth about $214,600 if bought as ads. Your site captures about 3,120.</li><li>They rank for 38 commercial keywords you are absent from, roughly 24,800 searches every month.</li><li>This is the size of the opening: demand that already exists and already converts for someone else.</li></ul><table class="kv"><thead><tr><th style="text-align:left">Keyword competitors rank for</th><th style="text-align:right">Searches/mo</th><th style="text-align:left">Held by</th></tr></thead><tbody><tr><td style="text-align:left">best coffee subscription</td><td style="text-align:right">6,600</td><td style="text-align:left">Globex Coffee</td></tr><tr><td style="text-align:left">light roast vs dark roast</td><td style="text-align:right">4,400</td><td style="text-align:left">Initech Brew Co.</td></tr><tr><td style="text-align:left">pour over coffee ratio</td><td style="text-align:right">3,600</td><td style="text-align:left">Vandelay Roasters</td></tr><tr><td style="text-align:left">single origin coffee subscription</td><td style="text-align:right">2,900</td><td style="text-align:left">Globex Coffee</td></tr><tr><td style="text-align:left">fresh roasted coffee beans online</td><td style="text-align:right">1,900</td><td style="text-align:left">Vandelay Roasters</td></tr><tr><td style="text-align:left">coffee gift subscription</td><td style="text-align:right">1,300</td><td style="text-align:left">Globex Coffee</td></tr><tr><td style="text-align:left">decaf coffee subscription</td><td style="text-align:right">880</td><td style="text-align:left">Globex Coffee</td></tr><tr><td style="text-align:left">espresso beans subscription</td><td style="text-align:right">720</td><td style="text-align:left">Beanline</td></tr></tbody></table><div class="note">Traffic and value are directional estimates from live search data.</div></div><div class="section"><div class="s-head"><span class="s-num">08</span><h2 class="s-title">Where rivals are spending and hiring</h2></div><ul class="lead"><li>Recent funding: Globex Coffee raised $40M (series b, 2025-11-04); Vandelay Roasters raised $12M (series a, 2024-08-19); Initech Brew Co. raised $4M (seed, 2024-02-27). Funded rivals spend on the lanes they hire for, which is why those are the hardest to enter head-on.</li><li>Hiring shows the same story: 100 open roles across your rivals, 41 in engineering and 28 in sales/GTM.</li></ul><div class="figure"><div class="fhead"><span class="ftitle">Open roles by company</span><span class="small">public hiring records</span></div><svg viewBox="0 0 720 264" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">
+<rect width="720" height="264" fill="#FFFFFF"/>
+<text x="140.0" y="69.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Globex Coffee</text>
+<rect x="150" y="54" width="500.0" height="20" rx="3" fill="#0E2A47"/>
+<text x="658.0" y="69.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">62</text>
+<text x="140.0" y="103.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Vandelay Roasters</text>
+<rect x="150" y="88" width="185.5" height="20" rx="3" fill="#0E2A47"/>
+<text x="343.5" y="103.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">23</text>
+<text x="140.0" y="137.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Initech Brew Co.</text>
+<rect x="150" y="122" width="88.7" height="20" rx="3" fill="#0E2A47"/>
+<text x="246.7" y="137.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">11</text>
+<text x="140.0" y="171.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Acme Roastworks</text>
+<rect x="150" y="156" width="32.3" height="20" rx="3" fill="#2BBF77"/>
+<text x="190.3" y="171.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">4</text>
+<text x="140.0" y="205.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Beanline</text>
+<rect x="150" y="190" width="24.2" height="20" rx="3" fill="#0E2A47"/>
+<text x="182.2" y="205.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">3</text>
+<text x="140.0" y="239.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Cupwell</text>
+<rect x="150" y="224" width="8.1" height="20" rx="3" fill="#0E2A47"/>
+<text x="166.1" y="239.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">1</text>
+</svg></div><div class="note">Where the money and hiring are absent is where the open ground is.</div></div><div class="section"><div class="s-head"><span class="s-num">09</span><h2 class="s-title">Search demand and where the gap is</h2></div><ul class="lead"><li>These are the highest-intent queries in your market with real monthly demand. Volume is what people search; difficulty (KD) is how contested it is.</li></ul><table class="kv"><thead><tr><th style="text-align:left">Query</th><th style="text-align:right">Searches/mo</th><th style="text-align:right">Difficulty</th><th style="text-align:left">Intent</th></tr></thead><tbody><tr><td style="text-align:left">coffee subscription</td><td style="text-align:right">27,100</td><td style="text-align:right">62</td><td style="text-align:left">Commercial</td></tr><tr><td style="text-align:left">single origin coffee</td><td style="text-align:right">9,900</td><td style="text-align:right">38</td><td style="text-align:left">Commercial</td></tr><tr><td style="text-align:left">best coffee subscription</td><td style="text-align:right">6,600</td><td style="text-align:right">45</td><td style="text-align:left">Commercial</td></tr><tr><td style="text-align:left">light roast vs dark roast</td><td style="text-align:right">4,400</td><td style="text-align:right">12</td><td style="text-align:left">Informational</td></tr><tr><td style="text-align:left">pour over coffee ratio</td><td style="text-align:right">3,600</td><td style="text-align:right">8</td><td style="text-align:left">Informational</td></tr><tr><td style="text-align:left">fresh roasted coffee beans</td><td style="text-align:right">2,900</td><td style="text-align:right">27</td><td style="text-align:left">Commercial</td></tr></tbody></table><div class="note">Competitors already rank for: how to store coffee beans (8,100/mo, Vandelay Roasters), cold brew coffee ratio (6,600/mo, Vandelay Roasters), coffee grind size chart (5,400/mo, Initech Brew Co.), french press coffee ratio (4,400/mo, Vandelay Roasters), arabica vs robusta (3,600/mo, Initech Brew Co.) - demand they capture and you do not, yet.</div></div><div class="section"><div class="s-head"><span class="s-num">10</span><h2 class="s-title">Greenfield opportunity map</h2></div><ul class="lead"><li>Each bubble is a buyer query. Right means winnable (lower difficulty), up means more demand, bigger means more searches. The green zone (top-right) is open demand you can take without fighting the giants head-on.</li><li>Greenfield 7  |  Winnable niche 4  |  Fortress, hard 2.</li></ul><div class="figure"><div class="fhead"><span class="ftitle">Demand vs winnability</span><span class="small">buyer queries, live data</span></div><svg viewBox="0 0 720 440" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">
+<rect width="720" height="440" fill="#FFFFFF"/>
+<rect x="378.0" y="46.0" width="318.0" height="174.0" fill="#2BBF77" opacity="0.07"/>
+<line x1="378.0" y1="46" x2="378.0" y2="394" stroke="#E6EBF0" stroke-dasharray="4 4"/>
+<line x1="60" y1="220.0" x2="696" y2="220.0" stroke="#E6EBF0" stroke-dasharray="4 4"/>
+<rect x="60" y="46" width="636.0" height="348.0" fill="none" stroke="#E6EBF0"/>
+<text x="378.0" y="424.0" font-size="10" fill="#7C8DA0" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">WINNABILITY  →</text>
+<text x="18" y="220.0" font-size="10" fill="#7C8DA0" font-weight="600" text-anchor="middle" transform="rotate(-90 18 220.0)" font-family="Inter, sans-serif">DEMAND  →</text>
+<text x="537.0" y="62.0" font-size="10" fill="#2BBF77" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">GREENFIELD</text>
+<text x="219.0" y="62.0" font-size="9" fill="#7C8DA0" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">LOW-DEMAND</text>
+<text x="219.0" y="386.0" font-size="9" fill="#7C8DA0" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">FORTRESS</text>
+<text x="537.0" y="386.0" font-size="9" fill="#7C8DA0" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">CONTESTED</text>
+<circle cx="594.2" cy="71.1" r="22.2" fill="#2BBF77" opacity="0.78"/>
+<text x="594.2" y="44.8" font-size="10.5" fill="#1B2733" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">how to store coffee beans</text>
+<circle cx="645.1" cy="79.4" r="19.6" fill="#2BBF77" opacity="0.78"/>
+<text x="645.1" y="55.8" font-size="10.5" fill="#1B2733" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">coffee grind size chart</text>
+<circle cx="543.4" cy="83.9" r="20.8" fill="#2BBF77" opacity="0.78"/>
+<text x="543.4" y="59.1" font-size="10.5" fill="#1B2733" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">cold brew coffee ratio</text>
+<circle cx="492.5" cy="94.4" r="17.5" fill="#2BBF77" opacity="0.78"/>
+<text x="492.5" y="72.9" font-size="10.5" fill="#1B2733" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">pour over coffee ratio</text>
+<circle cx="670.6" cy="104.5" r="14.9" fill="#2BBF77" opacity="0.78"/>
+<text x="670.6" y="85.6" font-size="10.5" fill="#1B2733" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">coffee bloom</text>
+<circle cx="619.7" cy="110.7" r="14.3" fill="#2BBF77" opacity="0.78"/>
+<text x="619.7" y="92.4" font-size="10.5" fill="#1B2733" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">single origin vs blend</text>
+<circle cx="568.8" cy="113.5" r="16.5" fill="#2BBF77" opacity="0.78"/>
+<text x="568.8" y="93.0" font-size="10.5" fill="#1B2733" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">how long do coffee beans last</text>
+<circle cx="199.9" cy="59.9" r="34.0" fill="#7C8DA0" opacity="0.78"/>
+<text x="199.9" y="21.9" font-size="10.5" fill="#1B2733" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">coffee subscription</text>
+<circle cx="250.8" cy="87.8" r="20.8" fill="#7C8DA0" opacity="0.78"/>
+<text x="250.8" y="62.9" font-size="10.5" fill="#1B2733" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">best coffee subscription</text>
+<circle cx="409.8" cy="178.2" r="16.5" fill="#1F6F8B" opacity="0.78"/>
+<text x="409.8" y="157.7" font-size="10.5" fill="#1B2733" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">single origin coffee subscription</text>
+<circle cx="448.0" cy="227.0" r="12.7" fill="#1F6F8B" opacity="0.78"/>
+<text x="448.0" y="210.3" font-size="10.5" fill="#1B2733" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">decaf coffee subscription</text>
+<circle cx="428.9" cy="240.9" r="12.2" fill="#1F6F8B" opacity="0.78"/>
+<text x="428.9" y="224.6" font-size="10.5" fill="#1B2733" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">espresso beans subscription</text>
+<circle cx="390.7" cy="216.5" r="13.7" fill="#1F6F8B" opacity="0.78"/>
+<text x="390.7" y="198.8" font-size="10.5" fill="#1B2733" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">coffee gift subscription</text>
+<circle cx="358.9" cy="192.2" r="23.7" fill="#E1526B" opacity="0.78"/>
+<text x="358.9" y="164.4" font-size="10.5" fill="#1B2733" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">cheap coffee pods</text>
+</svg></div><table class="kv"><thead><tr><th style="text-align:left">Greenfield query</th><th style="text-align:right">Searches/mo</th><th style="text-align:right">Difficulty</th><th style="text-align:left">Lane</th></tr></thead><tbody><tr><td style="text-align:left">how to store coffee beans</td><td style="text-align:right">8,100</td><td style="text-align:right">4</td><td style="text-align:left">Greenfield</td></tr><tr><td style="text-align:left">coffee grind size chart</td><td style="text-align:right">5,400</td><td style="text-align:right">2</td><td style="text-align:left">Greenfield</td></tr><tr><td style="text-align:left">cold brew coffee ratio</td><td style="text-align:right">6,600</td><td style="text-align:right">6</td><td style="text-align:left">Greenfield</td></tr><tr><td style="text-align:left">pour over coffee ratio</td><td style="text-align:right">3,600</td><td style="text-align:right">8</td><td style="text-align:left">Greenfield</td></tr><tr><td style="text-align:left">coffee bloom</td><td style="text-align:right">1,900</td><td style="text-align:right">1</td><td style="text-align:left">Greenfield</td></tr><tr><td style="text-align:left">single origin vs blend</td><td style="text-align:right">1,600</td><td style="text-align:right">3</td><td style="text-align:left">Greenfield</td></tr><tr><td style="text-align:left">how long do coffee beans last</td><td style="text-align:right">2,900</td><td style="text-align:right">5</td><td style="text-align:left">Greenfield</td></tr></tbody></table></div><div class="section"><div class="s-head"><span class="s-num">11</span><h2 class="s-title">What competitors are winning with</h2></div><table class="kv"><thead><tr><th style="text-align:left">Competitor</th><th style="text-align:left">Top-traffic page</th><th style="text-align:right">Est. visits/mo</th></tr></thead><tbody><tr><td style="text-align:left">Vandelay Roasters</td><td style="text-align:left">/learn/how-to-store-coffee-beans</td><td style="text-align:right">5,200</td></tr><tr><td style="text-align:left">Vandelay Roasters</td><td style="text-align:left">/</td><td style="text-align:right">3,900</td></tr><tr><td style="text-align:left">Vandelay Roasters</td><td style="text-align:left">/learn/cold-brew-ratio</td><td style="text-align:right">2,800</td></tr><tr><td style="text-align:left">Globex Coffee</td><td style="text-align:left">/</td><td style="text-align:right">8,900</td></tr><tr><td style="text-align:left">Globex Coffee</td><td style="text-align:left">/subscriptions</td><td style="text-align:right">6,100</td></tr><tr><td style="text-align:left">Globex Coffee</td><td style="text-align:left">/gifts</td><td style="text-align:right">2,400</td></tr><tr><td style="text-align:left">Initech Brew Co.</td><td style="text-align:left">/blog/grind-size-chart</td><td style="text-align:right">2,300</td></tr><tr><td style="text-align:left">Initech Brew Co.</td><td style="text-align:left">/</td><td style="text-align:right">1,900</td></tr><tr><td style="text-align:left">Acme Roastworks</td><td style="text-align:left">/</td><td style="text-align:right">260</td></tr><tr><td style="text-align:left">Acme Roastworks</td><td style="text-align:left">/shop</td><td style="text-align:right">120</td></tr></tbody></table><div class="note">Their traffic leaders are mostly their own home and category pages, built around what buyers search. The winnable move is to build the pages you are missing and out-structure theirs, so you rank for the terms that matter. Notably, Vandelay Roasters&#x27;s single biggest page is an editorial post, not a room page: content marketing most of the field ignores and you can win.</div></div><div class="section"><div class="s-head"><span class="s-num">12</span><h2 class="s-title">Reputation and the switching wedge</h2></div><table class="kv"><thead><tr><th style="text-align:left">Company</th><th style="text-align:right">Rating</th><th style="text-align:right">Reviews</th><th style="text-align:left">Top complaint (the wedge)</th></tr></thead><tbody><tr><td style="text-align:left">Acme Roastworks</td><td style="text-align:right">4.9 stars</td><td style="text-align:right">86</td><td style="text-align:left">-</td></tr><tr><td style="text-align:left">Globex Coffee</td><td style="text-align:right">4.3 stars</td><td style="text-align:right">4120</td><td style="text-align:left">stale batches when pausing a subscription</td></tr><tr><td style="text-align:left">Vandelay Roasters</td><td style="text-align:right">4.6 stars</td><td style="text-align:right">2210</td><td style="text-align:left">shipping delays in summer</td></tr><tr><td style="text-align:left">Initech Brew Co.</td><td style="text-align:right">4.4 stars</td><td style="text-align:right">-</td><td style="text-align:left">billing surprises on renewals</td></tr><tr><td style="text-align:left">Beanline</td><td style="text-align:right">4.7 stars</td><td style="text-align:right">310</td><td style="text-align:left">-</td></tr><tr><td style="text-align:left">Cupwell</td><td style="text-align:right">3.9 stars</td><td style="text-align:right">145</td><td style="text-align:left">inconsistent roast quality</td></tr></tbody></table><div class="note">Acme Roastworks shows a 4.9-star rating on just 86 public reviews; Globex Coffee has 4,120. In local and AI search, review volume is the social proof that gets you shown and cited. Closing this gap is one of the fastest, lowest-cost trust wins. Each rival&#x27;s recurring complaint is the wedge: point your comparison pages and outbound at their weakest point, and pre-empt the complaints that would land on you.</div></div><div class="section"><div class="s-head"><span class="s-num">13</span><h2 class="s-title">Where the field is buying attention: Google ads</h2></div><ul class="lead"><li>Google&#x27;s Ads Transparency Center shows Globex Coffee running about 240 live ads. Acme Roastworks runs 0. Every rival&#x27;s live ads are viewable in Google&#x27;s public Ads Transparency Center.</li><li>This is not a call to match their spend. It shows the field is buying attention while you are not, so paid is a selective lever once your proof pages exist to convert it.</li></ul><div class="figure"><div class="fhead"><span class="ftitle">Live Google ads by company</span><span class="small">Ads Transparency, high-confidence matches</span></div><svg viewBox="0 0 720 196" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">
+<rect width="720" height="196" fill="#FFFFFF"/>
+<text x="140.0" y="69.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Globex Coffee</text>
+<rect x="150" y="54" width="500.0" height="20" rx="3" fill="#0E2A47"/>
+<text x="658.0" y="69.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">240</text>
+<text x="140.0" y="103.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Vandelay Roasters</text>
+<rect x="150" y="88" width="177.1" height="20" rx="3" fill="#0E2A47"/>
+<text x="335.1" y="103.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">85</text>
+<text x="140.0" y="137.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Initech Brew Co.</text>
+<rect x="150" y="122" width="25.0" height="20" rx="3" fill="#0E2A47"/>
+<text x="183.0" y="137.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">12</text>
+<text x="140.0" y="171.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Acme Roastworks</text>
+<rect x="150" y="156" width="2.0" height="20" rx="3" fill="#2BBF77"/>
+<text x="160.0" y="171.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">0</text>
+</svg><div class="fnote">Only advertisers matched with high confidence are shown; ambiguous single-name matches are excluded.</div></div></div><div class="section"><div class="s-head"><span class="s-num">14</span><h2 class="s-title">Social presence</h2></div><ul class="lead"><li>Instagram is where design-forward consumer brands get discovered and where a photogenic product seeds the branded searches that convert. This is the aspirational front door before anyone buys.</li><li>This is a low-cost, high-leverage channel where you are currently underweight.</li></ul><div class="figure"><div class="fhead"><span class="ftitle">Instagram followers</span><span class="small">public profiles</span></div><svg viewBox="0 0 720 264" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">
+<rect width="720" height="264" fill="#FFFFFF"/>
+<text x="140.0" y="69.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Globex Coffee</text>
+<rect x="150" y="54" width="500.0" height="20" rx="3" fill="#0E2A47"/>
+<text x="658.0" y="69.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">148K</text>
+<text x="140.0" y="103.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Vandelay Roasters</text>
+<rect x="150" y="88" width="206.1" height="20" rx="3" fill="#0E2A47"/>
+<text x="364.1" y="103.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">61K</text>
+<text x="140.0" y="137.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Initech Brew Co.</text>
+<rect x="150" y="122" width="62.2" height="20" rx="3" fill="#0E2A47"/>
+<text x="220.2" y="137.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">18K</text>
+<text x="140.0" y="171.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Acme Roastworks</text>
+<rect x="150" y="156" width="31.1" height="20" rx="3" fill="#2BBF77"/>
+<text x="189.1" y="171.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">9K</text>
+<text x="140.0" y="205.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Beanline</text>
+<rect x="150" y="190" width="13.9" height="20" rx="3" fill="#0E2A47"/>
+<text x="171.9" y="205.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">4K</text>
+<text x="140.0" y="239.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Cupwell</text>
+<rect x="150" y="224" width="6.1" height="20" rx="3" fill="#0E2A47"/>
+<text x="164.1" y="239.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">2K</text>
+</svg></div><div class="note">Instagram reach compounds quickly for this category. This is a low-cost, high-leverage channel to own.</div></div><div class="section"><div class="s-head"><span class="s-num">15</span><h2 class="s-title">Site speed and Core Web Vitals</h2></div><ul class="lead"><li>Good news first: Acme Roastworks has the fastest site in this competitive set. Core Web Vitals are a Google ranking input and a real conversion lever. On mobile, Acme Roastworks scores 88 of 100 on a mobile speed test and passes Core Web Vitals. Rivals passing Core Web Vitals: Acme Roastworks.</li></ul><div class="figure"><div class="fhead"><span class="ftitle">Mobile performance score</span><span class="small">0-100, higher is better</span></div><svg viewBox="0 0 720 264" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">
+<rect width="720" height="264" fill="#FFFFFF"/>
+<text x="140.0" y="69.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Acme Roastworks</text>
+<rect x="150" y="54" width="500.0" height="20" rx="3" fill="#2BBF77"/>
+<text x="658.0" y="69.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">88</text>
+<text x="140.0" y="103.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Beanline</text>
+<rect x="150" y="88" width="403.4" height="20" rx="3" fill="#0E2A47"/>
+<text x="561.4" y="103.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">71</text>
+<text x="140.0" y="137.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Vandelay Roasters</text>
+<rect x="150" y="122" width="346.6" height="20" rx="3" fill="#0E2A47"/>
+<text x="504.6" y="137.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">61</text>
+<text x="140.0" y="171.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Globex Coffee</text>
+<rect x="150" y="156" width="261.4" height="20" rx="3" fill="#0E2A47"/>
+<text x="419.4" y="171.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">46</text>
+<text x="140.0" y="205.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Initech Brew Co.</text>
+<rect x="150" y="190" width="193.2" height="20" rx="3" fill="#0E2A47"/>
+<text x="351.2" y="205.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">34</text>
+<text x="140.0" y="239.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Cupwell</text>
+<rect x="150" y="224" width="136.4" height="20" rx="3" fill="#0E2A47"/>
+<text x="294.4" y="239.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">24</text>
+</svg></div><div class="note">This is a controlled lab test that works for any site, including a brand-new one.</div></div><div class="section"><div class="s-head"><span class="s-num">16</span><h2 class="s-title">AI visibility: is AI recommending you?</h2></div><p>More buyers now ask ChatGPT, Gemini, Perplexity, Claude, and Google&#x27;s AI Overview for recommendations instead of scrolling search results. Share of Voice is how often each brand is named or cited across those engines, weighted by how much people search each query. This is who the models put in front of your buyers.</p><div class="figure"><div class="fhead"><span class="ftitle">AI Share of Voice (% of brand mentions across engines)</span><span class="small">8 queries x 5 engines</span></div><svg viewBox="0 0 720 230" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">
+<rect width="720" height="230" fill="#FFFFFF"/>
+<text x="140.0" y="69.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Vandelay Roasters</text>
+<rect x="150" y="54" width="500.0" height="20" rx="3" fill="#0E2A47"/>
+<text x="658.0" y="69.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">44</text>
+<text x="140.0" y="103.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Globex Coffee</text>
+<rect x="150" y="88" width="447.1" height="20" rx="3" fill="#0E2A47"/>
+<text x="605.1" y="103.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">40</text>
+<text x="140.0" y="137.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Initech Brew Co.</text>
+<rect x="150" y="122" width="89.0" height="20" rx="3" fill="#0E2A47"/>
+<text x="247.0" y="137.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">8</text>
+<text x="140.0" y="171.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Beanline</text>
+<rect x="150" y="156" width="54.1" height="20" rx="3" fill="#0E2A47"/>
+<text x="212.1" y="171.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">5</text>
+<text x="140.0" y="205.1" font-size="12" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Acme Roastworks</text>
+<rect x="150" y="190" width="36.0" height="20" rx="3" fill="#2BBF77"/>
+<text x="194.0" y="205.1" font-size="12" fill="#7C8DA0" text-anchor="start" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">3</text>
+</svg><div class="fnote">Scope is your tracked demand set. A single scan is a sample; the value is the trend as we move you up it.</div></div></div><div class="section"><div class="s-head"><span class="s-num">17</span><h2 class="s-title">AI visibility matrix: who AI recommends</h2></div><ul class="lead"><li>Buyers increasingly ask AI engines for a vendor shortlist. This maps each buyer question against each engine: are you cited, named, or absent while a competitor is named instead.</li></ul><div class="figure"><svg viewBox="0 0 720 334" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">
+<rect width="720" height="334" fill="#FFFFFF"/>
+<text x="296.2" y="50.0" font-size="10" fill="#7C8DA0" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">AI Overview</text>
+<text x="388.6" y="50.0" font-size="10" fill="#7C8DA0" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">ChatGPT</text>
+<text x="481.0" y="50.0" font-size="10" fill="#7C8DA0" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Gemini</text>
+<text x="573.4" y="50.0" font-size="10" fill="#7C8DA0" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Perplexity</text>
+<text x="665.8" y="50.0" font-size="10" fill="#7C8DA0" text-anchor="middle" font-weight="600" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Claude</text>
+<text x="240.0" y="77.8" font-size="11" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">best coffee subscription service</text>
+<rect x="252.0" y="60.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="296.2" y="77.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="344.4" y="60.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="388.6" y="77.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="436.8" y="60.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="481.0" y="77.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="529.2" y="60.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="573.4" y="77.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="621.6" y="60.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="665.8" y="77.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<text x="240.0" y="107.8" font-size="11" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">best single origin coffee online</text>
+<rect x="252.0" y="90.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="296.2" y="107.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="344.4" y="90.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="388.6" y="107.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="436.8" y="90.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="481.0" y="107.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="529.2" y="90.0" width="88.4" height="26.0" rx="4" fill="#2BBF77"/>
+<text x="573.4" y="107.8" font-size="11" fill="#1B2733" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">N</text>
+<rect x="621.6" y="90.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="665.8" y="107.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<text x="240.0" y="137.8" font-size="11" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">freshest coffee beans delivered</text>
+<rect x="252.0" y="120.0" width="88.4" height="26.0" rx="4" fill="#E6EBF0"/>
+<rect x="344.4" y="120.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="388.6" y="137.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="436.8" y="120.0" width="88.4" height="26.0" rx="4" fill="#1B8A5A"/>
+<text x="481.0" y="137.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">C</text>
+<rect x="529.2" y="120.0" width="88.4" height="26.0" rx="4" fill="#E6EBF0"/>
+<rect x="621.6" y="120.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="665.8" y="137.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<text x="240.0" y="167.8" font-size="11" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">best coffee subscription for gifts</text>
+<rect x="252.0" y="150.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="296.2" y="167.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="344.4" y="150.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="388.6" y="167.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="436.8" y="150.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="481.0" y="167.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="529.2" y="150.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="573.4" y="167.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="621.6" y="150.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="665.8" y="167.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<text x="240.0" y="197.8" font-size="11" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">best light roast coffee online</text>
+<rect x="252.0" y="180.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="296.2" y="197.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="344.4" y="180.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="388.6" y="197.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="436.8" y="180.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="481.0" y="197.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="529.2" y="180.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="573.4" y="197.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="621.6" y="180.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="665.8" y="197.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<text x="240.0" y="227.8" font-size="11" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">coffee subscription vs buying bags</text>
+<rect x="252.0" y="210.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="296.2" y="227.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="344.4" y="210.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="388.6" y="227.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="436.8" y="210.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="481.0" y="227.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="529.2" y="210.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="573.4" y="227.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="621.6" y="210.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="665.8" y="227.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<text x="240.0" y="257.8" font-size="11" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">best specialty coffee roaster online</text>
+<rect x="252.0" y="240.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="296.2" y="257.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="344.4" y="240.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="388.6" y="257.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="436.8" y="240.0" width="88.4" height="26.0" rx="4" fill="#E6EBF0"/>
+<rect x="529.2" y="240.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="573.4" y="257.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="621.6" y="240.0" width="88.4" height="26.0" rx="4" fill="#E6EBF0"/>
+<text x="240.0" y="287.8" font-size="11" fill="#1B2733" text-anchor="end" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">best decaf coffee subscription</text>
+<rect x="252.0" y="270.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="296.2" y="287.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="344.4" y="270.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="388.6" y="287.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="436.8" y="270.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="481.0" y="287.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="529.2" y="270.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="573.4" y="287.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="621.6" y="270.0" width="88.4" height="26.0" rx="4" fill="#0E2A47"/>
+<text x="665.8" y="287.8" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="700" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">X</text>
+<rect x="250.0" y="306" width="12" height="12" rx="3" fill="#1B8A5A"/>
+<text x="267.0" y="316.0" font-size="10" fill="#7C8DA0" text-anchor="start" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Cited</text>
+<rect x="312.0" y="306" width="12" height="12" rx="3" fill="#2BBF77"/>
+<text x="329.0" y="316.0" font-size="10" fill="#7C8DA0" text-anchor="start" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Named</text>
+<rect x="374.0" y="306" width="12" height="12" rx="3" fill="#F0B429"/>
+<text x="391.0" y="316.0" font-size="10" fill="#7C8DA0" text-anchor="start" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Weak</text>
+<rect x="429.6" y="306" width="12" height="12" rx="3" fill="#E6EBF0"/>
+<text x="446.6" y="316.0" font-size="10" fill="#7C8DA0" text-anchor="start" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Absent</text>
+<rect x="498.0" y="306" width="12" height="12" rx="3" fill="#0E2A47"/>
+<text x="515.0" y="316.0" font-size="10" fill="#7C8DA0" text-anchor="start" font-weight="400" opacity="1.0" font-family="Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Competitor owns</text>
+</svg></div></div><div class="section"><div class="cta"><h3>The opportunity, and how we take it</h3><p>This is a live snapshot of Acme Roastworks&#x27; digital footprint against the field. The gaps above are the opening: the queries and AI answers your competitors have not locked down. We have the machine and the plan to move you up each one, and to prove it with the same live data you just saw. The full strategy and 90-day sequence is the next step.</p><p class="small" style="color:#cdd8e4">Prepared from live search, review, and AI-answer data</p></div></div></body></html>

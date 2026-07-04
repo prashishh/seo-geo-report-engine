@@ -1,0 +1,39 @@
+{
+  "date": "sample data",
+  "active_sources": [
+    "dataforseo",
+    "openpagerank"
+  ],
+  "rows": [
+    {
+      "domain": "globex-coffee.example",
+      "consensus": 52,
+      "referring_domains": 4100
+    },
+    {
+      "domain": "vandelay-roasters.example",
+      "consensus": 44,
+      "referring_domains": 2900
+    },
+    {
+      "domain": "initech-brew.example",
+      "consensus": 38,
+      "referring_domains": 1750
+    },
+    {
+      "domain": "beanline.example",
+      "consensus": 27,
+      "referring_domains": 640
+    },
+    {
+      "domain": "acme-roastworks.example",
+      "consensus": 24,
+      "referring_domains": 310
+    },
+    {
+      "domain": "cupwell.example",
+      "consensus": 19,
+      "referring_domains": 220
+    }
+  ]
+}

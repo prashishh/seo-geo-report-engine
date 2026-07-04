@@ -1,0 +1,43 @@
+# Copy to projects/<client>/client.yml. Inherits config/framework.yml; values here override.
+name: Acme Corp
+slug: acme                       # used for output filenames; kebab-case
+domain: acme.com
+industry: ""                     # one line
+market: US                       # primary geo market
+languages: [en]
+currency: USD
+
+positioning: >                   # 2–3 lines: what they sell, to whom, the wedge
+  ...
+
+icp:                             # ideal customer profiles / segments
+  - ""
+
+competitors:                     # name + domain; used by competitor + comparison skills
+  - { name: "", domain: "" }
+
+target_keywords:                 # seed terms for keyword/rank/programmatic work
+  - ""
+
+# Ahrefs project ids (list with management-projects / management-brand-radar-reports).
+ahrefs:
+  project_id:                    # rank-tracker / site-audit project id
+  brand_radar_report_id:         # GEO / Brand Radar report id
+
+# Owned analytics (optional).
+analytics:
+  ga4_property_id:
+  gsc_site:                      # sc-domain:example.com or https://example.com/
+
+# Canonical brand language — the positioning-messaging skill writes this; content-brief,
+# comparison-pages, programmatic-seo, and proposal-builder all read it. Leave blank to start.
+messaging:
+  one_liner: ""                  # the value-prop sentence a stranger repeats correctly
+  pillars: []                    # the 3 differentiators
+  say_this_not_that: []          # on-brand vs off-brand phrasing pairs
+
+# Per-project brand (overrides framework brand). Hex colors.
+brand:
+  primary: "#0E2A47"             # headers, titles
+  accent:  "#2BBF77"             # highlights, last pillar, chart accent
+  # muted / ink / paper inherit from framework.yml unless set here
