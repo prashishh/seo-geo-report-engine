@@ -2,11 +2,12 @@
 
 **Website → [geoseo-visibility.prashish.xyz](https://geoseo-visibility.prashish.xyz/)**
 
-An open-source **SEO and AI-search (GEO) report engine** that runs inside
+An open-source **SEO, GEO and AI visibility report engine** that runs inside
 [Claude Code](https://claude.com/claude-code) and any harness that can run Python. Point it at a
 company and it scans the field with live data, then renders a branded, 18-section competitive
-report as a PDF. AI visibility across five engines, backlink and keyword gaps, traffic share,
-reputation, ads footprint, social reach, Core Web Vitals, and the plan to take the open ground.
+report as a PDF. AI visibility across five engines, competitor gaps, traffic share, review
+counts, reputation, ads footprint, social reach, Core Web Vitals, and the plan to take the open
+ground.
 
 **See it before you install anything.**
 [Sample report 1](docs/assets/sample-report-1.pdf) (consumer brand) ·
@@ -72,11 +73,11 @@ say *"run a first-scan report for example.com"*. The skills route themselves.
 
 ## What it produces
 
-- **The first-scan pitch report**, the flagship. Authority, backlink and link-gap, traffic
-  share, share of search, funding and hiring momentum, keyword and greenfield maps, reputation
-  wedge, Google Ads read, social benchmark, Core Web Vitals, and an AI-visibility matrix across
-  ChatGPT, Gemini, Claude, Perplexity and Google AI Overviews. Every section auto-includes only
-  when its data exists.
+- **The first-scan pitch report**, the flagship. Authority, competitor gaps, traffic share,
+  share of search, funding and hiring momentum, keyword and greenfield maps, review counts,
+  reputation wedge, Google Ads read, social benchmark, Core Web Vitals, and an AI-visibility
+  matrix across ChatGPT, Gemini, Claude, Perplexity and Google AI Overviews. Every section
+  auto-includes only when its data exists.
 - **Growth proposals** and **weekly or monthly client reports** as branded PDFs. Pure-SVG charts
   and print-quality rendering make the decks look designed, not generated.
 - **Programmatic and comparison pages**, content briefs, keyword maps, technical audits.
