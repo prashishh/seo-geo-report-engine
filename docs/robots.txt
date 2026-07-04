@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://geoseo-visibility.prashish.xyz/sitemap.xml
+Sitemap: https://aeoseo-visibility.prashish.xyz/sitemap.xml

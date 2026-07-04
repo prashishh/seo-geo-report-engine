@@ -1,6 +1,6 @@
 # seo-geo-report-engine
 
-**Website → [geoseo-visibility.prashish.xyz](https://geoseo-visibility.prashish.xyz/)**
+**Website → [aeoseo-visibility.prashish.xyz](https://aeoseo-visibility.prashish.xyz/)**
 
 An open-source **SEO, AEO and AI visibility report engine** that runs inside
 [Claude Code](https://claude.com/claude-code) and any harness that can run Python. Point it at a
@@ -14,7 +14,7 @@ ground.
 [Sample report 2](docs/assets/sample-report-2.pdf) (B2B SaaS). Both were produced entirely from
 the fictional demo clients that ship with this repo. The full capability list, every report
 section, skill and workflow, lives on the
-[capabilities page](https://geoseo-visibility.prashish.xyz/capabilities.html).
+[capabilities page](https://aeoseo-visibility.prashish.xyz/capabilities.html).
 
 ![Report opening page with headline findings and a domain authority chart](docs/assets/shot-summary.png)
 
@@ -123,7 +123,7 @@ projects/<slug>/     your real clients. Gitignored, stays on your machine
 ## Capabilities at a glance
 
 The detailed list with one-line descriptions is on the
-[capabilities page](https://geoseo-visibility.prashish.xyz/capabilities.html).
+[capabilities page](https://aeoseo-visibility.prashish.xyz/capabilities.html).
 
 - **GEO / AI search** · `llm-visibility` (5-engine matrix) · `geo-audit` · `aeo-content-patterns` ·
   `ai-citation-sprint` · `serp-intel` (AI Overviews) · `web-research` (cited live research)

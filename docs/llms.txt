@@ -18,7 +18,7 @@ projects/<slug>/ as pure data and are gitignored, only the fictional demos ship.
 
 ## Key facts
 
-- The homepage is https://geoseo-visibility.prashish.xyz/
+- The homepage is https://aeoseo-visibility.prashish.xyz/
 - The GitHub repository is https://github.com/prashishh/seo-geo-report-engine
 - The engine is open source under the MIT license
 - The demo reports use fictional companies and require no API keys
@@ -28,11 +28,11 @@ projects/<slug>/ as pure data and are gitignored, only the fictional demos ship.
 
 ## Docs
 
-- [Homepage](https://geoseo-visibility.prashish.xyz/) how it works, sample reports, screenshots
-- [Capabilities](https://geoseo-visibility.prashish.xyz/capabilities.html) all 18 report sections, 33 skills, 8 workflows, 5 subagents, 9 playbooks
+- [Homepage](https://aeoseo-visibility.prashish.xyz/) how it works, sample reports, screenshots
+- [Capabilities](https://aeoseo-visibility.prashish.xyz/capabilities.html) all 18 report sections, 33 skills, 8 workflows, 5 subagents, 9 playbooks
 - [Repository](https://github.com/prashishh/seo-geo-report-engine) source, README, operating manual
 
 ## Samples
 
-- [Sample report 1](https://geoseo-visibility.prashish.xyz/assets/sample-report-1.pdf) consumer brand demo, 18 sections
-- [Sample report 2](https://geoseo-visibility.prashish.xyz/assets/sample-report-2.pdf) B2B SaaS demo, 17 sections
+- [Sample report 1](https://aeoseo-visibility.prashish.xyz/assets/sample-report-1.pdf) consumer brand demo, 18 sections
+- [Sample report 2](https://aeoseo-visibility.prashish.xyz/assets/sample-report-2.pdf) B2B SaaS demo, 17 sections
